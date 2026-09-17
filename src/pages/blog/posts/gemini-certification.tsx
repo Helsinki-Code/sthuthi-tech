@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { BlogImage } from "@/components/site/blog-image"
 
 export function GeminiCertificationPost() {
   return (
@@ -172,6 +173,7 @@ export function GeminiCertificationPost() {
       </p>
 
       <h2>What Gemini-specific proficiency actually requires testing</h2>
+      <BlogImage imageKey="gemini-certification/01-mixed-input-assessment" />
       <p>
         Gemini's real differentiator isn't chat quality — it's range. The
         same assistant is expected to read a screenshot, reconcile it

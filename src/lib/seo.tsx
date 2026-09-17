@@ -11,6 +11,9 @@ interface SeoProps {
   /** JSON-LD structured data object(s) for this page */
   structuredData?: object | object[]
   noIndex?: boolean
+  image?: string
+  imageAlt?: string
+  type?: "website" | "article"
 }
 
 function setMeta(attr: "name" | "property", key: string, content: string) {
@@ -23,7 +26,7 @@ function setMeta(attr: "name" | "property", key: string, content: string) {
   el.setAttribute("content", content)
 }
 
-export function Seo({ title, description, path, structuredData, noIndex }: SeoProps) {
+export function Seo({ title, description, path, structuredData, noIndex, image = DEFAULT_IMAGE, imageAlt = SITE_NAME, type = "website" }: SeoProps) {
   useEffect(() => {
     const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`
     const canonical = `${SITE_URL}${path}`
@@ -43,13 +46,22 @@ export function Seo({ title, description, path, structuredData, noIndex }: SeoPr
     setMeta("property", "og:title", fullTitle)
     setMeta("property", "og:description", description)
     setMeta("property", "og:url", canonical)
-    setMeta("property", "og:type", "website")
+    setMeta("property", "og:type", type)
     setMeta("property", "og:site_name", SITE_NAME)
-    setMeta("property", "og:image", DEFAULT_IMAGE)
+    setMeta("property", "og:image", image)
+    setMeta("property", "og:image:alt", imageAlt)
+    if (type === "article") {
+      setMeta("property", "og:image:width", "1200")
+      setMeta("property", "og:image:height", "630")
+    } else {
+      document.head.querySelector('meta[property="og:image:width"]')?.remove()
+      document.head.querySelector('meta[property="og:image:height"]')?.remove()
+    }
     setMeta("name", "twitter:card", "summary_large_image")
     setMeta("name", "twitter:title", fullTitle)
     setMeta("name", "twitter:description", description)
-    setMeta("name", "twitter:image", DEFAULT_IMAGE)
+    setMeta("name", "twitter:image", image)
+    setMeta("name", "twitter:image:alt", imageAlt)
 
     const scripts: HTMLScriptElement[] = []
     if (structuredData) {
@@ -66,7 +78,7 @@ export function Seo({ title, description, path, structuredData, noIndex }: SeoPr
     return () => {
       scripts.forEach((s) => s.remove())
     }
-  }, [title, description, path, structuredData, noIndex])
+  }, [title, description, path, structuredData, noIndex, image, imageAlt, type])
 
   return null
 }

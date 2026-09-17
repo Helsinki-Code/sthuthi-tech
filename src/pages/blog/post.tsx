@@ -5,6 +5,8 @@ import { PageHeader } from "@/components/site/page-header"
 import { ClosingCta } from "@/components/site/closing-cta"
 import { Reveal } from "@/components/site/reveal"
 import { BLOG_POSTS, formatPostDate } from "@/lib/blog-data"
+import { BLOG_IMAGES } from "@/lib/blog-images"
+import { BlogImage } from "@/components/site/blog-image"
 import { VibeCodingTaxPost } from "@/pages/blog/posts/vibe-coding-tax"
 import { ClaudeCodeCertificationPost } from "@/pages/blog/posts/claude-code-certification"
 import { MicrosoftCopilotCertificationPost } from "@/pages/blog/posts/microsoft-copilot-certification"
@@ -44,6 +46,9 @@ export function BlogPostPage() {
         title={meta.title}
         description={meta.description}
         path={`/blog/${meta.slug}`}
+        image={`${SITE_URL}${BLOG_IMAGES[`${meta.slug}/featured`].src}`}
+        imageAlt={BLOG_IMAGES[`${meta.slug}/featured`].alt}
+        type="article"
         structuredData={[
           {
             "@context": "https://schema.org",
@@ -51,6 +56,7 @@ export function BlogPostPage() {
             headline: meta.title,
             description: meta.description,
             datePublished: meta.publishedAt,
+            image: `${SITE_URL}${BLOG_IMAGES[`${meta.slug}/featured`].src}`,
             author: { "@type": "Organization", name: "Sthuthi Technologies" },
             publisher: { "@type": "Organization", name: "Sthuthi Technologies" },
           },
@@ -87,6 +93,7 @@ export function BlogPostPage() {
 
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-2xl px-5 sm:px-8">
+          <BlogImage imageKey={`${meta.slug}/featured`} featured />
           <Reveal className="prose-content text-[15px] leading-relaxed text-muted-foreground">
             <Content />
           </Reveal>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { BlogImage } from "@/components/site/blog-image"
 
 export function AiCodeVulnerabilitiesPost() {
   return (
@@ -84,6 +85,7 @@ export function AiCodeVulnerabilitiesPost() {
       </p>
 
       <h2>Why this keeps happening: review habits break under generation speed</h2>
+      <BlogImage imageKey="ai-code-vulnerabilities/01-input-to-sink" />
       <p>
         None of this is really a model-quality problem, which is why scaling
         hasn't fixed it. It's a review problem operating at a new speed. We
@@ -114,6 +116,7 @@ export function AiCodeVulnerabilitiesPost() {
       </p>
 
       <h2>Secrets are leaking at the same time, for the same reason</h2>
+      <BlogImage imageKey="ai-code-vulnerabilities/02-secrets-review" />
       <p>
         The vulnerability-class data lines up with a second, independent
         dataset on credential handling. GitGuardian's{" "}

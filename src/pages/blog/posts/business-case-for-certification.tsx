@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { BlogImage } from "@/components/site/blog-image"
 
 export function BusinessCaseForCertificationPost() {
   return (
@@ -98,6 +99,7 @@ export function BusinessCaseForCertificationPost() {
       </blockquote>
 
       <h2>Size the ask as a pilot, not a program</h2>
+      <BlogImage imageKey="business-case-for-certification/01-pilot-evidence" />
       <p>
         A request for "a certification program" reads as open-ended and
         expensive. A request for a scoped pilot with a fixed timeline reads

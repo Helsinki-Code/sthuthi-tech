@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { BlogImage } from "@/components/site/blog-image"
 
 export function CustomCertificationCostPost() {
   return (
@@ -85,6 +86,7 @@ export function CustomCertificationCostPost() {
       </p>
 
       <h2>Published track vs. custom: a decision framework</h2>
+      <BlogImage imageKey="custom-certification-cost/01-published-or-custom" />
       <p>
         Before you start a scoping call, it's worth running your situation
         through a short checklist. None of this is unique to certification —

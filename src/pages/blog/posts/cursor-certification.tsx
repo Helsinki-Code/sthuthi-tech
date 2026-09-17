@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { BlogImage } from "@/components/site/blog-image"
 
 export function CursorCertificationPost() {
   return (
@@ -165,6 +166,7 @@ export function CursorCertificationPost() {
       </p>
 
       <h2>What actually needs checking: Composer and Agent mode judgment</h2>
+      <BlogImage imageKey="cursor-certification/01-context-review" />
       <p>
         Cursor's failure modes aren't generic "did the AI write bad code"
         failure modes — they're specific to how much control the editor lets
