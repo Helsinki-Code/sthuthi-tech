@@ -30,7 +30,10 @@ export function HomePage() {
       <Programs />
       <CertificateShowcase />
       <CustomCertification />
-      <ClosingCta />
+      <ClosingCta
+        title="Tell us which tool your team needs to be tested on."
+        description="A 20-minute call is enough for us to tell you whether a published track fits, or if this needs a custom one."
+      />
     </>
   )
 }

@@ -5,6 +5,7 @@ import { TiltCard } from "@/components/site/tilt-card"
 import { SpotlightMascot } from "@/components/site/spotlight-mascot"
 import { LogoTile } from "@/components/site/logo-tile"
 import { Reveal } from "@/components/site/reveal"
+import { trackEvent } from "@/lib/analytics"
 import { TRACKS } from "@/lib/site-data"
 
 const TOOLS = [...TRACKS.map((t) => t.tool), "your own AI stack"]
@@ -54,14 +55,15 @@ export function Hero() {
                 size="lg"
                 className="h-11 bg-brand-orange px-5 text-[13px] font-semibold text-brand-orange-ink hover:bg-brand-orange/90"
                 nativeButton={false}
-                render={<Link to="/certifications">See the certification tracks</Link>}
+                onClick={() => trackEvent("cta_click", { location: "hero_primary" })}
+                render={<Link to="/contact">Talk to a program lead</Link>}
               />
               <Button
                 variant="outline"
                 size="lg"
                 className="h-11 px-5 text-[13px] font-semibold"
                 nativeButton={false}
-                render={<Link to="/contact">Talk to a program lead</Link>}
+                render={<Link to="/certifications">See the certification tracks</Link>}
               />
             </div>
           </Reveal>

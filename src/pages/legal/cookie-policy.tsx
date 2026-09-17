@@ -6,7 +6,7 @@ export function CookiePolicyPage() {
     <>
       <Seo
         title="Cookie Policy"
-        description="What Sthuthi Technologies actually stores in your browser — a short list, because the site doesn't run advertising or tracking cookies."
+        description="What Sthuthi Technologies actually stores in your browser and tracks with Google Analytics — stated plainly, not as a blanket consent form."
         path="/legal/cookie-policy"
         noIndex
       />
@@ -18,11 +18,37 @@ export function CookiePolicyPage() {
             title: "The short version",
             body: (
               <p>
-                This site does not run advertising cookies, cross-site
-                tracking, or a third-party analytics script. The only thing
-                stored in your browser is a single preference, described
-                below — so there's no cookie consent banner, because there's
-                nothing to consent to.
+                This site runs one analytics tool — Google Analytics — and
+                stores one local preference in your browser. It doesn't run
+                advertising cookies or sell data to third parties. Both are
+                described below in full, not summarised behind a blanket
+                "we use cookies to improve your experience" banner.
+              </p>
+            ),
+          },
+          {
+            title: "Google Analytics",
+            body: (
+              <p>
+                We use Google Analytics (GA4) to see which pages get read
+                and which buttons on this site actually get clicked — the
+                "Talk to a program lead" and "Book a program review" buttons,
+                the certification-track links, and successful contact-form
+                submissions, specifically. GA4 sets its own cookies to tell
+                repeat visitors apart from new ones and sends page and event
+                data to Google. We don't pass it your name, email, or
+                anything you type into the contact form — only the fact that
+                a page was viewed or a button was clicked. You can opt out
+                of Google Analytics tracking sitewide with{" "}
+                <a
+                  href="https://tools.google.com/dlpage/gaoptout"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-brand-orange underline underline-offset-4"
+                >
+                  Google's browser add-on
+                </a>
+                , or block it with any standard tracker/ad blocker.
               </p>
             ),
           },
@@ -43,10 +69,11 @@ export function CookiePolicyPage() {
             title: "If that changes",
             body: (
               <p>
-                If we ever add analytics or a scheduling widget that sets
-                its own cookies, this page will be updated first, with a
-                specific list of what's added and why — not a blanket
-                consent form covering hypothetical future tools.
+                If we add another analytics tool, an ad pixel, or a
+                scheduling widget that sets its own cookies, this page gets
+                updated first, with a specific list of what's added and why
+                — not a blanket consent form covering hypothetical future
+                tools.
               </p>
             ),
           },

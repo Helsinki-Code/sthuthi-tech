@@ -3,6 +3,7 @@ import { Seo, SITE_URL } from "@/lib/seo"
 import { PageHeader } from "@/components/site/page-header"
 import { SpotlightMascot } from "@/components/site/spotlight-mascot"
 import { Reveal } from "@/components/site/reveal"
+import { ClosingCta } from "@/components/site/closing-cta"
 
 const PRINCIPLES = [
   {
@@ -83,6 +84,11 @@ export function AboutPage() {
           </Reveal>
         </div>
       </section>
+
+      <ClosingCta
+        title="Want to see the syllabus for a specific tool?"
+        description="We'll walk you through what's actually assessed before you commit a cohort to it."
+      />
     </>
   )
 }

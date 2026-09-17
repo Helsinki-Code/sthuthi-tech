@@ -4,6 +4,7 @@ import { Seo, SITE_URL } from "@/lib/seo"
 import { PageHeader } from "@/components/site/page-header"
 import { Reveal } from "@/components/site/reveal"
 import { LogoTile } from "@/components/site/logo-tile"
+import { ClosingCta } from "@/components/site/closing-cta"
 import { TRACKS } from "@/lib/site-data"
 
 export function CertificationsIndexPage() {
@@ -101,6 +102,11 @@ export function CertificationsIndexPage() {
           </Reveal>
         </div>
       </section>
+
+      <ClosingCta
+        title="Not sure which track fits your team?"
+        description="Send us the tool and the headcount — we'll tell you which published track applies, or whether this needs a custom one."
+      />
     </>
   )
 }

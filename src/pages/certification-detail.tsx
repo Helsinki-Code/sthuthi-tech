@@ -5,6 +5,7 @@ import { PageHeader } from "@/components/site/page-header"
 import { Reveal } from "@/components/site/reveal"
 import { LogoTile } from "@/components/site/logo-tile"
 import { Button } from "@/components/ui/button"
+import { trackEvent } from "@/lib/analytics"
 import { TRACKS } from "@/lib/site-data"
 
 export function CertificationDetailPage() {
@@ -54,7 +55,12 @@ export function CertificationDetailPage() {
             size="lg"
             className="h-11 bg-brand-orange px-5 text-[13px] font-semibold text-brand-orange-ink hover:bg-brand-orange/90"
             nativeButton={false}
-            render={<Link to="/contact">Book this track for your team</Link>}
+            onClick={() => trackEvent("cta_click", { location: "certification_detail", track: track.tool })}
+            render={
+              <Link to={`/contact?reason=book-track&track=${encodeURIComponent(track.tool)}`}>
+                Talk to us about a {track.tool} cohort
+              </Link>
+            }
           />
           <Button
             variant="outline"

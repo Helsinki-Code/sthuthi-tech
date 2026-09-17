@@ -1,27 +1,65 @@
+import { useState, type FormEvent } from "react"
+import { useSearchParams } from "react-router-dom"
+import { CheckCircle, WarningCircle } from "@phosphor-icons/react"
 import { Seo, SITE_URL } from "@/lib/seo"
 import { PageHeader } from "@/components/site/page-header"
 import { Reveal } from "@/components/site/reveal"
 import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Textarea } from "@/components/ui/textarea"
+import { Label } from "@/components/ui/label"
+import { NativeSelect, NativeSelectOption } from "@/components/ui/native-select"
+import { trackEvent } from "@/lib/analytics"
 
-const ROUTES = [
-  {
-    title: "Booking a published track",
-    body: "Tell us the tool, the headcount, and roughly when. We'll confirm the next cohort start date or propose a private run for larger groups.",
-    to: "programs@sthuthitech.com?subject=Book%20a%20published%20track",
-  },
-  {
-    title: "Scoping a custom certification",
-    body: "Bring an engineering lead to the first call — we'll need someone who can describe the internal tool or workflow in detail.",
-    to: "programs@sthuthitech.com?subject=Custom%20certification%20scoping",
-  },
-  {
-    title: "Verifying a credential",
-    body: "Have a candidate's credential ID ready. We confirm validity, level, and issue date; we don't share assessment scores without the holder's consent.",
-    to: "verify@sthuthitech.com?subject=Credential%20verification",
-  },
-]
+const REASONS = [
+  { value: "book-track", label: "Book a published track" },
+  { value: "custom-track", label: "Scope a custom certification" },
+  { value: "verify-credential", label: "Verify a credential" },
+] as const
+
+type Status = "idle" | "submitting" | "success" | "error"
 
 export function ContactPage() {
+  const [params] = useSearchParams()
+  const initialReason = REASONS.some((r) => r.value === params.get("reason"))
+    ? (params.get("reason") as (typeof REASONS)[number]["value"])
+    : "book-track"
+  const initialTrack = params.get("track") ?? ""
+
+  const [status, setStatus] = useState<Status>("idle")
+  const [errorMessage, setErrorMessage] = useState("")
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    setStatus("submitting")
+    setErrorMessage("")
+
+    const form = event.currentTarget
+    const data = Object.fromEntries(new FormData(form).entries())
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      })
+      const body = (await res.json()) as { ok: boolean; error?: string }
+
+      if (!res.ok || !body.ok) {
+        setStatus("error")
+        setErrorMessage(body.error ?? "Something went wrong. Please try again shortly.")
+        return
+      }
+
+      trackEvent("contact_form_submit", { reason: String(data.reason ?? "") })
+      setStatus("success")
+      form.reset()
+    } catch {
+      setStatus("error")
+      setErrorMessage("Couldn't reach the server. Check your connection and try again.")
+    }
+  }
+
   return (
     <>
       <Seo
@@ -36,36 +74,105 @@ export function ContactPage() {
       />
       <PageHeader
         kicker="Get in touch"
-        title="Three reasons people write in — pick yours."
-        description="Each goes to a different inbox so it reaches someone who can actually answer it on the first reply."
+        title="Tell us why you're writing in."
+        description="One form, routed to the right inbox based on what you pick below — you'll hear back within one business day, India Standard Time."
       />
 
       <section className="py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-5 sm:px-8">
-          <div className="grid gap-6 sm:grid-cols-3">
-            {ROUTES.map((route, i) => (
-              <Reveal
-                key={route.title}
-                delayMs={i * 70}
-                className="flex flex-col border border-border bg-card p-6"
-              >
-                <h2 className="font-heading font-bold">{route.title}</h2>
-                <p className="mt-2 flex-1 text-[13px] leading-relaxed text-muted-foreground">
-                  {route.body}
-                </p>
-                <Button
-                  variant="outline"
-                  className="mt-5 w-fit text-[12px]"
-                  nativeButton={false}
-                  render={<a href={`mailto:${route.to}`}>{route.to.split("?")[0]}</a>}
+        <div className="mx-auto max-w-2xl px-5 sm:px-8">
+          {status === "success" ? (
+            <Reveal className="flex flex-col items-center gap-3 border border-border bg-card px-6 py-16 text-center">
+              <CheckCircle weight="fill" className="size-8 text-brand-orange" />
+              <p className="font-heading text-lg font-bold">Message sent.</p>
+              <p className="max-w-sm text-[14px] text-muted-foreground">
+                We reply from a person, not a ticketing system — expect a
+                reply within one business day, India Standard Time.
+              </p>
+            </Reveal>
+          ) : (
+            <Reveal>
+              <form onSubmit={handleSubmit} className="flex flex-col gap-5 border border-border bg-card p-6 sm:p-8">
+                {/* Honeypot — hidden from real visitors, catches simple bots */}
+                <input
+                  type="text"
+                  name="website"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  className="hidden"
+                  aria-hidden="true"
                 />
-              </Reveal>
-            ))}
-          </div>
 
-          <Reveal delayMs={240} className="mt-10 border-t border-border pt-8 font-mono text-[11px] uppercase tracking-[0.12em] text-muted-foreground">
-            Replies land within one business day, India Standard Time.
-          </Reveal>
+                <div className="grid gap-5 sm:grid-cols-2">
+                  <div className="flex flex-col gap-1.5">
+                    <Label htmlFor="name">Name</Label>
+                    <Input id="name" name="name" required minLength={2} placeholder="Full name" />
+                  </div>
+                  <div className="flex flex-col gap-1.5">
+                    <Label htmlFor="email">Work email</Label>
+                    <Input id="email" name="email" type="email" required placeholder="you@company.com" />
+                  </div>
+                </div>
+
+                <div className="grid gap-5 sm:grid-cols-2">
+                  <div className="flex flex-col gap-1.5">
+                    <Label htmlFor="company">Company</Label>
+                    <Input id="company" name="company" placeholder="Company name" />
+                  </div>
+                  <div className="flex flex-col gap-1.5">
+                    <Label htmlFor="reason">Reason for writing in</Label>
+                    <NativeSelect id="reason" name="reason" defaultValue={initialReason} className="w-full">
+                      {REASONS.map((r) => (
+                        <NativeSelectOption key={r.value} value={r.value}>
+                          {r.label}
+                        </NativeSelectOption>
+                      ))}
+                    </NativeSelect>
+                  </div>
+                </div>
+
+                {initialTrack && (
+                  <input type="hidden" name="track" value={initialTrack} />
+                )}
+                {initialTrack && (
+                  <p className="-mt-2 font-mono text-[11px] uppercase tracking-[0.1em] text-muted-foreground">
+                    Re: {initialTrack} track
+                  </p>
+                )}
+
+                <div className="flex flex-col gap-1.5">
+                  <Label htmlFor="message">Message</Label>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    required
+                    minLength={10}
+                    rows={5}
+                    placeholder={
+                      initialReason === "verify-credential"
+                        ? "Include the credential ID you're checking."
+                        : "Tool, headcount, and roughly when you're looking to run this."
+                    }
+                  />
+                </div>
+
+                {status === "error" && (
+                  <div className="flex items-start gap-2 border border-destructive/30 bg-destructive/10 px-3 py-2 text-[13px] text-destructive">
+                    <WarningCircle weight="fill" className="mt-0.5 size-4 shrink-0" />
+                    {errorMessage}
+                  </div>
+                )}
+
+                <Button
+                  type="submit"
+                  size="lg"
+                  disabled={status === "submitting"}
+                  className="h-11 w-fit bg-brand-orange px-6 text-[13px] font-semibold text-brand-orange-ink hover:bg-brand-orange/90"
+                >
+                  {status === "submitting" ? "Sending…" : "Send message"}
+                </Button>
+              </form>
+            </Reveal>
+          )}
         </div>
       </section>
     </>

@@ -4,6 +4,7 @@ import { PageHeader } from "@/components/site/page-header"
 import { Reveal } from "@/components/site/reveal"
 import { SpotlightMascot } from "@/components/site/spotlight-mascot"
 import { Button } from "@/components/ui/button"
+import { trackEvent } from "@/lib/analytics"
 
 const TIMELINE = [
   {
@@ -60,7 +61,8 @@ export function CustomCertificationPage() {
             size="lg"
             className="h-11 bg-brand-orange px-5 text-[13px] font-semibold text-brand-orange-ink hover:bg-brand-orange/90"
             nativeButton={false}
-            render={<Link to="/contact">Start a scoping call</Link>}
+            onClick={() => trackEvent("cta_click", { location: "custom_certification_page" })}
+            render={<Link to="/contact?reason=custom-track">Start a scoping call</Link>}
           />
         </div>
       </PageHeader>

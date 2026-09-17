@@ -4,6 +4,7 @@ import { List, X } from "@phosphor-icons/react"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/site/theme-toggle"
 import { LogoMark } from "@/components/site/logo-mark"
+import { trackEvent } from "@/lib/analytics"
 import { cn } from "@/lib/utils"
 
 const NAV_ITEMS = [
@@ -62,6 +63,7 @@ export function Header() {
             size="sm"
             className="hidden sm:inline-flex"
             nativeButton={false}
+            onClick={() => trackEvent("cta_click", { location: "header" })}
             render={<Link to="/contact">Book a program review</Link>}
           />
           <Button
@@ -93,7 +95,10 @@ export function Header() {
             <li>
               <Link
                 to="/contact"
-                onClick={() => setOpen(false)}
+                onClick={() => {
+                  setOpen(false)
+                  trackEvent("cta_click", { location: "header_mobile" })
+                }}
                 className="text-sm font-semibold text-brand-orange"
               >
                 Book a program review

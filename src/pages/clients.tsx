@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom"
 import { Seo } from "@/lib/seo"
 import { PageHeader } from "@/components/site/page-header"
 import { LogoTile } from "@/components/site/logo-tile"
 import { Reveal } from "@/components/site/reveal"
+import { ClosingCta } from "@/components/site/closing-cta"
 import { CLIENTS } from "@/lib/site-data"
 
 export function ClientsPage() {
@@ -44,19 +44,13 @@ export function ClientsPage() {
               </Reveal>
             ))}
           </div>
-
-          <Reveal delayMs={220} className="mt-10 max-w-2xl text-[14px] leading-relaxed text-muted-foreground">
-            <p>
-              Want a fuller reference — cohort size, track, or a direct
-              introduction to the team that ran it? Ask on the{" "}
-              <Link to="/contact" className="text-brand-orange underline underline-offset-4">
-                contact page
-              </Link>{" "}
-              and we'll check with the client first.
-            </p>
-          </Reveal>
         </div>
       </section>
+
+      <ClosingCta
+        title="Want a fuller reference?"
+        description="Cohort size, track, or a direct introduction to the team that ran it — ask, and we'll check with the client first."
+      />
     </>
   )
 }
