@@ -21,7 +21,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sthuthi-tech.com/certifications/github-copilot</loc>
+    <loc>https://sthuthi-tech.com/certifications/microsoft-copilot</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -57,6 +57,16 @@
   </url>
   <url>
     <loc>https://sthuthi-tech.com/blog/vibe-coding-tax</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sthuthi-tech.com/blog/claude-code-certification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sthuthi-tech.com/blog/microsoft-copilot-certification</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

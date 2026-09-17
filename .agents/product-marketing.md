@@ -4,7 +4,7 @@
 **Last updated:** 2026-09-17
 
 ## Product Overview
-**One-liner:** Sthuthi Technologies trains and certifies company employees on trending AI tools — Claude Code, Codex, GitHub Copilot, Gemini, Cursor, or a custom internal tool — with a proctored assessment and a verifiable credential.
+**One-liner:** Sthuthi Technologies trains and certifies company employees on trending AI tools — Claude Code, Codex, Microsoft Copilot, Gemini, Cursor, or a custom internal tool — with a proctored assessment and a verifiable credential.
 
 **What it does:** Runs instructor-led (and async) cohort training on a specific AI tool, then proctors a task-based, in-tool assessment reviewed by a human assessor. A pass issues a dated certificate with a unique credential ID that an employer or client can verify. For tools that don't have a published track, Sthuthi scopes and builds a custom curriculum and rubric directly with the client's engineering leads.
 
@@ -110,7 +110,7 @@
 | Theme | Proof |
 |-------|-------|
 | Credential is real, not a formality | Named human assessor sign-off + unique credential ID on every certificate |
-| Tool-specific, not generic AI training | Five published tracks (Claude Code, Codex, GitHub Copilot, Gemini, Cursor), each with its own syllabus and in-tool assessment |
+| Tool-specific, not generic AI training | Five published tracks (Claude Code, Codex, Microsoft Copilot, Gemini, Cursor), each with its own syllabus and in-tool assessment |
 | Can certify what no one else covers | Custom-track process for internal/proprietary tools, built with the client's engineering leads |
 
 ## Goals

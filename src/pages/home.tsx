@@ -13,7 +13,7 @@ export function HomePage() {
     <>
       <Seo
         title="Sthuthi Technologies — AI Tool Certification for Teams"
-        description="Sthuthi Technologies trains and certifies employees on Claude Code, Codex, GitHub Copilot, Gemini, and custom internal AI tools — with a proctored assessment and a verifiable credential."
+        description="Sthuthi Technologies trains and certifies employees on Claude Code, Codex, Microsoft Copilot, Gemini, and custom internal AI tools — with a proctored assessment and a verifiable credential."
         path="/"
         structuredData={{
           "@context": "https://schema.org",

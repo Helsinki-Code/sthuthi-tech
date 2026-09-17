@@ -1,6 +1,6 @@
 # Content Strategy
 
-**Document version:** v1
+**Document version:** v3
 **Last updated:** 2026-09-18
 
 Built from `.agents/product-marketing.md` context plus market/competitive
@@ -12,11 +12,31 @@ research (see Sources). The site's `/blog` infrastructure exists at
 
 ## Key research findings that shaped this
 
-- **GitHub already has its own Copilot certification** (GH-300, beta →
-  public), weighted 31% toward plan-tier trivia rather than applied
-  judgment — a real, named competitor for the Copilot track specifically.
-  No equivalent official Claude Code exam exists yet — a genuine,
-  low-competition search gap right now.
+- **Correction (v2): "Copilot" in Sthuthi's track lineup means Microsoft
+  Copilot, not GitHub Copilot.** Site-wide naming (site-data.ts, sitemap,
+  meta descriptions) has been corrected accordingly (slug is now
+  `microsoft-copilot`). GitHub does have its own Copilot exam (GH-300,
+  weighted 31% toward plan-tier trivia) — that's real, but it's a
+  different product and no longer the relevant competitive reference for
+  this track. The Microsoft Copilot research instead found: Microsoft's
+  official Copilot certifications (AB-900 admin exam, Applied Skills labs)
+  are openly available with no partner gate, unlike Anthropic's — but
+  AB-900 tests IT administration and Applied Skills tests generic office
+  scenarios, neither of which checks a specific employee's actual work.
+  See the published post for full citations.
+- **Correction (v2): Anthropic does have an official Claude Code–relevant
+  exam** — Claude Certified Developer – Foundations (CCDV-F), part of the
+  four-exam Claude Certification Program launched March 2026. The original
+  v1 assumption ("no official Claude Code exam exists — a gap to own") was
+  wrong and has been corrected in the published post. The real angle,
+  verified via Pearson VUE and Anthropic's own site, is sharper than the
+  original: CCDV-F is gated to Claude Partner Network member
+  organizations (not available to the general public), and it's scoped
+  broadly across the whole Claude platform rather than specifically at
+  "can this engineer use Claude Code safely on our repo." Anthropic's free
+  Skilljar courses ("Claude Code 101" etc.) are public but are self-paced
+  training, not a proctored assessment. See the published post for full
+  citations.
 - The site's core "usage isn't proficiency" argument is backed by citable
   2026 numbers: Workera found only 13% of enterprise employees have the
   critical skills to work with AI agents; separately, only 11% of
@@ -47,8 +67,8 @@ research (see Sources). The site's `/blog` infrastructure exists at
 | # | Title | Pillar | Type | Buyer stage | Status |
 |---|-------|--------|------|-------------|--------|
 | 1 | The vibe coding tax: what unmeasured AI usage is actually costing engineering teams | 2 | Shareable | Awareness | **Published** — `/blog/vibe-coding-tax` |
-| 2 | Is there a Claude Code certification? What to test for instead | 3 | Searchable | Consideration | Not started |
-| 3 | GitHub's GH-300 vs. a proctored Copilot assessment: what each one actually proves | 3 | Searchable | Consideration | Not started |
+| 2 | Is there a Claude Code certification? Here's what actually exists | 3 | Searchable | Consideration | **Published** — `/blog/claude-code-certification` |
+| 3 | Is there a Microsoft Copilot certification? Yes — here's what it actually checks | 3 | Searchable | Consideration | **Published** — `/blog/microsoft-copilot-certification` |
 | 4 | Usage isn't proficiency: why your AI adoption dashboard doesn't prove anyone can use the tool | 1 | Both | Awareness | Not started |
 | 5 | 45% of AI-generated code has an OWASP vulnerability — is anyone checking yours? | 2 | Shareable | Awareness | Not started |
 | 6 | How to build the business case for AI-tool certification | 4 | Searchable | Decision | Not started |
@@ -60,7 +80,7 @@ research (see Sources). The site's `/blog` infrastructure exists at
 ```
 /certifications (existing hub)
 ├── /certifications/claude-code → blog #2 (Is there a Claude Code certification?)
-├── /certifications/github-copilot → blog #3 (GH-300 vs. proctored assessment)
+├── /certifications/microsoft-copilot → blog #3 (Microsoft Copilot certification)
 └── /certifications/cursor, /gemini, /codex → tool-specific playbooks (later wave)
 
 /blog
@@ -105,11 +125,30 @@ guessed at here.
 - [How Companies Can Measure AI Literacy and Workforce Skills](https://www.weareamberjack.com/how-to-measure-ai-literacy/)
 - [Stop Selling Courses. Start Selling Outcomes (2026)](https://www.aicerts.ai/blog/stop-selling-courses-start-selling-outcomes-the-enterprise-ai-training-approach-that-works-in-2026/)
 - [Best Enterprise AI Training Companies in 2026: Top 8 Ranked](https://www.correlation-one.com/blog/best-enterprise-ai-training-companies-in-2026-top-8-ranked)
+- [Anthropic: Anthropic invests $100 million into the Claude Partner Network](https://www.anthropic.com/news/claude-partner-network)
+- [Pearson VUE: Claude Certification Program by Anthropic](https://www.pearsonvue.com/us/en/anthropic.html)
+- [Anthropic Courses (Skilljar)](https://anthropic.skilljar.com/)
+- [freeCodeCamp: Claude Certified Architect – Foundations exam guide](https://www.freecodecamp.org/news/claude-certified-architect-foundations-prep-for-anthropic-s-new-certification-exam/)
+- [Microsoft Learn: Microsoft 365 Certified – Copilot and Agent Administration Fundamentals (AB-900)](https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/)
+- [Microsoft Learn: Applied Skills – Streamline business workflows with AI chat](https://learn.microsoft.com/en-us/credentials/applied-skills/streamline-business-workflows-with-ai-chat/)
+- [Microsoft Learn: GitHub Copilot Certifications](https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/) — the GitHub Copilot exam (GH-300); kept for reference only, not used in the Microsoft Copilot post since it's a different product.
 
 ## Changelog
 
 *Newest first. One line per revision: what changed and why.*
 
+- v3 (2026-09-18) — User correction: the site's "Copilot" track is
+  Microsoft Copilot, not GitHub Copilot. Renamed the slug and all
+  references site-wide (`site-data.ts`, sitemap, meta descriptions).
+  Rewrote topic #3 around verified Microsoft Copilot certification
+  research (AB-900, Applied Skills) instead of the GH-300 comparison, and
+  published it.
+- v2 (2026-09-18) — Wrote and published topic #2. Fresh research
+  (Pearson VUE + Anthropic's own site) found the v1 premise was stale:
+  Anthropic does have an official Claude Code–relevant exam (CCDV-F), just
+  gated to Claude Partner Network members and scoped broadly. Corrected
+  the pillar note and the post itself accordingly rather than publishing
+  the outdated "no certification exists" claim.
 - v1 (2026-09-18) — Initial strategy, researched and written while
   building the site's `/blog` infrastructure. Topic #1 (the vibe coding
   tax) written and published the same day as a working example.

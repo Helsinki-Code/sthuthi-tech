@@ -12,7 +12,7 @@ export function CertificationsIndexPage() {
     <>
       <Seo
         title="Certification Tracks"
-        description="Published AI-tool certification tracks from Sthuthi Technologies: Claude Code, Codex, GitHub Copilot, Gemini, and Cursor, each with levels, format, and assessment type."
+        description="Published AI-tool certification tracks from Sthuthi Technologies: Claude Code, Codex, Microsoft Copilot, Gemini, and Cursor, each with levels, format, and assessment type."
         path="/certifications"
         structuredData={{
           "@context": "https://schema.org",

@@ -6,9 +6,13 @@ import { ClosingCta } from "@/components/site/closing-cta"
 import { Reveal } from "@/components/site/reveal"
 import { BLOG_POSTS, formatPostDate } from "@/lib/blog-data"
 import { VibeCodingTaxPost } from "@/pages/blog/posts/vibe-coding-tax"
+import { ClaudeCodeCertificationPost } from "@/pages/blog/posts/claude-code-certification"
+import { MicrosoftCopilotCertificationPost } from "@/pages/blog/posts/microsoft-copilot-certification"
 
 const POST_COMPONENTS: Record<string, ComponentType> = {
   "vibe-coding-tax": VibeCodingTaxPost,
+  "claude-code-certification": ClaudeCodeCertificationPost,
+  "microsoft-copilot-certification": MicrosoftCopilotCertificationPost,
 }
 
 export function BlogPostPage() {
@@ -43,6 +47,19 @@ export function BlogPostPage() {
               { "@type": "ListItem", position: 3, name: meta.title, item: `${SITE_URL}/blog/${meta.slug}` },
             ],
           },
+          ...(meta.faq
+            ? [
+                {
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: meta.faq.map((item) => ({
+                    "@type": "Question",
+                    name: item.question,
+                    acceptedAnswer: { "@type": "Answer", text: item.answer },
+                  })),
+                },
+              ]
+            : []),
         ]}
       />
 
@@ -57,6 +74,26 @@ export function BlogPostPage() {
           <Reveal className="prose-content text-[15px] leading-relaxed text-muted-foreground">
             <Content />
           </Reveal>
+
+          {meta.faq && (
+            <div className="mt-14 border-t border-border pt-10">
+              <h2 className="font-heading text-lg font-bold tracking-tight text-foreground">
+                Frequently asked questions
+              </h2>
+              <div className="mt-6 flex flex-col gap-6">
+                {meta.faq.map((item) => (
+                  <div key={item.question}>
+                    <h3 className="font-heading text-[15px] font-bold text-foreground">
+                      {item.question}
+                    </h3>
+                    <p className="mt-1.5 text-[14px] leading-relaxed text-muted-foreground">
+                      {item.answer}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </section>
 

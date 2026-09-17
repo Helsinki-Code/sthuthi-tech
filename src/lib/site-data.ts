@@ -55,8 +55,8 @@ export const TRACKS: TrackDetail[] = [
     ],
   },
   {
-    slug: "github-copilot",
-    tool: "GitHub Copilot",
+    slug: "microsoft-copilot",
+    tool: "Microsoft Copilot",
     logo: "copilot-logo.png",
     focus: "Pair-programming inside existing codebases",
     levels: "Foundations",
