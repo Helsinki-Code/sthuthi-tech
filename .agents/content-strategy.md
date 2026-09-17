@@ -1,6 +1,6 @@
 # Content Strategy
 
-**Document version:** v3
+**Document version:** v4
 **Last updated:** 2026-09-18
 
 Built from `.agents/product-marketing.md` context plus market/competitive
@@ -69,11 +69,13 @@ research (see Sources). The site's `/blog` infrastructure exists at
 | 1 | The vibe coding tax: what unmeasured AI usage is actually costing engineering teams | 2 | Shareable | Awareness | **Published** — `/blog/vibe-coding-tax` |
 | 2 | Is there a Claude Code certification? Here's what actually exists | 3 | Searchable | Consideration | **Published** — `/blog/claude-code-certification` |
 | 3 | Is there a Microsoft Copilot certification? Yes — here's what it actually checks | 3 | Searchable | Consideration | **Published** — `/blog/microsoft-copilot-certification` |
-| 4 | Usage isn't proficiency: why your AI adoption dashboard doesn't prove anyone can use the tool | 1 | Both | Awareness | Not started |
-| 5 | 45% of AI-generated code has an OWASP vulnerability — is anyone checking yours? | 2 | Shareable | Awareness | Not started |
-| 6 | How to build the business case for AI-tool certification | 4 | Searchable | Decision | Not started |
-| 7 | Why only 11% of employees can accurately self-assess their AI skills | 1 | Shareable | Awareness | Not started |
-| 8 | What a custom AI certification track costs to build, and when it's worth it | 4 | Searchable | Decision | Not started |
+| 4 | Usage isn't proficiency: why your AI adoption dashboard doesn't prove anyone can use the tool | 1 | Both | Awareness | **Published** — `/blog/usage-vs-proficiency` |
+| 5 | 45% of AI-generated code has an OWASP vulnerability — is anyone checking yours? | 2 | Shareable | Awareness | **Published** — `/blog/ai-code-vulnerabilities` |
+| 6 | How to build the business case for AI-tool certification | 4 | Searchable | Decision | **Published** — `/blog/business-case-for-certification` |
+| 7 | Why only 11% of employees can accurately self-assess their AI skills | 1 | Shareable | Awareness | **Published** — `/blog/self-assessment-accuracy` |
+| 8 | What a custom AI certification track costs to build, and when it's worth it | 4 | Searchable | Decision | **Published** — `/blog/custom-certification-cost` |
+
+All 8 priority topics from the original plan are now published (2026-09-18). Next step is a fresh planning pass for a second wave (see "Topic Cluster Map" below for the tool-specific playbooks — Codex, Cursor, Gemini — that were never scoped as numbered priority topics and remain open).
 
 ## Topic Cluster Map
 
@@ -132,11 +134,37 @@ guessed at here.
 - [Microsoft Learn: Microsoft 365 Certified – Copilot and Agent Administration Fundamentals (AB-900)](https://learn.microsoft.com/en-us/credentials/certifications/copilot-and-agent-administration-fundamentals/)
 - [Microsoft Learn: Applied Skills – Streamline business workflows with AI chat](https://learn.microsoft.com/en-us/credentials/applied-skills/streamline-business-workflows-with-ai-chat/)
 - [Microsoft Learn: GitHub Copilot Certifications](https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/) — the GitHub Copilot exam (GH-300); kept for reference only, not used in the Microsoft Copilot post since it's a different product.
+- [GitHub Docs: Copilot usage metrics](https://docs.github.com/en/copilot/concepts/copilot-usage-metrics/copilot-metrics) — confirms Copilot's metrics API tracks activity (DAU, acceptance rate), not skill.
+- [The Register: Microsoft Copilot / Viva Insights](https://www.theregister.com/2025/10/10/microsoft_copilot_viva_insights/) — confirms Viva Insights tracks adoption, not competency.
+- [VentureBeat: OpenAI State of Enterprise AI report](https://venturebeat.com/ai/openai-report-reveals-a-6x-productivity-gap-between-ai-power-users-and) — 6x/17x usage-volume gap between power users and median users.
+- [EY: Work Reimagined survey 2025](https://www.ey.com/en_gl/newsroom/2025/11/ey-survey-reveals-companies-are-missing-out-on-up-to-40-percent-of-ai-productivity-gains-due-to-gaps-in-talent-strategy) — 88% usage vs. 5% advanced-user split.
+- [Fortune: MIT NANDA "GenAI Divide" report](https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo) — 95% of enterprise GenAI pilots show no measurable P&L impact.
+- [Deloitte: State of AI in the Enterprise 2026](https://www.deloitte.com/ca/en/issues/generative-ai/state-of-ai-in-enterprise.html) — skills gap as the top AI adoption barrier.
+- [Veracode: 2025 GenAI Code Security Report](https://www.veracode.com/resources/analyst-reports/2025-genai-code-security-report/) and [Spring 2026 follow-up](https://www.veracode.com/blog/spring-2026-genai-code-security/) — the 45% OWASP-failure figure, confirmed flat a year later.
+- [Stanford/ACM CCS 2023: Do Users Write More Insecure Code with AI Assistants?](https://arxiv.org/abs/2211.03622) — controlled study on AI-assisted developers and false confidence.
+- [GitGuardian State of Secrets Sprawl 2026](https://blog.gitguardian.com/the-state-of-secrets-sprawl-2026/) — secret-leak rate data.
+- [The Register / SiliconANGLE on Apiiro's enterprise AI-code study](https://www.theregister.com/2025/09/05/ai_code_assistants_security_problems/) — commit velocity vs. security-finding rate at enterprise scale.
+- [IBM: Cost of a Data Breach Report 2025](https://www.ibm.com/think/x-force/2025-cost-of-a-data-breach-navigating-ai) — shadow AI adds $670K to average breach cost.
+- [Workera/IDC: the $5.5 trillion AI skills gap](https://www.workera.ai/guides-reports/the-5-5-trillion-skills-gap-what-idcs-new-report-reveals-about-ai-workforce-readiness) — cost-of-inaction sizing.
+- [Training Industry: Phillips ROI Methodology](https://trainingindustry.com/glossary/phillips-roi-methodology/) and [Whatfix: Phillips ROI formula](https://whatfix.com/blog/phillips-roi-model/) — the ROI framework used in the business-case post.
+- [Workera: 7 in 10 employees under/overestimate their AI skill level](https://www.workera.ai/blog/7-out-of-10-employees-dangerously-underestimate-or-overestimate-their-skill-levels-new-analysis-finds) — primary source for the verified 11%-accuracy claim.
+- [Aalto University: AI use makes us overestimate our cognitive performance](https://www.aalto.fi/en/news/ai-use-makes-us-overestimate-our-cognitive-performance) — published in *Computers in Human Behavior*, Oct 2025.
+- [Skillsoft 2025 Global Skills Intelligence Survey](https://www.digit.fyi/staff-overstate-their-ai-skills/) and [Workforce Readiness Report: AI Edition](https://finance.yahoo.com/sectors/technology/articles/only-1-4-employees-feel-120000286.html) — corroborating survey data (note: this report's "only 11% ever received a formal assessment" is a distinct finding from Workera's "11% accurate," kept separate in the post, not conflated).
+- [ATD: How Long to Develop One Hour of Training](https://www.td.org/content/atd-blog/how-long-to-develop-one-hour-of-training-a-case-study) — Chapman Alliance hours-per-finished-hour data, used (with caveats) for custom-build time scaling.
 
 ## Changelog
 
 *Newest first. One line per revision: what changed and why.*
 
+- v4 (2026-09-18) — Published all 5 remaining priority topics (#4–#8),
+  written by parallel agents per user request, each doing independent
+  fresh research rather than reusing this doc's existing citations. One
+  agent (self-assessment-accuracy) went back to the primary Workera
+  source to verify the "11%" claim from scratch rather than trusting the
+  number as given in the brief, and caught that a different, unrelated
+  "11%" stat exists in a separate Skillsoft report — both are cited in
+  the post but explicitly not conflated. All 8 original priority topics
+  are now published; see the note under Priority Topics for what's next.
 - v3 (2026-09-18) — User correction: the site's "Copilot" track is
   Microsoft Copilot, not GitHub Copilot. Renamed the slug and all
   references site-wide (`site-data.ts`, sitemap, meta descriptions).

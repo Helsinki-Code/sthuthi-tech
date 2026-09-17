@@ -8,11 +8,21 @@ import { BLOG_POSTS, formatPostDate } from "@/lib/blog-data"
 import { VibeCodingTaxPost } from "@/pages/blog/posts/vibe-coding-tax"
 import { ClaudeCodeCertificationPost } from "@/pages/blog/posts/claude-code-certification"
 import { MicrosoftCopilotCertificationPost } from "@/pages/blog/posts/microsoft-copilot-certification"
+import { UsageVsProficiencyPost } from "@/pages/blog/posts/usage-vs-proficiency"
+import { AiCodeVulnerabilitiesPost } from "@/pages/blog/posts/ai-code-vulnerabilities"
+import { BusinessCaseForCertificationPost } from "@/pages/blog/posts/business-case-for-certification"
+import { SelfAssessmentAccuracyPost } from "@/pages/blog/posts/self-assessment-accuracy"
+import { CustomCertificationCostPost } from "@/pages/blog/posts/custom-certification-cost"
 
 const POST_COMPONENTS: Record<string, ComponentType> = {
   "vibe-coding-tax": VibeCodingTaxPost,
   "claude-code-certification": ClaudeCodeCertificationPost,
   "microsoft-copilot-certification": MicrosoftCopilotCertificationPost,
+  "usage-vs-proficiency": UsageVsProficiencyPost,
+  "ai-code-vulnerabilities": AiCodeVulnerabilitiesPost,
+  "business-case-for-certification": BusinessCaseForCertificationPost,
+  "self-assessment-accuracy": SelfAssessmentAccuracyPost,
+  "custom-certification-cost": CustomCertificationCostPost,
 }
 
 export function BlogPostPage() {

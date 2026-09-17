@@ -75,6 +75,80 @@ export const BLOG_POSTS: BlogPostMeta[] = [
       },
     ],
   },
+  {
+    slug: "usage-vs-proficiency",
+    title: "AI adoption vs. proficiency: why usage dashboards don't prove anyone can use the tool",
+    description:
+      "88% of employees use AI tools, but real proficiency data tells a different story. Here's why adoption dashboards from Copilot and Viva can't measure whether anyone's actually good at the tool — and what can.",
+    pillar: "Usage Isn't Proficiency",
+    publishedAt: "2026-09-18",
+    readingMinutes: 6,
+    faq: [
+      {
+        question: "What's the difference between AI adoption and AI proficiency?",
+        answer:
+          "Adoption measures whether someone used the tool at all — a login, a prompt sent, a suggestion accepted. Proficiency measures whether they used it well — whether they'd catch a bad diff, know when a task is a poor fit for AI, or avoid shipping a plausible-looking mistake. A dashboard can show 100% adoption and zero proficiency data.",
+      },
+      {
+        question: "Do GitHub Copilot's or Microsoft Viva's dashboards measure skill or just usage?",
+        answer:
+          "Just usage. GitHub's Copilot Metrics API tracks active users, acceptance rate, and PR throughput; Microsoft Viva Insights tracks \"intentional actions\" and adoption rate by team. Neither evaluates code quality, review judgment, or competency — both vendors' own documentation scopes them to activity volume, not skill.",
+      },
+    ],
+  },
+  {
+    slug: "ai-code-vulnerabilities",
+    title: "45% of AI-generated code has an OWASP vulnerability — is anyone checking yours?",
+    description:
+      "Veracode found 45% of AI-generated code fails OWASP security tests, unchanged in 2026. Here's what the data means for your AI code review process.",
+    pillar: "The Vibe Coding Tax",
+    publishedAt: "2026-09-18",
+    readingMinutes: 8,
+  },
+  {
+    slug: "business-case-for-certification",
+    title: "How to build the business case for AI-tool certification",
+    description:
+      "A practical template for the business case for AI training certification: cost data, pilot sizing, ROI math, and a checklist to justify AI certification budget.",
+    pillar: "Building the Business Case",
+    publishedAt: "2026-09-18",
+    readingMinutes: 8,
+    faq: [
+      {
+        question: "What's the difference between pitching this as \"AI literacy\" versus \"risk reduction\"?",
+        answer:
+          "\"AI literacy\" asks for budget to run a course and measures success by attendance — it's easy to reject because nobody can define what \"literate\" means or what it prevents. A risk-reduction pitch asks for budget to verify, with evidence, which specific people can already use these tools safely, competing against the cost of the incident it prevents rather than against every other soft training line-item.",
+      },
+      {
+        question: "How much does unmanaged \"shadow AI\" actually cost a company?",
+        answer:
+          "IBM's 2025 Cost of a Data Breach Report found that breaches involving shadow AI — employees using AI tools the company never approved or governed — added an average of $670,000 to the cost of the breach, and that 63 percent of organizations have no AI governance policy in place at all.",
+      },
+      {
+        question: "How do I calculate ROI for a certification pilot?",
+        answer:
+          "Use the Phillips ROI Methodology, which extends standard training evaluation with a financial level: ROI (%) = (net benefits of the program ÷ total program costs) × 100. Net benefits are the estimated cost of the incidents or rework the credential is meant to catch, minus the pilot's cost; total costs are the assessment fee, rubric sign-off time, and paid assessment time.",
+      },
+    ],
+  },
+  {
+    slug: "self-assessment-accuracy",
+    title: "Why only 11% of employees can accurately self-assess their AI skills",
+    description:
+      "A Workera analysis of 22,000+ skills assessments found only 11% of employees rate their own AI ability accurately. Here's the research, and the fix.",
+    pillar: "Usage Isn't Proficiency",
+    publishedAt: "2026-09-18",
+    readingMinutes: 8,
+  },
+  {
+    slug: "custom-certification-cost",
+    title: "Custom AI certification cost: what actually drives it (and when not to build one)",
+    description:
+      "No published pricing exists because it depends on tool novelty, SME time, and cohort size. Here's what drives cost, and when a published track wins instead.",
+    pillar: "Building the Business Case",
+    publishedAt: "2026-09-18",
+    readingMinutes: 7,
+  },
 ]
 
 export function formatPostDate(iso: string) {

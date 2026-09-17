@@ -71,6 +71,31 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://sthuthi-tech.com/blog/usage-vs-proficiency</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sthuthi-tech.com/blog/ai-code-vulnerabilities</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sthuthi-tech.com/blog/business-case-for-certification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sthuthi-tech.com/blog/self-assessment-accuracy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sthuthi-tech.com/blog/custom-certification-cost</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://sthuthi-tech.com/contact</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
