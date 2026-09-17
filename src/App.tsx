@@ -1,28 +1,42 @@
-import { useState } from "react"
-import { ArrowDownIcon, ArrowUpRightIcon, CheckIcon, DownloadSimpleIcon, MoonIcon, SunIcon } from "@phosphor-icons/react"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import "./App.css"
+import { Route, Routes } from "react-router-dom"
+import { Header } from "@/components/site/header"
+import { Footer } from "@/components/site/footer"
+import { ScrollToTop } from "@/components/site/scroll-to-top"
+import { HomePage } from "@/pages/home"
+import { CertificationsIndexPage } from "@/pages/certifications-index"
+import { CertificationDetailPage } from "@/pages/certification-detail"
+import { CustomCertificationPage } from "@/pages/custom-certification"
+import { AboutPage } from "@/pages/about"
+import { ClientsPage } from "@/pages/clients"
+import { ContactPage } from "@/pages/contact"
+import { PrivacyPolicyPage } from "@/pages/legal/privacy-policy"
+import { TermsOfServicePage } from "@/pages/legal/terms-of-service"
+import { CookiePolicyPage } from "@/pages/legal/cookie-policy"
+import { NotFoundPage } from "@/pages/not-found"
 
-const tracks = [["Claude Code", "Engineering", "Repository tasks, review habits, and safe delegation."], ["Codex", "Product & engineering", "Task framing, iteration loops, and reliable checks."], ["GitHub Copilot", "Cross-functional", "Context, quality control, and daily AI practice."], ["Gemini", "Knowledge work", "Research discipline, analysis, and useful synthesis."]]
-function Guide({ pose, alt }: { pose: number; alt: string }) { return <div className="guide" role="img" aria-label={alt}><img src="/art/sthuthi-guide-character-sheet.png" alt={alt} style={{ transform: `translateX(-${pose * 16.6667}%)` }} /></div> }
 function App() {
-  const [dark, setDark] = useState(false)
-  const toggle = () => { const next = !dark; setDark(next); document.documentElement.classList.toggle("dark", next) }
-  const download = () => { const link = document.createElement("a"); link.href = "/art/sthuthi-certificate-template.png"; link.download = "sthuthi-certificate-template.png"; link.click() }
-  return <div className="site">
-    <header className="header shell"><img className="logo" src="/brand/logo-horizontal.png" alt="Sthuthi Technologies" /><nav><a href="#programmes">Programmes</a><a href="#method">Method</a><a href="#credential">Credential</a><a href="#custom">Custom work</a></nav><Button variant="ghost" size="icon" onClick={toggle} aria-label="Change color theme">{dark ? <SunIcon /> : <MoonIcon />}</Button><Button className="header-button">Book a working session</Button></header>
-    <main>
-      <section className="hero shell"><div><p className="eyebrow">Sthuthi Technologies / AI capability assurance</p><h1>AI certifications built for <span>work that counts.</span></h1><p className="lede">We train teams on the AI tools they use, assess their judgment in practical scenarios, and issue credentials leaders can rely on.</p><div className="actions"><Button className="orange">Plan a certification programme <ArrowUpRightIcon /></Button><a href="#programmes">Review programme paths <ArrowDownIcon /></a></div><p className="note"><i></i> Designed for learning leaders, technical teams, and people operations.</p></div><div className="hero-panel"><div className="panel-head"><span>CAPABILITY MAP</span><span>ST / 2026</span></div><Guide pose={0} alt="Sthuthi Technologies AI training guide planning a capability route" /><div className="callout a">TOOL CONTEXT<br /><b>What does this role need to do?</b></div><div className="callout b">EVIDENCE<br /><b>What does good judgment look like?</b></div></div></section>
-      <section className="band"><div className="shell">AI tool access is not the same as capability. Sthuthi makes the difference visible.<small>STHUTHI / STANDARD</small></div></section>
-      <section id="method" className="method shell"><div><p className="eyebrow">A practical standard</p><h2>Useful skills leave a trail of evidence.</h2><Guide pose={2} alt="Sthuthi guide reviewing AI certification evidence" /></div><div className="steps">{[["01","Scope","Roles, approved tools, and work that matters to the business."],["02","Practice","Live instruction and role-level tasks built from your workflow."],["03","Verify","A practical assessment that shows how judgment is applied."],["04","Record","A named credential and a clear view of capability for leadership."]].map(([n,t,c])=><article key={n}><b>{n}</b><div><h3>{t}</h3><p>{c}</p></div><CheckIcon /></article>)}</div></section>
-      <section id="programmes" className="programmes"><div className="shell"><div className="heading"><div><p className="eyebrow">Programme paths</p><h2>One standard.<br />Different tools.</h2></div><p>Every path uses the same training-to-evidence model. The role context and assessment change with the team.</p></div><div className="track-table">{tracks.map(([tool, role, description], index)=><article key={tool}><b>0{index + 1}</b><div><h3>{tool}</h3><p>{role}</p></div><p>{description}</p><span>ST-0{index + 1}</span></article>)}</div></div></section>
-      <section className="roles shell"><div><p className="eyebrow">Built around roles</p><h2>Train the work, not the menu.</h2><p className="lede">Each course is adapted for the decisions people make in a specific function.</p></div><Tabs defaultValue="engineering"><TabsList variant="line"><TabsTrigger value="engineering">Engineering</TabsTrigger><TabsTrigger value="product">Product</TabsTrigger><TabsTrigger value="operations">Operations</TabsTrigger></TabsList>{[["engineering",3,"Ship a scoped change with an AI coding partner and explain the review path."],["product",1,"Turn an ambiguous feature brief into a sourced decision document."],["operations",4,"Build a repeatable AI-assisted workflow with hand-off checks."]].map(([id,pose,copy])=><TabsContent value={id as string} key={id} className="role-content"><Guide pose={pose as number} alt={`Sthuthi Guide working with ${id} team`} /><div><Badge variant="outline">EXAMPLE ASSESSMENT</Badge><h3>{copy}</h3><p>Measures context setting, tool oversight, evidence, and responsible delivery.</p></div></TabsContent>)}</Tabs></section>
-      <section id="credential" className="credential"><div className="shell"><div><p className="eyebrow">The credential</p><h2>A certificate with a clear point of view.</h2><p className="lede">Every Sthuthi credential names the subject, assessed capability, issue date, and verification ID.</p><Button variant="outline" onClick={download}><DownloadSimpleIcon /> Download certificate template</Button></div><figure><img src="/art/sthuthi-certificate-template.png" alt="Sthuthi Technologies AI capability certificate template with credential fields" /><Guide pose={4} alt="Sthuthi Guide presenting a completed certification" /></figure></div></section>
-      <section id="custom" className="custom"><div className="shell"><div><p className="eyebrow">Your own certification</p><h2>Bring the workflow. We will build the standard.</h2><p>For internal tools, vendor platforms, or business-critical processes, we create the learning plan and assessment framework with your experts.</p><Button className="orange">Discuss a custom standard <ArrowUpRightIcon /></Button></div><div className="custom-art"><Guide pose={5} alt="Sthuthi Guide celebrating a completed AI certification" /><div><Badge>CERTIFICATION DESIGN BRIEF</Badge><ol><li>Tool and role context</li><li>Observed work standard</li><li>Assessment evidence</li></ol><p>Built with your internal experts.</p></div></div></div></section>
-    </main>
-    <footer className="footer shell"><img src="/brand/logo-horizontal.png" alt="Sthuthi Technologies" /><p>AI learning programmes and company certifications for responsible, practical adoption.</p><span>© 2026 Sthuthi Technologies</span></footer>
-  </div>
+  return (
+    <div className="min-h-screen bg-background text-foreground">
+      <ScrollToTop />
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/certifications" element={<CertificationsIndexPage />} />
+          <Route path="/certifications/:slug" element={<CertificationDetailPage />} />
+          <Route path="/custom-certification" element={<CustomCertificationPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/clients" element={<ClientsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/legal/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/legal/terms-of-service" element={<TermsOfServicePage />} />
+          <Route path="/legal/cookie-policy" element={<CookiePolicyPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+  )
 }
+
 export default App
