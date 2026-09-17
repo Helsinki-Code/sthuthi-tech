@@ -96,6 +96,21 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://sthuthi-tech.com/blog/codex-certification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sthuthi-tech.com/blog/cursor-certification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sthuthi-tech.com/blog/gemini-certification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://sthuthi-tech.com/contact</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

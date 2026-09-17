@@ -149,6 +149,67 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     publishedAt: "2026-09-18",
     readingMinutes: 7,
   },
+  {
+    slug: "codex-certification",
+    title: "Is there an OpenAI Codex certification? Here's what actually exists",
+    description:
+      "OpenAI has no official proctored Codex certification. Its one certification program is employer-pilot only and covers general ChatGPT use, not coding.",
+    pillar: "Tool-Specific Playbooks",
+    publishedAt: "2026-09-18",
+    readingMinutes: 5,
+    faq: [
+      {
+        question: "Is there an official OpenAI certification for Codex?",
+        answer:
+          "No. OpenAI's one certification program, AI Foundations, launched December 9, 2025, but it covers general ChatGPT and office-productivity AI use, not Codex or coding. Access is currently limited to employer and public-sector pilots (Walmart, Accenture, and others) — not open to individual enrollment.",
+      },
+      {
+        question: "Does OpenAI Academy's Codex Bootcamp make you \"Codex certified\"?",
+        answer:
+          "No. Codex Bootcamp is a free three-session live webinar series (101, 201, 301) with no quiz, assessment, or credential attached — it's training, not a certification.",
+      },
+      {
+        question: "What about the badges from OpenAI Academy's self-paced Codex courses?",
+        answer:
+          "Those are course-completion badges issued via Accredible after scoring 80% or higher on a self-paced quiz within a pathway like \"Build with AI\" — a real pass bar, but still an open-book quiz on course content, not a proctored assessment of skill against real code.",
+      },
+    ],
+  },
+  {
+    slug: "cursor-certification",
+    title: "Is there a Cursor certification? No — here's what Anysphere actually offers",
+    description:
+      "Cursor has no official certification for developers. It has free tutorials, workshops, and a product security audit (AIUC-1) — not a competency check.",
+    pillar: "Tool-Specific Playbooks",
+    publishedAt: "2026-09-18",
+    readingMinutes: 5,
+    faq: [
+      {
+        question: "Is there an official Cursor certification for developers?",
+        answer:
+          "No. Anysphere (Cursor's maker) offers free tutorials (Cursor Learn), live/on-demand workshops, and a community Ambassador program — none of which are proctored, scored, or issue a verifiable credential.",
+      },
+      {
+        question: "What is Cursor's AIUC-1 certification, then?",
+        answer:
+          "AIUC-1 is a real, independently audited certification — by Schellman — but it certifies Cursor the product's security and reliability controls (secrets protection, MCP security, agent permissions), not the competency of the people using it.",
+      },
+      {
+        question: "Does finishing Cursor Learn or attending a workshop count as being certified?",
+        answer:
+          "No. Cursor Learn is self-paced reading with no quiz or proctor, and workshops are 30-60 minute live or on-demand sessions with no assessment. Neither ends in a credential.",
+      },
+    ],
+  },
+  {
+    slug: "gemini-certification",
+    title: "Is there a Google Gemini certification? Here's what actually exists",
+    description:
+      "Google's Generative AI Leader exam is proctored and public but barely touches Gemini. The one exam named after Gemini is a free, unproctored K-12 quiz.",
+    pillar: "Tool-Specific Playbooks",
+    publishedAt: "2026-09-18",
+    readingMinutes: 5,
+  },
 ]
 
 export function formatPostDate(iso: string) {

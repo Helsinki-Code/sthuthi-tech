@@ -13,6 +13,9 @@ import { AiCodeVulnerabilitiesPost } from "@/pages/blog/posts/ai-code-vulnerabil
 import { BusinessCaseForCertificationPost } from "@/pages/blog/posts/business-case-for-certification"
 import { SelfAssessmentAccuracyPost } from "@/pages/blog/posts/self-assessment-accuracy"
 import { CustomCertificationCostPost } from "@/pages/blog/posts/custom-certification-cost"
+import { CodexCertificationPost } from "@/pages/blog/posts/codex-certification"
+import { CursorCertificationPost } from "@/pages/blog/posts/cursor-certification"
+import { GeminiCertificationPost } from "@/pages/blog/posts/gemini-certification"
 
 const POST_COMPONENTS: Record<string, ComponentType> = {
   "vibe-coding-tax": VibeCodingTaxPost,
@@ -21,6 +24,9 @@ const POST_COMPONENTS: Record<string, ComponentType> = {
   "usage-vs-proficiency": UsageVsProficiencyPost,
   "ai-code-vulnerabilities": AiCodeVulnerabilitiesPost,
   "business-case-for-certification": BusinessCaseForCertificationPost,
+  "codex-certification": CodexCertificationPost,
+  "cursor-certification": CursorCertificationPost,
+  "gemini-certification": GeminiCertificationPost,
   "self-assessment-accuracy": SelfAssessmentAccuracyPost,
   "custom-certification-cost": CustomCertificationCostPost,
 }

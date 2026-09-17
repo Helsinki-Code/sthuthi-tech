@@ -1,6 +1,6 @@
 # Content Strategy
 
-**Document version:** v4
+**Document version:** v5
 **Last updated:** 2026-09-18
 
 Built from `.agents/product-marketing.md` context plus market/competitive
@@ -74,24 +74,36 @@ research (see Sources). The site's `/blog` infrastructure exists at
 | 6 | How to build the business case for AI-tool certification | 4 | Searchable | Decision | **Published** — `/blog/business-case-for-certification` |
 | 7 | Why only 11% of employees can accurately self-assess their AI skills | 1 | Shareable | Awareness | **Published** — `/blog/self-assessment-accuracy` |
 | 8 | What a custom AI certification track costs to build, and when it's worth it | 4 | Searchable | Decision | **Published** — `/blog/custom-certification-cost` |
+| 9 | Is there an OpenAI Codex certification? Here's what actually exists | 3 | Searchable | Consideration | **Published** — `/blog/codex-certification` |
+| 10 | Is there a Cursor certification? No — here's what Anysphere actually offers | 3 | Searchable | Consideration | **Published** — `/blog/cursor-certification` |
+| 11 | Is there a Google Gemini certification? Here's what actually exists | 3 | Searchable | Consideration | **Published** — `/blog/gemini-certification` |
 
-All 8 priority topics from the original plan are now published (2026-09-18). Next step is a fresh planning pass for a second wave (see "Topic Cluster Map" below for the tool-specific playbooks — Codex, Cursor, Gemini — that were never scoped as numbered priority topics and remain open).
+All 8 original priority topics, plus the 3 tool-specific playbooks flagged as a follow-up in v4 (Codex, Cursor, Gemini), are now published (2026-09-18) — 11 posts total, covering all five certification tracks with the same "is there an official certification?" structure. Findings varied usefully across all five: Claude (official but partner-gated), Microsoft Copilot (public but generic/admin-scoped), Codex (no proctored cert, pilot-gated training only), Cursor (no cert at all — only a product security audit), Gemini (a broad business exam that barely touches it, plus a K-12-only exam that's literally named after it). That spread is itself a legitimate comparison-content asset — see "Next up" below.
+
+**Next up (not yet scoped as numbered topics):**
+- A short comparison/roundup post ("We checked: none of the 5 major AI coding tools have a certification that tests your team's actual work") that ties all 5 tool-specific posts together — genuinely easy to write now since the research is already done and cited, would function as a strong internal-linking hub back to all 5.
+- Real customer language is still the biggest gap (see "What's missing" below) — once a few scoping calls happen, that should take priority over more speculative topics.
 
 ## Topic Cluster Map
 
 ```
 /certifications (existing hub)
-├── /certifications/claude-code → blog #2 (Is there a Claude Code certification?)
+├── /certifications/claude-code → blog #2 (Claude Code certification)
 ├── /certifications/microsoft-copilot → blog #3 (Microsoft Copilot certification)
-└── /certifications/cursor, /gemini, /codex → tool-specific playbooks (later wave)
+├── /certifications/codex → blog #9 (Codex certification)
+├── /certifications/cursor → blog #10 (Cursor certification)
+└── /certifications/gemini → blog #11 (Gemini certification)
 
 /blog
 ├── Pillar 1 — Usage Isn't Proficiency
 │    ├── #4 "Usage isn't proficiency..." → links to /certifications
 │    └── #7 "Why only 11% can self-assess..." → links to #4
 ├── Pillar 2 — The Vibe Coding Tax
-│    ├── #1 "The vibe coding tax..." [PUBLISHED] → links to /certifications
+│    ├── #1 "The vibe coding tax..." → links to /certifications
 │    └── #5 "45% of AI-generated code..." → links to #6
+├── Pillar 3 — Tool-Specific Playbooks
+│    └── #2, #3, #9, #10, #11 — all 5 tools, cross-linked to each other,
+│        each linking to its own /certifications/<slug> page
 └── Pillar 4 — Building the Business Case
      ├── #6 "How to build the business case..." → links to /contact
      └── #8 "What a custom track costs..." → links to /custom-certification
@@ -151,11 +163,26 @@ guessed at here.
 - [Aalto University: AI use makes us overestimate our cognitive performance](https://www.aalto.fi/en/news/ai-use-makes-us-overestimate-our-cognitive-performance) — published in *Computers in Human Behavior*, Oct 2025.
 - [Skillsoft 2025 Global Skills Intelligence Survey](https://www.digit.fyi/staff-overstate-their-ai-skills/) and [Workforce Readiness Report: AI Edition](https://finance.yahoo.com/sectors/technology/articles/only-1-4-employees-feel-120000286.html) — corroborating survey data (note: this report's "only 11% ever received a formal assessment" is a distinct finding from Workera's "11% accurate," kept separate in the post, not conflated).
 - [ATD: How Long to Develop One Hour of Training](https://www.td.org/content/atd-blog/how-long-to-develop-one-hour-of-training-a-case-study) — Chapman Alliance hours-per-finished-hour data, used (with caveats) for custom-build time scaling.
+- [OpenAI: AI Foundations certification announcement](https://openai.com/index/openai-certificate-courses/) and [AI News coverage](https://www.artificialintelligence-news.com/news/openai-targets-ai-skills-gap-with-new-certification-standards/) — confirms OpenAI's only certification program is general ChatGPT/office use, employer-pilot gated, not Codex-specific.
+- [OpenAI Academy: Codex Bootcamp](https://academy.openai.com/public/clubs/builders-etkn1/resources/codex-bootcamp-2026-07-18) and [self-paced course pathways](https://academy.openai.com/pages/courses) — confirms Codex training is webinars/Accredible completion badges, not a proctored exam.
+- [Cursor: Learn](https://cursor.com/learn), [Workshops](https://cursor.com/workshops), [Ambassadors](https://cursor.com/ambassadors) — confirms no proctored certification exists for Cursor users.
+- [Cursor: AIUC-1](https://cursor.com/blog/aiuc-1) — Cursor's one real certification, audited by Schellman, certifies the product's security controls, not user competency.
+- [Google Cloud: Generative AI Leader certification](https://cloud.google.com/learn/certification/generative-ai-leader) — the one proctored, public Google exam touching Gemini, scoped broadly to generative AI on GCP, not Gemini specifically.
+- [Google for Education: Gemini Certified Educator](https://support.google.com/googleforeducation/answer/16561655?hl=en) — the only exam literally named "Gemini," free and unproctored, scoped to K-12 education.
 
 ## Changelog
 
 *Newest first. One line per revision: what changed and why.*
 
+- v5 (2026-09-18) — Published the 3 tool-specific playbooks flagged as
+  open in v4: Codex, Cursor, and Gemini certification landscapes. All
+  agents researched from scratch with no assumed premise (learning from
+  the v2/v3 corrections) and found genuinely varied answers: Codex has
+  no proctored cert, Cursor has no cert of any kind for users, and
+  Gemini has a broad exam that barely covers it plus a narrowly-scoped
+  K-12 exam that's literally named after it. All 5 tools now have a
+  published playbook; noted a follow-up comparison/roundup post as the
+  natural next piece since the research for it already exists.
 - v4 (2026-09-18) — Published all 5 remaining priority topics (#4–#8),
   written by parallel agents per user request, each doing independent
   fresh research rather than reusing this doc's existing citations. One
