@@ -81,8 +81,8 @@ export function PrivacyPolicyPage() {
                 You can ask us what we hold on you, correct inaccurate
                 records, or request deletion of data that isn't needed for
                 an active credential's verification record. Write to{" "}
-                <a href="mailto:privacy@sthuthitech.com" className="text-brand-orange underline underline-offset-4">
-                  privacy@sthuthitech.com
+                <a href="mailto:privacy@sthuthi-tech.com" className="text-brand-orange underline underline-offset-4">
+                  privacy@sthuthi-tech.com
                 </a>{" "}
                 and we'll respond within 30 days.
               </p>

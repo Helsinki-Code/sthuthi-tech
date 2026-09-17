@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.sthuthitech.com/</loc>
+    <loc>https://sthuthi-tech.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.sthuthitech.com/certifications</loc>
+    <loc>https://sthuthi-tech.com/certifications</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.sthuthitech.com/certifications/claude-code</loc>
+    <loc>https://sthuthi-tech.com/certifications/claude-code</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.sthuthitech.com/certifications/codex</loc>
+    <loc>https://sthuthi-tech.com/certifications/codex</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.sthuthitech.com/certifications/github-copilot</loc>
+    <loc>https://sthuthi-tech.com/certifications/github-copilot</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.sthuthitech.com/certifications/gemini</loc>
+    <loc>https://sthuthi-tech.com/certifications/gemini</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.sthuthitech.com/certifications/cursor</loc>
+    <loc>https://sthuthi-tech.com/certifications/cursor</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.sthuthitech.com/custom-certification</loc>
+    <loc>https://sthuthi-tech.com/custom-certification</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.sthuthitech.com/about</loc>
+    <loc>https://sthuthi-tech.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.sthuthitech.com/clients</loc>
+    <loc>https://sthuthi-tech.com/clients</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.sthuthitech.com/contact</loc>
+    <loc>https://sthuthi-tech.com/contact</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /legal/
 
-Sitemap: https://www.sthuthitech.com/sitemap.xml
+Sitemap: https://sthuthi-tech.com/sitemap.xml
