@@ -9,6 +9,8 @@ import { CustomCertificationPage } from "@/pages/custom-certification"
 import { AboutPage } from "@/pages/about"
 import { ClientsPage } from "@/pages/clients"
 import { ContactPage } from "@/pages/contact"
+import { BlogIndexPage } from "@/pages/blog"
+import { BlogPostPage } from "@/pages/blog/post"
 import { PrivacyPolicyPage } from "@/pages/legal/privacy-policy"
 import { TermsOfServicePage } from "@/pages/legal/terms-of-service"
 import { CookiePolicyPage } from "@/pages/legal/cookie-policy"
@@ -28,6 +30,8 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/clients" element={<ClientsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/blog" element={<BlogIndexPage />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/legal/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/legal/terms-of-service" element={<TermsOfServicePage />} />
           <Route path="/legal/cookie-policy" element={<CookiePolicyPage />} />

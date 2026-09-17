@@ -51,6 +51,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://sthuthi-tech.com/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sthuthi-tech.com/blog/vibe-coding-tax</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://sthuthi-tech.com/contact</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

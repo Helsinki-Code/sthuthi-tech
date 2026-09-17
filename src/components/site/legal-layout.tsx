@@ -31,7 +31,7 @@ export function LegalLayout({
                 <h2 className="font-heading text-lg font-bold tracking-tight">
                   {String(i + 1).padStart(2, "0")}. {section.title}
                 </h2>
-                <div className="prose-legal mt-3 text-[14px] leading-relaxed text-muted-foreground">
+                <div className="prose-content mt-3 text-[14px] leading-relaxed text-muted-foreground">
                   {section.body}
                 </div>
               </div>

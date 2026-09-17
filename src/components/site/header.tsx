@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { to: "/certifications", label: "Certification tracks" },
   { to: "/custom-certification", label: "Custom programs" },
   { to: "/clients", label: "Clients" },
+  { to: "/blog", label: "Blog" },
   { to: "/about", label: "About" },
 ]
 

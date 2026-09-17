@@ -5,6 +5,7 @@ import { Programs } from "@/components/site/programs"
 import { ClientsSection } from "@/components/site/clients-section"
 import { CertificateShowcase } from "@/components/site/certificate-showcase"
 import { CustomCertification } from "@/components/site/custom-certification"
+import { LatestFromBlog } from "@/components/site/latest-from-blog"
 import { ClosingCta } from "@/components/site/closing-cta"
 
 export function HomePage() {
@@ -30,6 +31,7 @@ export function HomePage() {
       <Programs />
       <CertificateShowcase />
       <CustomCertification />
+      <LatestFromBlog />
       <ClosingCta
         title="Tell us which tool your team needs to be tested on."
         description="A 20-minute call is enough for us to tell you whether a published track fits, or if this needs a custom one."
