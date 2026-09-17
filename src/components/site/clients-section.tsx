@@ -1,5 +1,5 @@
 import { CLIENTS } from "@/lib/site-data"
-import { ClientLogo } from "@/components/site/client-logo"
+import { LogoTile } from "@/components/site/logo-tile"
 import { Reveal } from "@/components/site/reveal"
 
 export function ClientsSection() {
@@ -15,15 +15,17 @@ export function ClientsSection() {
 
         <Reveal
           delayMs={80}
-          className="mt-8 grid grid-cols-2 divide-x divide-y divide-border border border-border sm:grid-cols-4 sm:divide-y-0"
+          className="mt-8 grid grid-cols-2 gap-px overflow-hidden border border-border bg-border sm:grid-cols-4"
         >
           {CLIENTS.map((client) => (
-            <div
+            <LogoTile
               key={client.name}
-              className="flex h-24 items-center justify-center px-6"
-            >
-              <ClientLogo name={client.name} file={client.file} />
-            </div>
+              src={`/clients/${client.file}`}
+              alt={client.name}
+              fallback={client.name}
+              className="h-24 w-full border-0"
+              imgClassName="h-3/5 w-3/5"
+            />
           ))}
         </Reveal>
       </div>

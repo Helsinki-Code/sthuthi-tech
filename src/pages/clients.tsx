@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { Seo } from "@/lib/seo"
 import { PageHeader } from "@/components/site/page-header"
-import { ClientLogo } from "@/components/site/client-logo"
+import { LogoTile } from "@/components/site/logo-tile"
 import { Reveal } from "@/components/site/reveal"
 import { CLIENTS } from "@/lib/site-data"
 
@@ -28,9 +28,13 @@ export function ClientsPage() {
                 delayMs={i * 60}
                 className="flex items-center gap-5 bg-card px-6 py-8"
               >
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center border border-border bg-secondary/40">
-                  <ClientLogo name={client.name} file={client.file} />
-                </div>
+                <LogoTile
+                  src={`/clients/${client.file}`}
+                  alt={client.name}
+                  fallback={client.name}
+                  className="h-14 w-14 shrink-0"
+                  imgClassName="h-3/4 w-3/4"
+                />
                 <div>
                   <p className="font-heading font-bold">{client.name}</p>
                   <p className="mt-0.5 font-mono text-[11px] uppercase tracking-[0.1em] text-muted-foreground">

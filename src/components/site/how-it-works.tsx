@@ -43,12 +43,7 @@ export function HowItWorks() {
         <div className="mt-14 flex flex-col gap-14 sm:mt-16 sm:gap-20">
           {STEPS.map((step, i) => (
             <Reveal key={step.n} delayMs={i * 60}>
-              <div
-                className={cn(
-                  "grid items-center gap-8 sm:grid-cols-[220px_1fr] sm:gap-12",
-                  i % 2 === 1 && "sm:[&>*:first-child]:order-2"
-                )}
-              >
+              <div className="grid items-center gap-8 sm:grid-cols-[220px_1fr] sm:gap-12">
                 <SpotlightMascot
                   src={step.img}
                   alt={`${step.imgLabel} illustration`}

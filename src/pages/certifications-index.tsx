@@ -3,6 +3,7 @@ import { ArrowUpRight } from "@phosphor-icons/react"
 import { Seo, SITE_URL } from "@/lib/seo"
 import { PageHeader } from "@/components/site/page-header"
 import { Reveal } from "@/components/site/reveal"
+import { LogoTile } from "@/components/site/logo-tile"
 import { TRACKS } from "@/lib/site-data"
 
 export function CertificationsIndexPage() {
@@ -10,7 +11,7 @@ export function CertificationsIndexPage() {
     <>
       <Seo
         title="Certification Tracks"
-        description="Published AI-tool certification tracks from Sthuthi Technologies: Claude Code, Codex, GitHub Copilot, and Gemini, each with levels, format, and assessment type."
+        description="Published AI-tool certification tracks from Sthuthi Technologies: Claude Code, Codex, GitHub Copilot, Gemini, and Cursor, each with levels, format, and assessment type."
         path="/certifications"
         structuredData={{
           "@context": "https://schema.org",
@@ -23,7 +24,7 @@ export function CertificationsIndexPage() {
       />
       <PageHeader
         kicker="Published tracks"
-        title="Four tools, one assessment standard."
+        title="Five tools, one assessment standard."
         description="Every track ends the same way: a task-based assessment inside the real tool, reviewed by a human before a credential is issued. What differs is the syllabus underneath."
       />
 
@@ -37,9 +38,12 @@ export function CertificationsIndexPage() {
                   className="group flex h-full flex-col border border-border bg-card p-6 transition-colors hover:border-brand-orange"
                 >
                   <div className="flex items-start justify-between gap-4">
-                    <h2 className="font-heading text-xl font-bold tracking-tight">
-                      {track.tool}
-                    </h2>
+                    <div className="flex items-center gap-3">
+                      <LogoTile src={`/tools/${track.logo}`} alt={track.tool} className="h-9 w-9 shrink-0" />
+                      <h2 className="font-heading text-xl font-bold tracking-tight">
+                        {track.tool}
+                      </h2>
+                    </div>
                     <ArrowUpRight
                       weight="bold"
                       className="size-5 shrink-0 text-muted-foreground transition-colors group-hover:text-brand-orange"

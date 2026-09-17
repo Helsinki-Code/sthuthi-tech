@@ -5,10 +5,11 @@ interface PageHeaderProps {
   kicker: string
   title: string
   description?: string
+  logo?: ReactNode
   children?: ReactNode
 }
 
-export function PageHeader({ kicker, title, description, children }: PageHeaderProps) {
+export function PageHeader({ kicker, title, description, logo, children }: PageHeaderProps) {
   return (
     <section className="relative overflow-hidden border-b border-border">
       <div
@@ -27,9 +28,12 @@ export function PageHeader({ kicker, title, description, children }: PageHeaderP
             <span className="h-1.5 w-1.5 bg-brand-orange" aria-hidden="true" />
             {kicker}
           </div>
-          <h1 className="max-w-3xl font-heading text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl">
-            {title}
-          </h1>
+          <div className="flex items-center gap-4">
+            {logo}
+            <h1 className="max-w-3xl font-heading text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-5xl">
+              {title}
+            </h1>
+          </div>
           {description && (
             <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground sm:text-base">
               {description}

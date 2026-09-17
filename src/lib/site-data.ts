@@ -1,6 +1,7 @@
 export interface TrackDetail {
   slug: string
   tool: string
+  logo: string
   focus: string
   levels: string
   format: string
@@ -14,6 +15,7 @@ export const TRACKS: TrackDetail[] = [
   {
     slug: "claude-code",
     tool: "Claude Code",
+    logo: "claude-code-logo.png",
     focus: "Agentic coding & repo-scale workflows",
     levels: "Foundations → Practitioner → Expert",
     format: "Cohort + async",
@@ -35,6 +37,7 @@ export const TRACKS: TrackDetail[] = [
   {
     slug: "codex",
     tool: "Codex",
+    logo: "codex-logo.png",
     focus: "OpenAI's coding agent in CI and local flows",
     levels: "Foundations → Practitioner",
     format: "Cohort + async",
@@ -54,6 +57,7 @@ export const TRACKS: TrackDetail[] = [
   {
     slug: "github-copilot",
     tool: "GitHub Copilot",
+    logo: "copilot-logo.png",
     focus: "Pair-programming inside existing codebases",
     levels: "Foundations",
     format: "Self-paced + live clinic",
@@ -73,6 +77,7 @@ export const TRACKS: TrackDetail[] = [
   {
     slug: "gemini",
     tool: "Gemini",
+    logo: "gemini-logo.png",
     focus: "Multimodal assistance across code, docs & data",
     levels: "Foundations → Practitioner",
     format: "Cohort + async",
@@ -89,13 +94,33 @@ export const TRACKS: TrackDetail[] = [
       { title: "Assessment", body: "A mixed-input task: turn a screenshot, a CSV, and a ticket into a working fix and a short writeup." },
     ],
   },
+  {
+    slug: "cursor",
+    tool: "Cursor",
+    logo: "cursor-logo.png",
+    focus: "AI-native editor workflows across a full codebase",
+    levels: "Foundations → Practitioner",
+    format: "Cohort + async",
+    assessment: "In-IDE task assessment",
+    summary:
+      "Covers working in Cursor's Composer and Agent modes across a multi-file change — where the editor's own context choices matter as much as the model's.",
+    whoFor: [
+      "Engineers switching their default editor to Cursor",
+      "Teams that need a shared standard for when to use Agent mode versus manual edits",
+    ],
+    syllabus: [
+      { title: "Context selection", body: "Choosing what Cursor should index and reference for a given change, and when the default context is wrong." },
+      { title: "Composer vs. manual edits", body: "Recognising which changes are safe to hand to Composer end-to-end and which need line-by-line control." },
+      { title: "Assessment", body: "A multi-file repository task completed inside Cursor, reviewed for both the diff and the prompts that produced it." },
+    ],
+  },
 ]
 
 export const CLIENTS = [
-  { name: "ShelVey AI", file: "shelvey-ai.png" },
-  { name: "Amro Agentic AI", file: "amro-agentic-ai.png" },
+  { name: "ShelVey AI", file: "shelvey-ai-logo.png" },
+  { name: "Amro Agentic AI", file: "amro-agentic-ai-logo.png" },
   { name: "Kenect AI", file: "kenect-ai.svg" },
-  { name: "The Payzon", file: "payzon.png" },
+  { name: "The Payzon", file: "the-payzon-logo.png" },
 ]
 
 export const LEGAL_UPDATED = "17 September 2026"

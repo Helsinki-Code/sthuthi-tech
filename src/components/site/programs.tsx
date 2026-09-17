@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import { ArrowUpRight } from "@phosphor-icons/react"
 import { Reveal } from "@/components/site/reveal"
 import { Button } from "@/components/ui/button"
+import { LogoTile } from "@/components/site/logo-tile"
 import { TRACKS } from "@/lib/site-data"
 
 export function Programs() {
@@ -48,8 +49,9 @@ export function Programs() {
                   <td className="whitespace-nowrap px-4 py-4">
                     <Link
                       to={`/certifications/${track.slug}`}
-                      className="font-heading font-bold hover:text-brand-orange"
+                      className="flex items-center gap-3 font-heading font-bold hover:text-brand-orange"
                     >
+                      <LogoTile src={`/tools/${track.logo}`} alt={track.tool} className="h-7 w-7 shrink-0" />
                       {track.tool}
                     </Link>
                   </td>

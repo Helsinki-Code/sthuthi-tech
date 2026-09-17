@@ -3,6 +3,7 @@ import { ArrowLeft, CheckCircle } from "@phosphor-icons/react"
 import { Seo, SITE_URL } from "@/lib/seo"
 import { PageHeader } from "@/components/site/page-header"
 import { Reveal } from "@/components/site/reveal"
+import { LogoTile } from "@/components/site/logo-tile"
 import { Button } from "@/components/ui/button"
 import { TRACKS } from "@/lib/site-data"
 
@@ -42,7 +43,12 @@ export function CertificationDetailPage() {
         ]}
       />
 
-      <PageHeader kicker={track.focus} title={`${track.tool} certification`} description={track.summary}>
+      <PageHeader
+        kicker={track.focus}
+        title={`${track.tool} certification`}
+        description={track.summary}
+        logo={<LogoTile src={`/tools/${track.logo}`} alt={track.tool} className="h-14 w-14 shrink-0" />}
+      >
         <div className="mt-8 flex flex-wrap items-center gap-4">
           <Button
             size="lg"

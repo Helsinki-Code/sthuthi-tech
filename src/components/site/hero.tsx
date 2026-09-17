@@ -3,16 +3,11 @@ import { Button } from "@/components/ui/button"
 import { FlipWords } from "@/components/site/flip-words"
 import { TiltCard } from "@/components/site/tilt-card"
 import { SpotlightMascot } from "@/components/site/spotlight-mascot"
+import { LogoTile } from "@/components/site/logo-tile"
 import { Reveal } from "@/components/site/reveal"
+import { TRACKS } from "@/lib/site-data"
 
-const TOOLS = ["Claude Code", "Codex", "GitHub Copilot", "Gemini", "your own AI stack"]
-
-const LEDGER_ROWS = [
-  { tool: "Claude Code", level: "Practitioner" },
-  { tool: "Codex", level: "Practitioner" },
-  { tool: "GitHub Copilot", level: "Foundations" },
-  { tool: "Gemini", level: "Foundations" },
-]
+const TOOLS = [...TRACKS.map((t) => t.tool), "your own AI stack"]
 
 export function Hero() {
   return (
@@ -78,18 +73,23 @@ export function Hero() {
                   Live track roster
                 </span>
                 <span className="font-mono text-[10px] text-muted-foreground">
-                  4 tools
+                  {TRACKS.length} tools
                 </span>
               </div>
               <ul>
-                {LEDGER_ROWS.map((row) => (
+                {TRACKS.map((track) => (
                   <li
-                    key={row.tool}
-                    className="flex items-center justify-between border-b border-border px-4 py-2.5 text-[13px] last:border-b-0"
+                    key={track.slug}
+                    className="flex items-center gap-3 border-b border-border px-4 py-2.5 text-[13px] last:border-b-0"
                   >
-                    <span className="font-medium">{row.tool}</span>
-                    <span className="font-mono text-[11px] text-muted-foreground">
-                      {row.level}
+                    <LogoTile
+                      src={`/tools/${track.logo}`}
+                      alt={track.tool}
+                      className="h-6 w-6 shrink-0"
+                    />
+                    <span className="font-medium">{track.tool}</span>
+                    <span className="ml-auto font-mono text-[11px] text-muted-foreground">
+                      {track.levels.split(" → ").length} levels
                     </span>
                   </li>
                 ))}
@@ -128,7 +128,7 @@ export function Hero() {
               src="/art/sthuthi-guide-laptop.png"
               alt="Sthuthi Technologies program guide working through the assessment platform on a laptop"
               label="Assessor · Cohort 04"
-              className="absolute -bottom-10 -left-10 z-0 hidden aspect-[3/4] w-40 rotate-[-3deg] sm:block"
+              className="absolute -bottom-12 -left-24 z-0 hidden aspect-[3/4] w-48 rotate-[-3deg] sm:block"
             />
           </div>
         </Reveal>
