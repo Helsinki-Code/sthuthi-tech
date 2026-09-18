@@ -116,11 +116,38 @@ export const TRACKS: TrackDetail[] = [
   },
 ]
 
-export const CLIENTS = [
-  { name: "ShelVey AI", file: "shelvey-ai-logo.png" },
-  { name: "Amro Agentic AI", file: "amro-agentic-ai-logo.png" },
-  { name: "Kenect AI", file: "kenect-ai.svg" },
-  { name: "The Payzon", file: "the-payzon-logo.png" },
+export interface ClientMeta {
+  name: string
+  file: string
+  url: string
+  description: string
+}
+
+export const CLIENTS: ClientMeta[] = [
+  {
+    name: "ShelVey AI",
+    file: "shelvey-ai-logo.png",
+    url: "https://shelvey.pro",
+    description: "An autonomous AI platform that runs sales and business-creation workflows end to end.",
+  },
+  {
+    name: "Amro Agentic AI",
+    file: "amro-agentic-ai-logo.png",
+    url: "https://amroagentic.com",
+    description: "A UK-based suite of practical agentic AI products for sales, content, and customer engagement, built for small and growing businesses.",
+  },
+  {
+    name: "Kenect AI",
+    file: "kenect-ai.svg",
+    url: "https://kenectai.com",
+    description: "Agentic operations software for automotive dealerships, automating day-to-day dealership workflows.",
+  },
+  {
+    name: "The Payzon",
+    file: "the-payzon-logo.png",
+    url: "https://thepayzon.com",
+    description: "A micro-banking platform offering money transfers, loans, fixed deposits, and multi-currency accounts.",
+  },
 ]
 
 export const LEGAL_UPDATED = "17 September 2026"
