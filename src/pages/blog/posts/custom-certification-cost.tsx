@@ -17,6 +17,7 @@ export function CustomCertificationCostPost() {
       </p>
 
       <h2>What actually drives cost and time in a custom build</h2>
+      <BlogImage imageKey="custom-certification-cost/03-build-timeline" />
       <p>
         Our own process runs on{" "}
         <Link to="/custom-certification" className="text-brand-orange underline underline-offset-4">
@@ -147,6 +148,7 @@ export function CustomCertificationCostPost() {
       </p>
 
       <h2>What to bring to a scoping call to make it efficient</h2>
+      <BlogImage imageKey="custom-certification-cost/02-scoping-inputs" />
       <p>
         The biggest lever you have over how long Weeks 1–3 take isn't
         anything we do — it's how much of the groundwork is already sitting

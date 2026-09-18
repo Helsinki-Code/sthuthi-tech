@@ -144,6 +144,7 @@ export function GeminiCertificationPost() {
       </p>
 
       <h2>The pattern, a third time</h2>
+      <BlogImage imageKey="gemini-certification/02-coverage-map" />
       <p>
         This is the same split we've now found in every major AI coding
         and productivity tool.{" "}
@@ -194,6 +195,7 @@ export function GeminiCertificationPost() {
         a short writeup, reviewed against how your team actually works, not
         a fixed answer key.
       </p>
+      <BlogImage imageKey="gemini-certification/03-conflicting-evidence" />
       <p>
         If Gemini isn't the tool you're evaluating, see the{" "}
         <Link

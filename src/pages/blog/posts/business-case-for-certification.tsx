@@ -133,6 +133,7 @@ export function BusinessCaseForCertificationPost() {
       </p>
 
       <h2>Present the credential as an asset, not a line-item that disappears after the training ends</h2>
+      <BlogImage imageKey="business-case-for-certification/03-credential-reuse" />
       <p>
         A course-completion certificate is a sunk cost the moment the course
         ends — it has no ongoing use to the business. A verified credential
@@ -155,6 +156,7 @@ export function BusinessCaseForCertificationPost() {
       </p>
 
       <h2>Put a number on it: the ROI math to actually show your finance team</h2>
+      <BlogImage imageKey="business-case-for-certification/02-roi-components" />
       <p>
         You don't need a novel formula here — using a recognized one makes
         the pitch more credible, not less. The standard approach, the

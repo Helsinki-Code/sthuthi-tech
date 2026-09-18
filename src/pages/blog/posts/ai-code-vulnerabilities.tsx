@@ -181,6 +181,7 @@ export function AiCodeVulnerabilitiesPost() {
       </p>
 
       <h2>What a real review process would need to catch this</h2>
+      <BlogImage imageKey="ai-code-vulnerabilities/03-least-privilege" />
       <p>
         A linter and a pull-request template don't cover this gap, because
         the failures aren't syntax errors — they're missing judgment calls
@@ -232,6 +233,7 @@ export function AiCodeVulnerabilitiesPost() {
       </p>
 
       <h2>The actual test: can this person catch it, not just prompt for it</h2>
+      <BlogImage imageKey="ai-code-vulnerabilities/04-planted-flaw-assessment" />
       <p>
         Here's the governance question this data actually raises, and it's
         not "which AI tool is safest" — none of the vendors in Veracode's

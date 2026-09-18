@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { BlogImage } from "@/components/site/blog-image"
 
 export function VibeCodingTaxPost() {
   return (
@@ -42,6 +43,7 @@ export function VibeCodingTaxPost() {
       </p>
 
       <h2>The tell isn't the tool. It's the review habit.</h2>
+      <BlogImage imageKey="vibe-coding-tax/01-review-before-ship" />
       <p>
         Engineers who get real value out of AI coding tools tend to share a
         few habits: they know which tasks are a good fit for the tool
@@ -79,6 +81,7 @@ export function VibeCodingTaxPost() {
       </p>
 
       <h2>The alternative to a policy memo</h2>
+      <BlogImage imageKey="vibe-coding-tax/02-maintenance-task" />
       <p>
         None of this gets fixed by writing an AI usage policy and asking
         people to read it, and it doesn't get fixed by a course that ends in

@@ -201,6 +201,7 @@ export function CursorCertificationPost() {
       </p>
 
       <h2>What to test for instead</h2>
+      <BlogImage imageKey="cursor-certification/02-delegation-boundary" />
       <p>
         If your team already has Cursor turned on — and given the adoption
         numbers above, a large share of engineering orgs do — the honest

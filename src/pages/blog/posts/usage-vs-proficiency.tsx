@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { BlogImage } from "@/components/site/blog-image"
 
 export function UsageVsProficiencyPost() {
   return (
@@ -15,6 +16,7 @@ export function UsageVsProficiencyPost() {
       </p>
 
       <h2>What an adoption dashboard is built to count</h2>
+      <BlogImage imageKey="usage-vs-proficiency/02-metric-boundaries" />
       <p>
         Look at what the market-leading adoption tools actually track.
         GitHub's own{" "}
@@ -137,6 +139,7 @@ export function UsageVsProficiencyPost() {
       </p>
 
       <h2>Even Deloitte's C-suite data points at the same wall</h2>
+      <BlogImage imageKey="usage-vs-proficiency/03-workflow-redesign" />
       <p>
         Deloitte's{" "}
         <a
@@ -175,6 +178,7 @@ export function UsageVsProficiencyPost() {
       </p>
 
       <h2>Why nobody just measures proficiency directly</h2>
+      <BlogImage imageKey="usage-vs-proficiency/01-observed-task" />
       <p>
         It isn't that engineering and L&D leaders don't want better data —
         it's that adoption metrics are what the vendor tooling exports by

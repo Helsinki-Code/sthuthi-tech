@@ -25,7 +25,8 @@ export function BlogImage({ imageKey, featured, className }: BlogImageProps) {
         width={image.width}
         height={image.height}
         loading={featured ? "eager" : "lazy"}
-        className="h-full w-full object-cover"
+        decoding="async"
+        className="h-auto w-full"
       />
     </figure>
   )

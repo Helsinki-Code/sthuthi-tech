@@ -212,6 +212,450 @@
       "path": "public/blog/claude-code-certification/featured.png",
       "width": 1200,
       "height": 630
+    },
+    {
+      "slug": "claude-code-certification",
+      "name": "01-ecosystem-and-repository",
+      "tool": "claude-code",
+      "mascot": "sthuthi-guide-teaching.png",
+      "alt": "The Sthuthi guide compares Claude ecosystem knowledge with an observed Claude Code repository task.",
+      "scene": "New broad-versus-local competency comparison, unlike permissions hero. Guide viewed three-quarter back, reaching UP to pin a repo task evidence card on a wall-sized two-column board; thoughtful focused profile, not facing camera or pointing at a laptop. Left column ecosystem architecture symbols API/SDK/MCP, right a repo branch/diff/test sheet. Header text: \"KNOWLEDGE + PRACTICE\"; column titles \"ECOSYSTEM\" and \"YOUR REPOSITORY\"; bottom line \"A course is a start. Observe the task.\" Labels \"API\", \"SDK\", \"MCP\", \"DIFF\", \"TESTS\".",
+      "prompt": "Use case: illustration-story. Create a final professional editorial PNG, landscape 4:3, intended to export at 1000x750. Match the finished blog reference's flat cartoon linework and soft cel shading, not its composition. Opaque uniform paper #F5F3EE background; orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23 panels; off-white #ECEDE7 panel text; grey-blue #5B6570 secondary. No green or yellow UI, no gradients, no glow, no 3D, no photorealism. Sharp rectangular panels. Generous negative space. Include the supplied Sthuthi horizontal logo as a small clean issuing/editorial mark near an upper corner, NOT its checkerboard. Keep every listed text string legible and verbatim, strong professional sans serif typography, no fake fine print or invented claims. Product logos only from supplied product reference, small editorial use, no affiliation claim. Keep exactly the supplied guide's face, warm brown skin, short shoulder-length dark wavy hair, orange blazer with S lapel pin, grey-blue blouse, charcoal trousers, dark heels. Change action and pose, never identity. New broad-versus-local competency comparison, unlike permissions hero. Guide viewed three-quarter back, reaching UP to pin a repo task evidence card on a wall-sized two-column board; thoughtful focused profile, not facing camera or pointing at a laptop. Left column ecosystem architecture symbols API/SDK/MCP, right a repo branch/diff/test sheet. Header text: \"KNOWLEDGE + PRACTICE\"; column titles \"ECOSYSTEM\" and \"YOUR REPOSITORY\"; bottom line \"A course is a start. Observe the task.\" Labels \"API\", \"SDK\", \"MCP\", \"DIFF\", \"TESTS\".",
+      "path": "public/blog/claude-code-certification/01-ecosystem-and-repository.png",
+      "width": 1000,
+      "height": 750,
+      "editPrompt": "Edit only this generated illustration: add the supplied real CLAUDE CODE wordmark as a small editorial tool reference inside the upper left of the ECOSYSTEM board, below its column heading. Do not omit the tool logo. Keep all existing text, character identity, her three-quarter-back pinning pose, board layout and palette unchanged. Sharp rectangle panel corners, no rounded cards. Logo reference image2, ignore its background.",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/claude-code-certification/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/art/sthuthi-guide-teaching.png",
+        "/Users/vikky/Desktop/skill-dev/public/tools/claude-code-logo.png"
+      ]
+    },
+    {
+      "slug": "codex-certification",
+      "name": "01-failure-decisions",
+      "tool": "codex",
+      "mascot": "sthuthi-guide-planning.png",
+      "alt": "The Sthuthi guide weighs retrying Codex, narrowing the task or taking a manual path after a failed run.",
+      "scene": "A troubleshooting decision station, not pipeline repair desk. Guide seated sideways on a simple stool at far right, arms folded, brow thoughtfully raised, looking at branching decision chart on left. Top failure log routes to three sharp panels containing loop arrow, scoped target, hand/tool icons. Text \"WHEN THE RUN FAILS\"; branches \"RETRY\", \"NARROW\", \"MANUAL\"; footer \"Choose the next move. Don't just rerun.\" Tiny supplied Codex mark on failure log.",
+      "prompt": "Use case: illustration-story. Create a final professional editorial PNG, landscape 4:3, intended to export at 1000x750. Match the finished blog reference's flat cartoon linework and soft cel shading, not its composition. Opaque uniform paper #F5F3EE background; orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23 panels; off-white #ECEDE7 panel text; grey-blue #5B6570 secondary. No green or yellow UI, no gradients, no glow, no 3D, no photorealism. Sharp rectangular panels. Generous negative space. Include the supplied Sthuthi horizontal logo as a small clean issuing/editorial mark near an upper corner, NOT its checkerboard. Keep every listed text string legible and verbatim, strong professional sans serif typography, no fake fine print or invented claims. Product logos only from supplied product reference, small editorial use, no affiliation claim. Keep exactly the supplied guide's face, warm brown skin, short shoulder-length dark wavy hair, orange blazer with S lapel pin, grey-blue blouse, charcoal trousers, dark heels. Change action and pose, never identity. A troubleshooting decision station, not pipeline repair desk. Guide seated sideways on a simple stool at far right, arms folded, brow thoughtfully raised, looking at branching decision chart on left. Top failure log routes to three sharp panels containing loop arrow, scoped target, hand/tool icons. Text \"WHEN THE RUN FAILS\"; branches \"RETRY\", \"NARROW\", \"MANUAL\"; footer \"Choose the next move. Don't just rerun.\" Tiny supplied Codex mark on failure log.",
+      "path": "public/blog/codex-certification/01-failure-decisions.png",
+      "width": 1000,
+      "height": 750,
+      "editPrompt": "Edit only the mascot's hands and expression in image1. Keep the exact face identity, seated sideways crossed-leg stool pose, clothes and ALL diagram text/logo/layout unchanged. Remove hand-on-chin gesture. Fold BOTH arms comfortably across her torso, thoughtful raised-eyebrow focused expression looking toward chart, not camera. Preserve S lapel pin. Square off UI panel corners. No new props, no new text.",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/codex-certification/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/art/sthuthi-guide-planning.png",
+        "/Users/vikky/Desktop/skill-dev/public/tools/codex-logo.png"
+      ]
+    },
+    {
+      "slug": "gemini-certification",
+      "name": "02-coverage-map",
+      "tool": "gemini",
+      "mascot": null,
+      "alt": "Gemini certification coverage separates business strategy, classroom practice and workplace task assessment.",
+      "scene": "Pure diagram NO mascot. Three tall distinct syllabus maps connected to one small Gemini header mark; strategy compass, classroom book, workplace mixed-input task evidence. No seals claiming official credential. Text \"WHAT DOES IT COVER?\"; cards \"STRATEGY\", \"CLASSROOM\", \"YOUR WORKFLOW\"; footer \"Different audiences. Different evidence.\".",
+      "prompt": "Use case: illustration-story. Create a final professional editorial PNG, landscape 4:3, intended to export at 1000x750. Match the finished blog reference's flat cartoon linework and soft cel shading, not its composition. Opaque uniform paper #F5F3EE background; orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23 panels; off-white #ECEDE7 panel text; grey-blue #5B6570 secondary. No green or yellow UI, no gradients, no glow, no 3D, no photorealism. Sharp rectangular panels. Generous negative space. Include the supplied Sthuthi horizontal logo as a small clean issuing/editorial mark near an upper corner, NOT its checkerboard. Keep every listed text string legible and verbatim, strong professional sans serif typography, no fake fine print or invented claims. Product logos only from supplied product reference, small editorial use, no affiliation claim. NO person or mascot in this composition. Pure diagram NO mascot. Three tall distinct syllabus maps connected to one small Gemini header mark; strategy compass, classroom book, workplace mixed-input task evidence. No seals claiming official credential. Text \"WHAT DOES IT COVER?\"; cards \"STRATEGY\", \"CLASSROOM\", \"YOUR WORKFLOW\"; footer \"Different audiences. Different evidence.\".",
+      "path": "public/blog/gemini-certification/02-coverage-map.png",
+      "width": 1000,
+      "height": 750,
+      "editPrompt": "Precise edit: square all UI/card/banner corners; preserve every text string, logo, composition and palette.",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/gemini-certification/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/tools/gemini-logo.png"
+      ]
+    },
+    {
+      "slug": "usage-vs-proficiency",
+      "name": "01-observed-task",
+      "tool": null,
+      "mascot": "sthuthi-guide-laptop.png",
+      "alt": "The Sthuthi guide observes a live AI task to record scope, review decisions and a tested outcome.",
+      "scene": "Guide walking mid-stride behind a schematic dark silhouette worker at a testing station, holding a small observation tablet down at waist; attentive serious expression, no pointing. A cutaway three-panel ribbon records task scope, review choices, tested outcome. Text \"OBSERVE THE WORK\"; labels \"SCOPE\", \"JUDGMENT\", \"OUTCOME\"; footer \"Activity logs cannot show every decision.\" No product logo because generic AI work.",
+      "prompt": "Use case: illustration-story. Create a final professional editorial PNG, landscape 4:3, intended to export at 1000x750. Match the finished blog reference's flat cartoon linework and soft cel shading, not its composition. Opaque uniform paper #F5F3EE background; orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23 panels; off-white #ECEDE7 panel text; grey-blue #5B6570 secondary. No green or yellow UI, no gradients, no glow, no 3D, no photorealism. Sharp rectangular panels. Generous negative space. Include the supplied Sthuthi horizontal logo as a small clean issuing/editorial mark near an upper corner, NOT its checkerboard. Keep every listed text string legible and verbatim, strong professional sans serif typography, no fake fine print or invented claims. Product logos only from supplied product reference, small editorial use, no affiliation claim. Keep exactly the supplied guide's face, warm brown skin, short shoulder-length dark wavy hair, orange blazer with S lapel pin, grey-blue blouse, charcoal trousers, dark heels. Change action and pose, never identity. Guide walking mid-stride behind a schematic dark silhouette worker at a testing station, holding a small observation tablet down at waist; attentive serious expression, no pointing. A cutaway three-panel ribbon records task scope, review choices, tested outcome. Text \"OBSERVE THE WORK\"; labels \"SCOPE\", \"JUDGMENT\", \"OUTCOME\"; footer \"Activity logs cannot show every decision.\" No product logo because generic AI work.",
+      "path": "public/blog/usage-vs-proficiency/01-observed-task.png",
+      "width": 1000,
+      "height": 750,
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/usage-vs-proficiency/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/art/sthuthi-guide-laptop.png"
+      ]
+    },
+    {
+      "slug": "vibe-coding-tax",
+      "name": "01-review-before-ship",
+      "tool": null,
+      "mascot": null,
+      "alt": "A review checkpoint stops AI-generated code from shipping before its scope, diff and tests are checked.",
+      "scene": "Pure graphic no mascot. An orange flow from generation stream passes three controlled review gates, then a clean package. Text \"PUT REVIEW IN THE LOOP\"; labels \"SCOPE\", \"DIFF\", \"TESTS\", \"SHIP\". Bottom \"Fast generation still needs a check.\" NO product logos, no invented statistics.",
+      "prompt": "Use case: illustration-story. Create a final professional editorial PNG, landscape 4:3, intended to export at 1000x750. Match the finished blog reference's flat cartoon linework and soft cel shading, not its composition. Opaque uniform paper #F5F3EE background; orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23 panels; off-white #ECEDE7 panel text; grey-blue #5B6570 secondary. No green or yellow UI, no gradients, no glow, no 3D, no photorealism. Sharp rectangular panels. Generous negative space. Include the supplied Sthuthi horizontal logo as a small clean issuing/editorial mark near an upper corner, NOT its checkerboard. Keep every listed text string legible and verbatim, strong professional sans serif typography, no fake fine print or invented claims. Product logos only from supplied product reference, small editorial use, no affiliation claim. NO person or mascot in this composition. Pure graphic no mascot. An orange flow from generation stream passes three controlled review gates, then a clean package. Text \"PUT REVIEW IN THE LOOP\"; labels \"SCOPE\", \"DIFF\", \"TESTS\", \"SHIP\". Bottom \"Fast generation still needs a check.\" NO product logos, no invented statistics.",
+      "path": "public/blog/vibe-coding-tax/01-review-before-ship.png",
+      "width": 1000,
+      "height": 750,
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/vibe-coding-tax/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png"
+      ]
+    },
+    {
+      "slug": "self-assessment-accuracy",
+      "name": "01-verification-loop",
+      "tool": null,
+      "mascot": "sthuthi-guide-reviewing.png",
+      "alt": "The Sthuthi guide checks a fluent AI answer against source evidence before accepting it.",
+      "scene": "Guide in a side-profile standing posture, torso slightly turned, holding one paper source at eye-level in LEFT hand and a small answer sheet lower RIGHT hand, skeptical raised eyebrow. Clear two documents on easels labelled \"ANSWER\" and \"SOURCE\" with a verification return arrow joining them. Text \"FLUENT ISN'T VERIFIED\"; footer \"Check the evidence before you trust the answer.\" Not clipboard/chin pose, not survey gauges.",
+      "prompt": "Use case: illustration-story. Create a final professional editorial PNG, landscape 4:3, intended to export at 1000x750. Match the finished blog reference's flat cartoon linework and soft cel shading, not its composition. Opaque uniform paper #F5F3EE background; orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23 panels; off-white #ECEDE7 panel text; grey-blue #5B6570 secondary. No green or yellow UI, no gradients, no glow, no 3D, no photorealism. Sharp rectangular panels. Generous negative space. Include the supplied Sthuthi horizontal logo as a small clean issuing/editorial mark near an upper corner, NOT its checkerboard. Keep every listed text string legible and verbatim, strong professional sans serif typography, no fake fine print or invented claims. Product logos only from supplied product reference, small editorial use, no affiliation claim. Keep exactly the supplied guide's face, warm brown skin, short shoulder-length dark wavy hair, orange blazer with S lapel pin, grey-blue blouse, charcoal trousers, dark heels. Change action and pose, never identity. Guide in a side-profile standing posture, torso slightly turned, holding one paper source at eye-level in LEFT hand and a small answer sheet lower RIGHT hand, skeptical raised eyebrow. Clear two documents on easels labelled \"ANSWER\" and \"SOURCE\" with a verification return arrow joining them. Text \"FLUENT ISN'T VERIFIED\"; footer \"Check the evidence before you trust the answer.\" Not clipboard/chin pose, not survey gauges.",
+      "path": "public/blog/self-assessment-accuracy/01-verification-loop.png",
+      "width": 1000,
+      "height": 750,
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/self-assessment-accuracy/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/art/sthuthi-guide-reviewing.png"
+      ]
+    },
+    {
+      "slug": "ai-code-vulnerabilities",
+      "name": "03-least-privilege",
+      "tool": null,
+      "mascot": null,
+      "alt": "A least-privilege boundary limits an AI service account to approved resources and blocks broader access.",
+      "scene": "Pure architecture schematic no mascot. One service-account key inside orange outlined boundary connects to exactly one permitted database slice; blocked dashed branches to admin controls and unrelated files outside boundary. Text \"LIMIT THE BLAST RADIUS\"; labels \"SERVICE ACCOUNT\", \"APPROVED\", \"ADMIN\", \"OUT OF SCOPE\"; footer \"Review permissions, not only generated code.\" No invented technical fine print.",
+      "prompt": "Use case: illustration-story. Create a final professional editorial PNG, landscape 4:3, intended to export at 1000x750. Match the finished blog reference's flat cartoon linework and soft cel shading, not its composition. Opaque uniform paper #F5F3EE background; orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23 panels; off-white #ECEDE7 panel text; grey-blue #5B6570 secondary. No green or yellow UI, no gradients, no glow, no 3D, no photorealism. Sharp rectangular panels. Generous negative space. Include the supplied Sthuthi horizontal logo as a small clean issuing/editorial mark near an upper corner, NOT its checkerboard. Keep every listed text string legible and verbatim, strong professional sans serif typography, no fake fine print or invented claims. Product logos only from supplied product reference, small editorial use, no affiliation claim. NO person or mascot in this composition. Pure architecture schematic no mascot. One service-account key inside orange outlined boundary connects to exactly one permitted database slice; blocked dashed branches to admin controls and unrelated files outside boundary. Text \"LIMIT THE BLAST RADIUS\"; labels \"SERVICE ACCOUNT\", \"APPROVED\", \"ADMIN\", \"OUT OF SCOPE\"; footer \"Review permissions, not only generated code.\" No invented technical fine print.",
+      "path": "public/blog/ai-code-vulnerabilities/03-least-privilege.png",
+      "width": 1000,
+      "height": 750,
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/ai-code-vulnerabilities/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png"
+      ]
+    },
+    {
+      "slug": "business-case-for-certification",
+      "name": "02-roi-components",
+      "tool": null,
+      "mascot": null,
+      "alt": "Training ROI compares attributable monetary benefits with the full cost of the certification program.",
+      "scene": "Clean mathematical editorial diagram no mascot. Large visible correct formula \"ROI = (Benefits − Costs) / Costs × 100%\" in navy rectangle, supported by separate orange benefit bucket and charcoal cost bucket. Labels \"ATTRIBUTABLE BENEFITS\", \"FULL PROGRAM COST\". Header \"MAKE THE CASE WITH EVIDENCE\"; footer \"Include training, assessment and staff time.\" No fabricated values or ROI promise.",
+      "prompt": "Use case: illustration-story. Create a final professional editorial PNG, landscape 4:3, intended to export at 1000x750. Match the finished blog reference's flat cartoon linework and soft cel shading, not its composition. Opaque uniform paper #F5F3EE background; orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23 panels; off-white #ECEDE7 panel text; grey-blue #5B6570 secondary. No green or yellow UI, no gradients, no glow, no 3D, no photorealism. Sharp rectangular panels. Generous negative space. Include the supplied Sthuthi horizontal logo as a small clean issuing/editorial mark near an upper corner, NOT its checkerboard. Keep every listed text string legible and verbatim, strong professional sans serif typography, no fake fine print or invented claims. Product logos only from supplied product reference, small editorial use, no affiliation claim. NO person or mascot in this composition. Clean mathematical editorial diagram no mascot. Large visible correct formula \"ROI = (Benefits − Costs) / Costs × 100%\" in navy rectangle, supported by separate orange benefit bucket and charcoal cost bucket. Labels \"ATTRIBUTABLE BENEFITS\", \"FULL PROGRAM COST\". Header \"MAKE THE CASE WITH EVIDENCE\"; footer \"Include training, assessment and staff time.\" No fabricated values or ROI promise.",
+      "path": "public/blog/business-case-for-certification/02-roi-components.png",
+      "width": 1000,
+      "height": 750,
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/business-case-for-certification/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png"
+      ]
+    },
+    {
+      "slug": "business-case-for-certification",
+      "name": "03-credential-reuse",
+      "tool": null,
+      "mascot": "sthuthi-guide-teaching.png",
+      "alt": "The Sthuthi guide files assessment evidence for staffing decisions, audit review and future training.",
+      "scene": "Guide full-body profile walking left-to-right, carrying a slim credential folder, gentle confident smile, placing it into a sharp three-compartment standing evidence library, not a meeting/presentation or seatedtyping. Clear reuse paths to team roster, audit checklist, learning plan icon. Text \"ONE RECORD. MORE USES.\"; labels \"STAFFING\", \"AUDIT\", \"TRAINING\". Footer \"Keep the evidence behind the credential.\" No filled credential IDs.",
+      "prompt": "Use case: illustration-story. Create a final professional editorial PNG, landscape 4:3, intended to export at 1000x750. Match the finished blog reference's flat cartoon linework and soft cel shading, not its composition. Opaque uniform paper #F5F3EE background; orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23 panels; off-white #ECEDE7 panel text; grey-blue #5B6570 secondary. No green or yellow UI, no gradients, no glow, no 3D, no photorealism. Sharp rectangular panels. Generous negative space. Include the supplied Sthuthi horizontal logo as a small clean issuing/editorial mark near an upper corner, NOT its checkerboard. Keep every listed text string legible and verbatim, strong professional sans serif typography, no fake fine print or invented claims. Product logos only from supplied product reference, small editorial use, no affiliation claim. Keep exactly the supplied guide's face, warm brown skin, short shoulder-length dark wavy hair, orange blazer with S lapel pin, grey-blue blouse, charcoal trousers, dark heels. Change action and pose, never identity. Guide full-body profile walking left-to-right, carrying a slim credential folder, gentle confident smile, placing it into a sharp three-compartment standing evidence library, not a meeting/presentation or seatedtyping. Clear reuse paths to team roster, audit checklist, learning plan icon. Text \"ONE RECORD. MORE USES.\"; labels \"STAFFING\", \"AUDIT\", \"TRAINING\". Footer \"Keep the evidence behind the credential.\" No filled credential IDs.",
+      "path": "public/blog/business-case-for-certification/03-credential-reuse.png",
+      "width": 1000,
+      "height": 750,
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/business-case-for-certification/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/art/sthuthi-guide-teaching.png"
+      ]
+    },
+    {
+      "slug": "custom-certification-cost",
+      "name": "02-scoping-inputs",
+      "tool": null,
+      "mascot": "sthuthi-guide-planning.png",
+      "alt": "The Sthuthi guide prepares tasks, internal docs, a lead, cohort details and constraints for a scoping call.",
+      "scene": "High oblique composition of guide leaning forward packing a flat project folio on a standing counter, both hands arranging labeled divider tabs; focus on organization, not writing a rubric or thinking with clipboard. Text \"ARRIVE WITH A WORKING BRIEF\"; tabs \"TASKS\", \"DOCS\", \"LEAD\", \"COHORT\", \"CONSTRAINTS\". Footer \"A useful draft beats a blank page.\" Simple props no decorative books or plants.",
+      "prompt": "Use case: illustration-story. Create a final professional editorial PNG, landscape 4:3, intended to export at 1000x750. Match the finished blog reference's flat cartoon linework and soft cel shading, not its composition. Opaque uniform paper #F5F3EE background; orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23 panels; off-white #ECEDE7 panel text; grey-blue #5B6570 secondary. No green or yellow UI, no gradients, no glow, no 3D, no photorealism. Sharp rectangular panels. Generous negative space. Include the supplied Sthuthi horizontal logo as a small clean issuing/editorial mark near an upper corner, NOT its checkerboard. Keep every listed text string legible and verbatim, strong professional sans serif typography, no fake fine print or invented claims. Product logos only from supplied product reference, small editorial use, no affiliation claim. Keep exactly the supplied guide's face, warm brown skin, short shoulder-length dark wavy hair, orange blazer with S lapel pin, grey-blue blouse, charcoal trousers, dark heels. Change action and pose, never identity. High oblique composition of guide leaning forward packing a flat project folio on a standing counter, both hands arranging labeled divider tabs; focus on organization, not writing a rubric or thinking with clipboard. Text \"ARRIVE WITH A WORKING BRIEF\"; tabs \"TASKS\", \"DOCS\", \"LEAD\", \"COHORT\", \"CONSTRAINTS\". Footer \"A useful draft beats a blank page.\" Simple props no decorative books or plants.",
+      "path": "public/blog/custom-certification-cost/02-scoping-inputs.png",
+      "width": 1000,
+      "height": 750,
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/custom-certification-cost/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/art/sthuthi-guide-planning.png"
+      ]
+    },
+    {
+      "slug": "claude-code-certification",
+      "name": "02-partner-eligibility",
+      "tool": "claude-code",
+      "mascot": null,
+      "alt": "Claude certification eligibility passes through a partner-network gate before exam registration.",
+      "scene": "Use case: infographic-diagram. NO mascot. Minimal overhead access-map: an applicant entry token follows a routed line to a narrow orange partner gate, then an exam document beyond it. One alternate applicant path ends at a blocked checkpoint before gate. Small real supplied Claude Code wordmark on header. Text: \"CHECK ELIGIBILITY FIRST\"; gate \"PARTNER NETWORK\"; far document \"EXAM\"; footer \"Access requirements matter before exam content.\" Don't suggest partner membership guarantees a pass. No person silhouette needed.",
+      "prompt": "Asset: final editorial PNG, 4:3 landscape export 1000x750. References: first image is rendering-style ground truth ONLY, not a layout to reuse; second is original Sthuthi horizontal brand logo, use a small clean lockup in upper corner, omit its checkerboard; further inputs are explicitly mascot identity or product logo references. Flat cartoon/vector-like clean charcoal ink and restrained soft cel shading. SOLID OPAQUE paper #F5F3EE edge-to-edge. Orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23/#0D1318 panels; #ECEDE7 text on dark; #5B6570 secondary. Only authentic small product logo may use its own colors. NO green/yellow UI, no fake red/green status dots. UI, cards, banners and label boxes MUST be precise SHARP 90-degree rectangle corners, zero radius, no pills. No decorative gradients, glows, 3D, photorealism, glass. Generous whitespace and clear hierarchy; polished adult enterprise editorial art, not cute stock-office clutter. Text is required: retain every specified phrase verbatim, large legible sans serif. No unrequested small print, no fabricated statistics, no invented credential IDs, no endorsement/partnership implication. Use case: infographic-diagram. NO mascot. Minimal overhead access-map: an applicant entry token follows a routed line to a narrow orange partner gate, then an exam document beyond it. One alternate applicant path ends at a blocked checkpoint before gate. Small real supplied Claude Code wordmark on header. Text: \"CHECK ELIGIBILITY FIRST\"; gate \"PARTNER NETWORK\"; far document \"EXAM\"; footer \"Access requirements matter before exam content.\" Don't suggest partner membership guarantees a pass. No person silhouette needed.",
+      "path": "public/blog/claude-code-certification/02-partner-eligibility.png",
+      "width": 1000,
+      "height": 750,
+      "generatedSource": "/Users/vikky/.codex/generated_images/01a0af40-a5fd-71a0-916d-06aa6c7d97cb/exec-b4c18f3b-0afe-43b8-94ee-385322563ac1.png",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/claude-code-certification/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/tools/claude-code-logo.png"
+      ]
+    },
+    {
+      "slug": "claude-code-certification",
+      "name": "03-task-contract",
+      "tool": "claude-code",
+      "mascot": "sthuthi-guide-planning.png",
+      "alt": "The Sthuthi guide builds a Claude Code task brief with a goal, constraints and completion evidence.",
+      "scene": "Use case: illustration-story. A top-down 30-degree view across a standing assessment drafting table. Guide from right-side three-quarter angle, one palm pressing a GOAL tile into a task-contract board while other aligns a CONSTRAINTS strip; purposeful concentrated expression. NOT laptop typing, NOT clipboard, NOT chin-rest, NOT permissions switch or wall presentation. Large schematic brief composition with clear separately bordered regions. Small supplied Claude Code wordmark on task-board header. Text: \"DEFINE THE TASK\"; regions \"GOAL\", \"CONSTRAINTS\", \"DONE WHEN\"; footer \"Judge the result against the brief.\" No code fineprint.",
+      "prompt": "Asset: final editorial PNG, 4:3 landscape export 1000x750. References: first image is rendering-style ground truth ONLY, not a layout to reuse; second is original Sthuthi horizontal brand logo, use a small clean lockup in upper corner, omit its checkerboard; further inputs are explicitly mascot identity or product logo references. Flat cartoon/vector-like clean charcoal ink and restrained soft cel shading. SOLID OPAQUE paper #F5F3EE edge-to-edge. Orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23/#0D1318 panels; #ECEDE7 text on dark; #5B6570 secondary. Only authentic small product logo may use its own colors. NO green/yellow UI, no fake red/green status dots. UI, cards, banners and label boxes MUST be precise SHARP 90-degree rectangle corners, zero radius, no pills. No decorative gradients, glows, 3D, photorealism, glass. Generous whitespace and clear hierarchy; polished adult enterprise editorial art, not cute stock-office clutter. Text is required: retain every specified phrase verbatim, large legible sans serif. No unrequested small print, no fabricated statistics, no invented credential IDs, no endorsement/partnership implication. Mascot input is identity only: EXACT same warm brown face, dark wavy shoulder-length hair, orange blazer with dark S pin, grey-blue blouse, charcoal trousers and heels. Do NOT copy her pose from reference. Use case: illustration-story. A top-down 30-degree view across a standing assessment drafting table. Guide from right-side three-quarter angle, one palm pressing a GOAL tile into a task-contract board while other aligns a CONSTRAINTS strip; purposeful concentrated expression. NOT laptop typing, NOT clipboard, NOT chin-rest, NOT permissions switch or wall presentation. Large schematic brief composition with clear separately bordered regions. Small supplied Claude Code wordmark on task-board header. Text: \"DEFINE THE TASK\"; regions \"GOAL\", \"CONSTRAINTS\", \"DONE WHEN\"; footer \"Judge the result against the brief.\" No code fineprint.",
+      "path": "public/blog/claude-code-certification/03-task-contract.png",
+      "width": 1000,
+      "height": 750,
+      "generatedSource": "/Users/vikky/.codex/generated_images/01a0af40-a5fd-71a0-916d-06aa6c7d97cb/exec-1c535c7f-d09b-4672-8c57-07220eaf3e65.png",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/claude-code-certification/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/art/sthuthi-guide-planning.png",
+        "/Users/vikky/Desktop/skill-dev/public/tools/claude-code-logo.png"
+      ]
+    },
+    {
+      "slug": "codex-certification",
+      "name": "02-learning-and-assessment",
+      "tool": "codex",
+      "mascot": null,
+      "alt": "Codex learning materials lead to practice, while a separate observed task produces assessment evidence.",
+      "scene": "Use case: infographic-diagram. NO mascot. A neat horizontal bookshelf-like progression of learning reader, practice terminal and scored-task evidence sheet, with a deliberate break between practice and assessment. Small supplied Codex logo on practice terminal. Text: \"LEARNING IS THE START\"; labels \"LEARN\", \"PRACTISE\", \"ASSESS\"; below break \"Completion is not proof of proficiency.\" Do not put a vendor seal on assessment or imply OpenAI offers this tool-specific exam.",
+      "prompt": "Asset: final editorial PNG, 4:3 landscape export 1000x750. References: first image is rendering-style ground truth ONLY, not a layout to reuse; second is original Sthuthi horizontal brand logo, use a small clean lockup in upper corner, omit its checkerboard; further inputs are explicitly mascot identity or product logo references. Flat cartoon/vector-like clean charcoal ink and restrained soft cel shading. SOLID OPAQUE paper #F5F3EE edge-to-edge. Orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23/#0D1318 panels; #ECEDE7 text on dark; #5B6570 secondary. Only authentic small product logo may use its own colors. NO green/yellow UI, no fake red/green status dots. UI, cards, banners and label boxes MUST be precise SHARP 90-degree rectangle corners, zero radius, no pills. No decorative gradients, glows, 3D, photorealism, glass. Generous whitespace and clear hierarchy; polished adult enterprise editorial art, not cute stock-office clutter. Text is required: retain every specified phrase verbatim, large legible sans serif. No unrequested small print, no fabricated statistics, no invented credential IDs, no endorsement/partnership implication. Use case: infographic-diagram. NO mascot. A neat horizontal bookshelf-like progression of learning reader, practice terminal and scored-task evidence sheet, with a deliberate break between practice and assessment. Small supplied Codex logo on practice terminal. Text: \"LEARNING IS THE START\"; labels \"LEARN\", \"PRACTISE\", \"ASSESS\"; below break \"Completion is not proof of proficiency.\" Do not put a vendor seal on assessment or imply OpenAI offers this tool-specific exam.",
+      "path": "public/blog/codex-certification/02-learning-and-assessment.png",
+      "width": 1000,
+      "height": 750,
+      "generatedSource": "/Users/vikky/.codex/generated_images/01a0af40-a5fd-71a0-916d-06aa6c7d97cb/exec-81ae220a-8977-40ba-b444-15b8143470b7.png",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/codex-certification/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/tools/codex-logo.png"
+      ]
+    },
+    {
+      "slug": "codex-certification",
+      "name": "03-preserve-tests",
+      "tool": "codex",
+      "mascot": null,
+      "alt": "A Codex assessment checks that a repository fix preserves the original test suite instead of weakening it.",
+      "scene": "Use case: infographic-diagram. NO mascot. A rectangular comparison of an original test-contract sheet above and a candidate repository patch below, joined by an orange unchanged-tests bracket. Separate unacceptable crossed-out deleted-test strip on far right. NOT pipeline desktop, NOT retry decision tree. Small supplied Codex logo adjacent candidate patch header. Text: \"FIX THE CODE. KEEP THE CHECKS.\"; labels \"BASELINE TESTS\", \"CANDIDATE FIX\", \"NO TEST DELETION\"; footer \"A passing run is not enough if the checks changed.\" Abstract line bars not illegible sourcecode.",
+      "prompt": "Asset: final editorial PNG, 4:3 landscape export 1000x750. References: first image is rendering-style ground truth ONLY, not a layout to reuse; second is original Sthuthi horizontal brand logo, use a small clean lockup in upper corner, omit its checkerboard; further inputs are explicitly mascot identity or product logo references. Flat cartoon/vector-like clean charcoal ink and restrained soft cel shading. SOLID OPAQUE paper #F5F3EE edge-to-edge. Orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23/#0D1318 panels; #ECEDE7 text on dark; #5B6570 secondary. Only authentic small product logo may use its own colors. NO green/yellow UI, no fake red/green status dots. UI, cards, banners and label boxes MUST be precise SHARP 90-degree rectangle corners, zero radius, no pills. No decorative gradients, glows, 3D, photorealism, glass. Generous whitespace and clear hierarchy; polished adult enterprise editorial art, not cute stock-office clutter. Text is required: retain every specified phrase verbatim, large legible sans serif. No unrequested small print, no fabricated statistics, no invented credential IDs, no endorsement/partnership implication. Use case: infographic-diagram. NO mascot. A rectangular comparison of an original test-contract sheet above and a candidate repository patch below, joined by an orange unchanged-tests bracket. Separate unacceptable crossed-out deleted-test strip on far right. NOT pipeline desktop, NOT retry decision tree. Small supplied Codex logo adjacent candidate patch header. Text: \"FIX THE CODE. KEEP THE CHECKS.\"; labels \"BASELINE TESTS\", \"CANDIDATE FIX\", \"NO TEST DELETION\"; footer \"A passing run is not enough if the checks changed.\" Abstract line bars not illegible sourcecode.",
+      "path": "public/blog/codex-certification/03-preserve-tests.png",
+      "width": 1000,
+      "height": 750,
+      "generatedSource": "/Users/vikky/.codex/generated_images/01a0af40-a5fd-71a0-916d-06aa6c7d97cb/exec-af89f768-05de-4bb0-9c53-484cb4ccd2d4.png",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/codex-certification/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/tools/codex-logo.png"
+      ]
+    },
+    {
+      "slug": "microsoft-copilot-certification",
+      "name": "01-open-credential-paths",
+      "paletteCorrection": "User-approved CLI correction only: blue pointer recolored to shaded #5B6570; original tool logo, text and generated panel geometry retained. scripts/correct-editorial-palette.mjs",
+      "tool": "copilot",
+      "mascot": null,
+      "alt": "Microsoft Copilot credential paths distinguish a proctored administration exam from a practical office-work lab.",
+      "scene": "Use case: infographic-diagram. NO mascot. Open doorway icon at bottom center fans upward into two credential-path tickets, one exam clock and one lab mouse/keyboard task tray. No desktop pair split matching hero. Supplied small Copilot logo at upper corner. Text: \"OPEN TO REGISTER\"; ticket titles \"AB-900\", \"APPLIED SKILLS\"; subtitles \"PROCTORED EXAM\", \"PRACTICAL LAB\". Footer \"Choose the credential that matches the role.\" No fake certification seal or score.",
+      "prompt": "Asset: final editorial PNG, 4:3 landscape export 1000x750. References: first image is rendering-style ground truth ONLY, not a layout to reuse; second is original Sthuthi horizontal brand logo, use a small clean lockup in upper corner, omit its checkerboard; further inputs are explicitly mascot identity or product logo references. Flat cartoon/vector-like clean charcoal ink and restrained soft cel shading. SOLID OPAQUE paper #F5F3EE edge-to-edge. Orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23/#0D1318 panels; #ECEDE7 text on dark; #5B6570 secondary. Only authentic small product logo may use its own colors. NO green/yellow UI, no fake red/green status dots. UI, cards, banners and label boxes MUST be precise SHARP 90-degree rectangle corners, zero radius, no pills. No decorative gradients, glows, 3D, photorealism, glass. Generous whitespace and clear hierarchy; polished adult enterprise editorial art, not cute stock-office clutter. Text is required: retain every specified phrase verbatim, large legible sans serif. No unrequested small print, no fabricated statistics, no invented credential IDs, no endorsement/partnership implication. Use case: infographic-diagram. NO mascot. Open doorway icon at bottom center fans upward into two credential-path tickets, one exam clock and one lab mouse/keyboard task tray. No desktop pair split matching hero. Supplied small Copilot logo at upper corner. Text: \"OPEN TO REGISTER\"; ticket titles \"AB-900\", \"APPLIED SKILLS\"; subtitles \"PROCTORED EXAM\", \"PRACTICAL LAB\". Footer \"Choose the credential that matches the role.\" No fake certification seal or score.",
+      "path": "public/blog/microsoft-copilot-certification/01-open-credential-paths.png",
+      "width": 1000,
+      "height": 750,
+      "generatedSource": "/Users/vikky/.codex/generated_images/01a0af40-a5fd-71a0-916d-06aa6c7d97cb/exec-4d34134a-aeea-40b5-a94c-884ec258435f.png",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/microsoft-copilot-certification/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/tools/copilot-logo.png"
+      ]
+    },
+    {
+      "slug": "microsoft-copilot-certification",
+      "name": "02-company-workflows",
+      "tool": "copilot",
+      "mascot": "sthuthi-guide-laptop.png",
+      "alt": "The Sthuthi guide adapts a generic Copilot lab brief to company documents, communications and reporting formats.",
+      "scene": "Use case: illustration-story. Guide standing in side-profile between a small generic worksheet dispenser and a large business brief laid on a drafting stand. She physically swaps a blank sample brief for a branded company-format brief using two hands, curious focused expression. NOT laptop typing, NOT presentation, NOT pointing, no sitting. Small supplied Copilot logo on the brief's corner. Three tabs around businessbrief: documents, client communications, report. Text: \"BRING THE REAL WORK\"; labels \"SAMPLE LAB\", \"YOUR DOCUMENTS\", \"CLIENT CONTEXT\", \"REPORT FORMAT\". Footer \"A baseline lab cannot represent every team.\" No client names/data.",
+      "prompt": "Asset: final editorial PNG, 4:3 landscape export 1000x750. References: first image is rendering-style ground truth ONLY, not a layout to reuse; second is original Sthuthi horizontal brand logo, use a small clean lockup in upper corner, omit its checkerboard; further inputs are explicitly mascot identity or product logo references. Flat cartoon/vector-like clean charcoal ink and restrained soft cel shading. SOLID OPAQUE paper #F5F3EE edge-to-edge. Orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23/#0D1318 panels; #ECEDE7 text on dark; #5B6570 secondary. Only authentic small product logo may use its own colors. NO green/yellow UI, no fake red/green status dots. UI, cards, banners and label boxes MUST be precise SHARP 90-degree rectangle corners, zero radius, no pills. No decorative gradients, glows, 3D, photorealism, glass. Generous whitespace and clear hierarchy; polished adult enterprise editorial art, not cute stock-office clutter. Text is required: retain every specified phrase verbatim, large legible sans serif. No unrequested small print, no fabricated statistics, no invented credential IDs, no endorsement/partnership implication. Mascot input is identity only: EXACT same warm brown face, dark wavy shoulder-length hair, orange blazer with dark S pin, grey-blue blouse, charcoal trousers and heels. Do NOT copy her pose from reference. Use case: illustration-story. Guide standing in side-profile between a small generic worksheet dispenser and a large business brief laid on a drafting stand. She physically swaps a blank sample brief for a branded company-format brief using two hands, curious focused expression. NOT laptop typing, NOT presentation, NOT pointing, no sitting. Small supplied Copilot logo on the brief's corner. Three tabs around businessbrief: documents, client communications, report. Text: \"BRING THE REAL WORK\"; labels \"SAMPLE LAB\", \"YOUR DOCUMENTS\", \"CLIENT CONTEXT\", \"REPORT FORMAT\". Footer \"A baseline lab cannot represent every team.\" No client names/data.",
+      "path": "public/blog/microsoft-copilot-certification/02-company-workflows.png",
+      "width": 1000,
+      "height": 750,
+      "generatedSource": "/Users/vikky/.codex/generated_images/01a0af40-a5fd-71a0-916d-06aa6c7d97cb/exec-1ff560eb-dc7e-4b78-b58a-1c8bc5b2a65c.png",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/microsoft-copilot-certification/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/art/sthuthi-guide-laptop.png",
+        "/Users/vikky/Desktop/skill-dev/public/tools/copilot-logo.png"
+      ]
+    },
+    {
+      "slug": "microsoft-copilot-certification",
+      "name": "03-contextual-rubric",
+      "paletteCorrection": "User-approved CLI correction only: green plant recolored to shaded #5B6570 and tan desk to shaded #F5F3EE; mascot, text, logos and generated panel geometry retained. scripts/correct-editorial-palette.mjs",
+      "tool": "copilot",
+      "mascot": "sthuthi-guide-reviewing.png",
+      "alt": "The Sthuthi guide scores a Copilot work sample against a company-specific review rubric.",
+      "scene": "Use case: illustration-story. Close-up across an assessor's desk from above left: guide seated upright in concentrated profile using a pen to mark a three-row scoring ruler adjacent a finished work sample; one hand holds the ruler straight. No hand-on-chin or clipboard, no team presentation, no keyboard. Small supplied Copilot logo on work sample header, tiny Sthuthi mark on rubric. Text: \"SCORE WHAT GOOD LOOKS LIKE\"; row headings \"ACCURACY\", \"CONTEXT\", \"USEFULNESS\"; work sample label \"WORK SAMPLE\"; footer \"Use a rubric your team can defend.\" No numeric scores or certification promises.",
+      "prompt": "Asset: final editorial PNG, 4:3 landscape export 1000x750. References: first image is rendering-style ground truth ONLY, not a layout to reuse; second is original Sthuthi horizontal brand logo, use a small clean lockup in upper corner, omit its checkerboard; further inputs are explicitly mascot identity or product logo references. Flat cartoon/vector-like clean charcoal ink and restrained soft cel shading. SOLID OPAQUE paper #F5F3EE edge-to-edge. Orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23/#0D1318 panels; #ECEDE7 text on dark; #5B6570 secondary. Only authentic small product logo may use its own colors. NO green/yellow UI, no fake red/green status dots. UI, cards, banners and label boxes MUST be precise SHARP 90-degree rectangle corners, zero radius, no pills. No decorative gradients, glows, 3D, photorealism, glass. Generous whitespace and clear hierarchy; polished adult enterprise editorial art, not cute stock-office clutter. Text is required: retain every specified phrase verbatim, large legible sans serif. No unrequested small print, no fabricated statistics, no invented credential IDs, no endorsement/partnership implication. Mascot input is identity only: EXACT same warm brown face, dark wavy shoulder-length hair, orange blazer with dark S pin, grey-blue blouse, charcoal trousers and heels. Do NOT copy her pose from reference. Use case: illustration-story. Close-up across an assessor's desk from above left: guide seated upright in concentrated profile using a pen to mark a three-row scoring ruler adjacent a finished work sample; one hand holds the ruler straight. No hand-on-chin or clipboard, no team presentation, no keyboard. Small supplied Copilot logo on work sample header, tiny Sthuthi mark on rubric. Text: \"SCORE WHAT GOOD LOOKS LIKE\"; row headings \"ACCURACY\", \"CONTEXT\", \"USEFULNESS\"; work sample label \"WORK SAMPLE\"; footer \"Use a rubric your team can defend.\" No numeric scores or certification promises.",
+      "path": "public/blog/microsoft-copilot-certification/03-contextual-rubric.png",
+      "width": 1000,
+      "height": 750,
+      "generatedSource": "/Users/vikky/.codex/generated_images/01a0af40-a5fd-71a0-916d-06aa6c7d97cb/exec-6b1cb18e-7bfc-4f14-81d7-e93033d341c6.png",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/microsoft-copilot-certification/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/art/sthuthi-guide-reviewing.png",
+        "/Users/vikky/Desktop/skill-dev/public/tools/copilot-logo.png"
+      ]
+    },
+    {
+      "slug": "cursor-certification",
+      "name": "02-delegation-boundary",
+      "tool": "cursor",
+      "mascot": null,
+      "alt": "A Cursor task boundary separates scoped Composer delegation from changes needing manual control.",
+      "scene": "Use case: infographic-diagram. NO mascot. Overhead schematic repo area with exactly one small highlighted bounded change cluster on left, wide unbounded many-file cluster on right stopped by an orange hand-brake icon. Different from prompt/context/diff illustration and hero. Small supplied Cursor cube and wordmark above bounded cluster. Text: \"CHOOSE HOW MUCH TO DELEGATE\"; labels \"SCOPED CHANGE\", \"MANUAL CONTROL\"; footer \"The blast radius sets the review burden.\" No product-safety credential symbols.",
+      "prompt": "Asset: final editorial PNG, 4:3 landscape export 1000x750. References: first image is rendering-style ground truth ONLY, not a layout to reuse; second is original Sthuthi horizontal brand logo, use a small clean lockup in upper corner, omit its checkerboard; further inputs are explicitly mascot identity or product logo references. Flat cartoon/vector-like clean charcoal ink and restrained soft cel shading. SOLID OPAQUE paper #F5F3EE edge-to-edge. Orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23/#0D1318 panels; #ECEDE7 text on dark; #5B6570 secondary. Only authentic small product logo may use its own colors. NO green/yellow UI, no fake red/green status dots. UI, cards, banners and label boxes MUST be precise SHARP 90-degree rectangle corners, zero radius, no pills. No decorative gradients, glows, 3D, photorealism, glass. Generous whitespace and clear hierarchy; polished adult enterprise editorial art, not cute stock-office clutter. Text is required: retain every specified phrase verbatim, large legible sans serif. No unrequested small print, no fabricated statistics, no invented credential IDs, no endorsement/partnership implication. Use case: infographic-diagram. NO mascot. Overhead schematic repo area with exactly one small highlighted bounded change cluster on left, wide unbounded many-file cluster on right stopped by an orange hand-brake icon. Different from prompt/context/diff illustration and hero. Small supplied Cursor cube and wordmark above bounded cluster. Text: \"CHOOSE HOW MUCH TO DELEGATE\"; labels \"SCOPED CHANGE\", \"MANUAL CONTROL\"; footer \"The blast radius sets the review burden.\" No product-safety credential symbols.",
+      "path": "public/blog/cursor-certification/02-delegation-boundary.png",
+      "width": 1000,
+      "height": 750,
+      "generatedSource": "/Users/vikky/.codex/generated_images/01a0af40-a5fd-71a0-916d-06aa6c7d97cb/exec-d42fc5af-81b2-4023-ad3d-ca5546d5d097.png",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/cursor-certification/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/tools/cursor-logo.png"
+      ]
+    },
+    {
+      "slug": "gemini-certification",
+      "name": "03-conflicting-evidence",
+      "tool": "gemini",
+      "mascot": null,
+      "alt": "A Gemini assessment resolves disagreement between visual and tabular evidence before producing a checked result.",
+      "scene": "Use case: infographic-diagram. NO mascot. One visual chart card and one table card disagree: chart ascending arrow while table trend descending arrow, both secondary greyblue/orange, no fabricated quantities. Orange warning between them routes down through a source-check lens to a reconciled output sheet. Small supplied Gemini logo at source-check header. Text: \"WHEN INPUTS DISAGREE\"; labels \"VISUAL\", \"TABLE\", \"CHECK SOURCE\", \"RESOLVE\"; footer \"Find the conflict before accepting the answer.\" Not another three-input ingestion diagram.",
+      "prompt": "Asset: final editorial PNG, 4:3 landscape export 1000x750. References: first image is rendering-style ground truth ONLY, not a layout to reuse; second is original Sthuthi horizontal brand logo, use a small clean lockup in upper corner, omit its checkerboard; further inputs are explicitly mascot identity or product logo references. Flat cartoon/vector-like clean charcoal ink and restrained soft cel shading. SOLID OPAQUE paper #F5F3EE edge-to-edge. Orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23/#0D1318 panels; #ECEDE7 text on dark; #5B6570 secondary. Only authentic small product logo may use its own colors. NO green/yellow UI, no fake red/green status dots. UI, cards, banners and label boxes MUST be precise SHARP 90-degree rectangle corners, zero radius, no pills. No decorative gradients, glows, 3D, photorealism, glass. Generous whitespace and clear hierarchy; polished adult enterprise editorial art, not cute stock-office clutter. Text is required: retain every specified phrase verbatim, large legible sans serif. No unrequested small print, no fabricated statistics, no invented credential IDs, no endorsement/partnership implication. Use case: infographic-diagram. NO mascot. One visual chart card and one table card disagree: chart ascending arrow while table trend descending arrow, both secondary greyblue/orange, no fabricated quantities. Orange warning between them routes down through a source-check lens to a reconciled output sheet. Small supplied Gemini logo at source-check header. Text: \"WHEN INPUTS DISAGREE\"; labels \"VISUAL\", \"TABLE\", \"CHECK SOURCE\", \"RESOLVE\"; footer \"Find the conflict before accepting the answer.\" Not another three-input ingestion diagram.",
+      "path": "public/blog/gemini-certification/03-conflicting-evidence.png",
+      "width": 1000,
+      "height": 750,
+      "generatedSource": "/Users/vikky/.codex/generated_images/01a0af40-a5fd-71a0-916d-06aa6c7d97cb/exec-6cc22436-ae73-4efd-959f-9e74453db5c1.png",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/gemini-certification/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/tools/gemini-logo.png"
+      ]
+    },
+    {
+      "slug": "usage-vs-proficiency",
+      "name": "02-metric-boundaries",
+      "tool": null,
+      "mascot": null,
+      "alt": "AI adoption metrics record activity while leaving review judgment and output quality unmeasured.",
+      "scene": "Use case: infographic-diagram. NO mascot. Cutaway measurement instrument: left an export tray containing three counters with no quantities, center a tall boundary labeled observable activity, beyond it an unfilled question-mark quality sheet. NOT two dashboards matching hero. Text: \"KNOW WHAT THE METRIC MEASURES\"; counters \"ACTIVE USERS\", \"ACCEPTANCE\", \"PR COUNT\"; far sheet \"OUTPUT QUALITY?\"; footer \"Useful rollout data. Incomplete skill evidence.\" No namedtool depiction, logos onlySthuthi.",
+      "prompt": "Asset: final editorial PNG, 4:3 landscape export 1000x750. References: first image is rendering-style ground truth ONLY, not a layout to reuse; second is original Sthuthi horizontal brand logo, use a small clean lockup in upper corner, omit its checkerboard; further inputs are explicitly mascot identity or product logo references. Flat cartoon/vector-like clean charcoal ink and restrained soft cel shading. SOLID OPAQUE paper #F5F3EE edge-to-edge. Orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23/#0D1318 panels; #ECEDE7 text on dark; #5B6570 secondary. Only authentic small product logo may use its own colors. NO green/yellow UI, no fake red/green status dots. UI, cards, banners and label boxes MUST be precise SHARP 90-degree rectangle corners, zero radius, no pills. No decorative gradients, glows, 3D, photorealism, glass. Generous whitespace and clear hierarchy; polished adult enterprise editorial art, not cute stock-office clutter. Text is required: retain every specified phrase verbatim, large legible sans serif. No unrequested small print, no fabricated statistics, no invented credential IDs, no endorsement/partnership implication. Use case: infographic-diagram. NO mascot. Cutaway measurement instrument: left an export tray containing three counters with no quantities, center a tall boundary labeled observable activity, beyond it an unfilled question-mark quality sheet. NOT two dashboards matching hero. Text: \"KNOW WHAT THE METRIC MEASURES\"; counters \"ACTIVE USERS\", \"ACCEPTANCE\", \"PR COUNT\"; far sheet \"OUTPUT QUALITY?\"; footer \"Useful rollout data. Incomplete skill evidence.\" No namedtool depiction, logos onlySthuthi.",
+      "path": "public/blog/usage-vs-proficiency/02-metric-boundaries.png",
+      "width": 1000,
+      "height": 750,
+      "generatedSource": "/Users/vikky/.codex/generated_images/01a0af40-a5fd-71a0-916d-06aa6c7d97cb/exec-a5a2a491-efcd-4540-9c29-44d4c3f04441.png",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/usage-vs-proficiency/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png"
+      ]
+    },
+    {
+      "slug": "usage-vs-proficiency",
+      "name": "03-workflow-redesign",
+      "tool": null,
+      "mascot": "sthuthi-guide-teaching.png",
+      "alt": "The Sthuthi guide redesigns task ownership and review checkpoints around an AI-assisted workflow.",
+      "scene": "Use case: illustration-story. Full-body guide in a high three-quarter view moving a rectangular review checkpoint block into the center of a large floor-layout workflow path; slight forward stride with arms carrying the block, determined expression. No pointing/whiteboard presentation/clipboard/keyboard or classroom. Workflow is tabletop-like visual map no surrealglow. Text: \"CHANGE HOW WORK GETS DONE\"; stages \"TASK\", \"AI ASSIST\", \"REVIEW\", \"OWNER\"; footer \"Tool access does not redesign a workflow.\" No thirdpartylogo because genericconcept.",
+      "prompt": "Asset: final editorial PNG, 4:3 landscape export 1000x750. References: first image is rendering-style ground truth ONLY, not a layout to reuse; second is original Sthuthi horizontal brand logo, use a small clean lockup in upper corner, omit its checkerboard; further inputs are explicitly mascot identity or product logo references. Flat cartoon/vector-like clean charcoal ink and restrained soft cel shading. SOLID OPAQUE paper #F5F3EE edge-to-edge. Orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23/#0D1318 panels; #ECEDE7 text on dark; #5B6570 secondary. Only authentic small product logo may use its own colors. NO green/yellow UI, no fake red/green status dots. UI, cards, banners and label boxes MUST be precise SHARP 90-degree rectangle corners, zero radius, no pills. No decorative gradients, glows, 3D, photorealism, glass. Generous whitespace and clear hierarchy; polished adult enterprise editorial art, not cute stock-office clutter. Text is required: retain every specified phrase verbatim, large legible sans serif. No unrequested small print, no fabricated statistics, no invented credential IDs, no endorsement/partnership implication. Mascot input is identity only: EXACT same warm brown face, dark wavy shoulder-length hair, orange blazer with dark S pin, grey-blue blouse, charcoal trousers and heels. Do NOT copy her pose from reference. Use case: illustration-story. Full-body guide in a high three-quarter view moving a rectangular review checkpoint block into the center of a large floor-layout workflow path; slight forward stride with arms carrying the block, determined expression. No pointing/whiteboard presentation/clipboard/keyboard or classroom. Workflow is tabletop-like visual map no surrealglow. Text: \"CHANGE HOW WORK GETS DONE\"; stages \"TASK\", \"AI ASSIST\", \"REVIEW\", \"OWNER\"; footer \"Tool access does not redesign a workflow.\" No thirdpartylogo because genericconcept.",
+      "path": "public/blog/usage-vs-proficiency/03-workflow-redesign.png",
+      "width": 1000,
+      "height": 750,
+      "generatedSource": "/Users/vikky/.codex/generated_images/01a0af40-a5fd-71a0-916d-06aa6c7d97cb/exec-312de6dd-2504-4361-974c-d9b4981c54f3.png",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/usage-vs-proficiency/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/art/sthuthi-guide-teaching.png"
+      ]
+    },
+    {
+      "slug": "ai-code-vulnerabilities",
+      "name": "04-planted-flaw-assessment",
+      "tool": null,
+      "mascot": "sthuthi-guide-reviewing.png",
+      "alt": "A practical security assessment asks the Sthuthi guide to explain and repair a planted authorization flaw.",
+      "scene": "Use case: illustration-story. Guide turned away three-quarter-back at a standing small interview testing board, one hand writing a tiny correction arrow on a route-access diagram, other holds no prop, alert serious expression. Not magnifying glass, not stopmerge gesture, not laptop. A schematic user request hits a route missing an orange authorization checkpoint; patched route includes checkpoint. Text: \"CAN THEY CATCH THE FLAW?\"; labels \"MISSING CHECK\", \"EXPLAIN\", \"REPAIR\"; footer \"Test review judgment on a real task.\" No full source code; no false exploit instructions.",
+      "prompt": "Asset: final editorial PNG, 4:3 landscape export 1000x750. References: first image is rendering-style ground truth ONLY, not a layout to reuse; second is original Sthuthi horizontal brand logo, use a small clean lockup in upper corner, omit its checkerboard; further inputs are explicitly mascot identity or product logo references. Flat cartoon/vector-like clean charcoal ink and restrained soft cel shading. SOLID OPAQUE paper #F5F3EE edge-to-edge. Orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23/#0D1318 panels; #ECEDE7 text on dark; #5B6570 secondary. Only authentic small product logo may use its own colors. NO green/yellow UI, no fake red/green status dots. UI, cards, banners and label boxes MUST be precise SHARP 90-degree rectangle corners, zero radius, no pills. No decorative gradients, glows, 3D, photorealism, glass. Generous whitespace and clear hierarchy; polished adult enterprise editorial art, not cute stock-office clutter. Text is required: retain every specified phrase verbatim, large legible sans serif. No unrequested small print, no fabricated statistics, no invented credential IDs, no endorsement/partnership implication. Mascot input is identity only: EXACT same warm brown face, dark wavy shoulder-length hair, orange blazer with dark S pin, grey-blue blouse, charcoal trousers and heels. Do NOT copy her pose from reference. Use case: illustration-story. Guide turned away three-quarter-back at a standing small interview testing board, one hand writing a tiny correction arrow on a route-access diagram, other holds no prop, alert serious expression. Not magnifying glass, not stopmerge gesture, not laptop. A schematic user request hits a route missing an orange authorization checkpoint; patched route includes checkpoint. Text: \"CAN THEY CATCH THE FLAW?\"; labels \"MISSING CHECK\", \"EXPLAIN\", \"REPAIR\"; footer \"Test review judgment on a real task.\" No full source code; no false exploit instructions.",
+      "path": "public/blog/ai-code-vulnerabilities/04-planted-flaw-assessment.png",
+      "width": 1000,
+      "height": 750,
+      "generatedSource": "/Users/vikky/.codex/generated_images/01a0af40-a5fd-71a0-916d-06aa6c7d97cb/exec-e9c0241a-6de8-4acd-beca-c5d61e3a2d68.png",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/ai-code-vulnerabilities/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/art/sthuthi-guide-reviewing.png"
+      ]
+    },
+    {
+      "slug": "vibe-coding-tax",
+      "name": "02-maintenance-task",
+      "tool": null,
+      "mascot": "sthuthi-guide-laptop.png",
+      "alt": "The Sthuthi guide performs an observed maintenance task on an existing codebase instead of relying on a policy memo.",
+      "scene": "Use case: illustration-story. Guide kneeling at the side of a schematic modular codebase puzzle on a low platform, carefully replacing one faulty rectangular module while neighboring stable modules remain connected; focused serious face. A discarded small policy document lies off to the side. NOT piles of duplicatedpapers, not seatedtyping, not reviewcheckpoint conveyor. Text: \"PROVE IT IN THE CODEBASE\"; labels \"EXISTING CODE\", \"SCOPED FIX\", \"TEST EVIDENCE\"; footer \"A policy cannot demonstrate review habits.\" Abstract engineering metaphor, not 3D mechanicalstock.",
+      "prompt": "Asset: final editorial PNG, 4:3 landscape export 1000x750. References: first image is rendering-style ground truth ONLY, not a layout to reuse; second is original Sthuthi horizontal brand logo, use a small clean lockup in upper corner, omit its checkerboard; further inputs are explicitly mascot identity or product logo references. Flat cartoon/vector-like clean charcoal ink and restrained soft cel shading. SOLID OPAQUE paper #F5F3EE edge-to-edge. Orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23/#0D1318 panels; #ECEDE7 text on dark; #5B6570 secondary. Only authentic small product logo may use its own colors. NO green/yellow UI, no fake red/green status dots. UI, cards, banners and label boxes MUST be precise SHARP 90-degree rectangle corners, zero radius, no pills. No decorative gradients, glows, 3D, photorealism, glass. Generous whitespace and clear hierarchy; polished adult enterprise editorial art, not cute stock-office clutter. Text is required: retain every specified phrase verbatim, large legible sans serif. No unrequested small print, no fabricated statistics, no invented credential IDs, no endorsement/partnership implication. Mascot input is identity only: EXACT same warm brown face, dark wavy shoulder-length hair, orange blazer with dark S pin, grey-blue blouse, charcoal trousers and heels. Do NOT copy her pose from reference. Use case: illustration-story. Guide kneeling at the side of a schematic modular codebase puzzle on a low platform, carefully replacing one faulty rectangular module while neighboring stable modules remain connected; focused serious face. A discarded small policy document lies off to the side. NOT piles of duplicatedpapers, not seatedtyping, not reviewcheckpoint conveyor. Text: \"PROVE IT IN THE CODEBASE\"; labels \"EXISTING CODE\", \"SCOPED FIX\", \"TEST EVIDENCE\"; footer \"A policy cannot demonstrate review habits.\" Abstract engineering metaphor, not 3D mechanicalstock.",
+      "path": "public/blog/vibe-coding-tax/02-maintenance-task.png",
+      "width": 1000,
+      "height": 750,
+      "generatedSource": "/Users/vikky/.codex/generated_images/01a0af40-a5fd-71a0-916d-06aa6c7d97cb/exec-c92206ba-7750-483d-8684-5eae85c64a3b.png",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/vibe-coding-tax/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png",
+        "/Users/vikky/Desktop/skill-dev/public/art/sthuthi-guide-laptop.png"
+      ]
+    },
+    {
+      "slug": "self-assessment-accuracy",
+      "name": "02-calibration-cycle",
+      "tool": null,
+      "mascot": null,
+      "alt": "Observed AI task results feed back into practice to calibrate a learner's confidence against evidence.",
+      "scene": "Use case: infographic-diagram. NO mascot. Clean square feedback circuit with task work sample, assessor evidence notes, targeted practice sheet and a recalibrated selfrating marker; no gauges like hero. Explicit return arrow from practice back to task. Text: \"CALIBRATE WITH EVIDENCE\"; labels \"TASK\", \"OBSERVE\", \"FEEDBACK\", \"PRACTISE\"; footer \"Compare your judgment with what the task shows.\" No fabricatedscores/statistics.",
+      "prompt": "Asset: final editorial PNG, 4:3 landscape export 1000x750. References: first image is rendering-style ground truth ONLY, not a layout to reuse; second is original Sthuthi horizontal brand logo, use a small clean lockup in upper corner, omit its checkerboard; further inputs are explicitly mascot identity or product logo references. Flat cartoon/vector-like clean charcoal ink and restrained soft cel shading. SOLID OPAQUE paper #F5F3EE edge-to-edge. Orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23/#0D1318 panels; #ECEDE7 text on dark; #5B6570 secondary. Only authentic small product logo may use its own colors. NO green/yellow UI, no fake red/green status dots. UI, cards, banners and label boxes MUST be precise SHARP 90-degree rectangle corners, zero radius, no pills. No decorative gradients, glows, 3D, photorealism, glass. Generous whitespace and clear hierarchy; polished adult enterprise editorial art, not cute stock-office clutter. Text is required: retain every specified phrase verbatim, large legible sans serif. No unrequested small print, no fabricated statistics, no invented credential IDs, no endorsement/partnership implication. Use case: infographic-diagram. NO mascot. Clean square feedback circuit with task work sample, assessor evidence notes, targeted practice sheet and a recalibrated selfrating marker; no gauges like hero. Explicit return arrow from practice back to task. Text: \"CALIBRATE WITH EVIDENCE\"; labels \"TASK\", \"OBSERVE\", \"FEEDBACK\", \"PRACTISE\"; footer \"Compare your judgment with what the task shows.\" No fabricatedscores/statistics.",
+      "path": "public/blog/self-assessment-accuracy/02-calibration-cycle.png",
+      "width": 1000,
+      "height": 750,
+      "generatedSource": "/Users/vikky/.codex/generated_images/01a0af40-a5fd-71a0-916d-06aa6c7d97cb/exec-273c6525-580c-4ff9-b5d0-1ccd33f15530.png",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/self-assessment-accuracy/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png"
+      ]
+    },
+    {
+      "slug": "custom-certification-cost",
+      "name": "03-build-timeline",
+      "tool": null,
+      "mascot": null,
+      "alt": "Custom AI certification progresses through scoping, rubric review, a pilot cohort and ongoing updates.",
+      "scene": "Use case: infographic-diagram. NO mascot. Stair-step horizontal timeline on paper with four discrete rectangular milestone panels connected by straight rightangle routes, no3D. Text: \"BUILD A STANDING TRACK\"; panels \"WEEK 1\" / \"SCOPE\", \"WEEKS 2–3\" / \"RUBRIC\", \"WEEK 4\" / \"PILOT\", \"ONGOING\" / \"UPDATE\"; footer \"Complexity and expert availability can shift timing.\" No fixed-price amount or guaranteeddeadline.",
+      "prompt": "Asset: final editorial PNG, 4:3 landscape export 1000x750. References: first image is rendering-style ground truth ONLY, not a layout to reuse; second is original Sthuthi horizontal brand logo, use a small clean lockup in upper corner, omit its checkerboard; further inputs are explicitly mascot identity or product logo references. Flat cartoon/vector-like clean charcoal ink and restrained soft cel shading. SOLID OPAQUE paper #F5F3EE edge-to-edge. Orange #E6501F emphasis; charcoal #14181C outlines; navy #121B23/#0D1318 panels; #ECEDE7 text on dark; #5B6570 secondary. Only authentic small product logo may use its own colors. NO green/yellow UI, no fake red/green status dots. UI, cards, banners and label boxes MUST be precise SHARP 90-degree rectangle corners, zero radius, no pills. No decorative gradients, glows, 3D, photorealism, glass. Generous whitespace and clear hierarchy; polished adult enterprise editorial art, not cute stock-office clutter. Text is required: retain every specified phrase verbatim, large legible sans serif. No unrequested small print, no fabricated statistics, no invented credential IDs, no endorsement/partnership implication. Use case: infographic-diagram. NO mascot. Stair-step horizontal timeline on paper with four discrete rectangular milestone panels connected by straight rightangle routes, no3D. Text: \"BUILD A STANDING TRACK\"; panels \"WEEK 1\" / \"SCOPE\", \"WEEKS 2–3\" / \"RUBRIC\", \"WEEK 4\" / \"PILOT\", \"ONGOING\" / \"UPDATE\"; footer \"Complexity and expert availability can shift timing.\" No fixed-price amount or guaranteeddeadline.",
+      "path": "public/blog/custom-certification-cost/03-build-timeline.png",
+      "width": 1000,
+      "height": 750,
+      "generatedSource": "/Users/vikky/.codex/generated_images/01a0af40-a5fd-71a0-916d-06aa6c7d97cb/exec-cedcc659-925b-4031-b360-c1c875cd3b16.png",
+      "references": [
+        "/Users/vikky/Desktop/skill-dev/public/blog/custom-certification-cost/featured.png",
+        "/Users/vikky/Desktop/skill-dev/public/brand/logo-horizontal.png"
+      ]
     }
   ]
 }

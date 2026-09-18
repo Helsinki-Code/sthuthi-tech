@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { BlogImage } from "@/components/site/blog-image"
 
 export function SelfAssessmentAccuracyPost() {
   return (
@@ -93,6 +94,7 @@ export function SelfAssessmentAccuracyPost() {
       </blockquote>
 
       <h2>Why this happens</h2>
+      <BlogImage imageKey="self-assessment-accuracy/01-verification-loop" />
       <p>
         Some of this is the classic Dunning-Kruger pattern — people with the
         least ability in a domain lack the exact knowledge needed to notice
@@ -192,6 +194,7 @@ export function SelfAssessmentAccuracyPost() {
       </p>
 
       <h2>What an actual proficiency check looks like instead</h2>
+      <BlogImage imageKey="self-assessment-accuracy/02-calibration-cycle" />
       <p>
         Every study cited here reaches the same structural conclusion:
         self-report is unreliable specifically because it isn't checked

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { BlogImage } from "@/components/site/blog-image"
 
 export function CodexCertificationPost() {
   return (
@@ -55,6 +56,7 @@ export function CodexCertificationPost() {
       </p>
 
       <h2>Codex has free training — but nothing that certifies you</h2>
+      <BlogImage imageKey="codex-certification/02-learning-and-assessment" />
       <p>
         Separately from the AI Foundations program, OpenAI Academy runs
         actual Codex-specific training, and it's worth knowing what shape
@@ -170,6 +172,7 @@ export function CodexCertificationPost() {
       </p>
 
       <h2>What to test for instead</h2>
+      <BlogImage imageKey="codex-certification/01-failure-decisions" />
       <p>
         If you're evaluating Codex for your engineering team, what you
         need isn't a credential about the OpenAI platform in general — it's
@@ -210,6 +213,7 @@ export function CodexCertificationPost() {
         about scoping something specific to how your team actually uses
         it.
       </p>
+      <BlogImage imageKey="codex-certification/03-preserve-tests" />
     </>
   )
 }

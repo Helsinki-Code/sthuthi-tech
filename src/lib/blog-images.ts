@@ -1,4 +1,7 @@
+import { FOLLOWUP_BLOG_IMAGES } from "./blog-images-followup"
+
 export const BLOG_IMAGES: Record<string, { src: string; alt: string; width: number; height: number }> = {
+  ...FOLLOWUP_BLOG_IMAGES,
   "vibe-coding-tax/featured": {
     "src": "/blog/vibe-coding-tax/featured.png",
     "alt": "The Sthuthi guide interrupts rapid AI code generation to review a growing backlog of duplicated code.",

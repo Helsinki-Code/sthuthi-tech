@@ -1,0 +1,98 @@
+{
+  "generator": "Deterministic CLI compositing (explicitly approved)",
+  "note": "Personalized template previews, not issued credentials. Original client logo colors are preserved. Original translucent template flattened on paper.",
+  "images": [
+    {
+      "slug": "shelvey-ai",
+      "name": "shelvey-ai",
+      "tool": null,
+      "mascot": null,
+      "scene": "Personalized original Sthuthi certificate template preview.",
+      "alt": "Certificate of completion for Vikram Varma Sanagaraju at ShelVey AI, issued by Sthuthi Technologies.",
+      "prompt": "Deterministically composite public/clients/shelvey-ai-logo.png and exact name Vikram Varma Sanagaraju onto public/art/sthuthi-certificate-template.png; flatten on #F5F3EE; leave credential fields blank.",
+      "path": "public/clients/certificates/shelvey-ai.png",
+      "width": 1536,
+      "height": 1024,
+      "client": "ShelVey AI",
+      "recipient": "Vikram Varma Sanagaraju",
+      "sourceLogo": "public/clients/shelvey-ai-logo.png",
+      "sourceLogoSha256": "1fe1291ad96d13e82c7c9ead000c93fed016f385ee88961568cbb83aced33918",
+      "logoTransform": "Original source rasterized if SVG, outer whitespace trimmed, proportionally resized and composited without recoloring.",
+      "validation": {
+        "name": "Exact typeset string; no image-model spelling risk.",
+        "logo": "Original source file used without generative redraw.",
+        "retry": false
+      },
+      "previewOnly": true
+    },
+    {
+      "slug": "amro-agentic-ai",
+      "name": "amro-agentic-ai",
+      "tool": null,
+      "mascot": null,
+      "scene": "Personalized original Sthuthi certificate template preview.",
+      "alt": "Certificate of completion for Hemant Joshi at Amro Agentic AI, issued by Sthuthi Technologies.",
+      "prompt": "Deterministically composite public/clients/amro-agentic-ai-logo.png and exact name Hemant Joshi onto public/art/sthuthi-certificate-template.png; flatten on #F5F3EE; leave credential fields blank.",
+      "path": "public/clients/certificates/amro-agentic-ai.png",
+      "width": 1536,
+      "height": 1024,
+      "client": "Amro Agentic AI",
+      "recipient": "Hemant Joshi",
+      "sourceLogo": "public/clients/amro-agentic-ai-logo.png",
+      "sourceLogoSha256": "fe8b5715e375a3bd605245e6ab159c90d4d19512bbd227c2129f2171819c4109",
+      "logoTransform": "Original source rasterized if SVG, outer whitespace trimmed, proportionally resized and composited without recoloring.",
+      "validation": {
+        "name": "Exact typeset string; no image-model spelling risk.",
+        "logo": "Original source file used without generative redraw.",
+        "retry": false
+      },
+      "previewOnly": true
+    },
+    {
+      "slug": "kenect-ai",
+      "name": "kenect-ai",
+      "tool": null,
+      "mascot": null,
+      "scene": "Personalized original Sthuthi certificate template preview.",
+      "alt": "Certificate of completion for Shaun Sorensen at Kenect AI, issued by Sthuthi Technologies.",
+      "prompt": "Deterministically composite public/clients/kenect-ai.svg and exact name Shaun Sorensen onto public/art/sthuthi-certificate-template.png; flatten on #F5F3EE; leave credential fields blank.",
+      "path": "public/clients/certificates/kenect-ai.png",
+      "width": 1536,
+      "height": 1024,
+      "client": "Kenect AI",
+      "recipient": "Shaun Sorensen",
+      "sourceLogo": "public/clients/kenect-ai.svg",
+      "sourceLogoSha256": "79945780b841103262b46e8a2e444f4cda69399384278d07159811be4ae858f9",
+      "logoTransform": "Original source rasterized if SVG, outer whitespace trimmed, proportionally resized and composited without recoloring.",
+      "validation": {
+        "name": "Exact typeset string; no image-model spelling risk.",
+        "logo": "Original source file used without generative redraw.",
+        "retry": false
+      },
+      "previewOnly": true
+    },
+    {
+      "slug": "the-payzon",
+      "name": "the-payzon",
+      "tool": null,
+      "mascot": null,
+      "scene": "Personalized original Sthuthi certificate template preview.",
+      "alt": "Certificate of completion for The Payzon, issued by Sthuthi Technologies.",
+      "prompt": "Deterministically composite public/clients/the-payzon-logo.png and exact name [no individual name] onto public/art/sthuthi-certificate-template.png; flatten on #F5F3EE; leave credential fields blank.",
+      "path": "public/clients/certificates/the-payzon.png",
+      "width": 1536,
+      "height": 1024,
+      "client": "The Payzon",
+      "recipient": null,
+      "sourceLogo": "public/clients/the-payzon-logo.png",
+      "sourceLogoSha256": "5cd9d361fe9f29639ae9d8950673e4f5d1cbd1a3906158cd9f8da79922de77cc",
+      "logoTransform": "Original source rasterized if SVG, outer whitespace trimmed, proportionally resized and composited without recoloring.",
+      "validation": {
+        "name": "No individual name.",
+        "logo": "Original source file used without generative redraw.",
+        "retry": false
+      },
+      "previewOnly": true
+    }
+  ]
+}

@@ -3,7 +3,6 @@ import { Navigate, useParams } from "react-router-dom"
 import { Seo, SITE_URL } from "@/lib/seo"
 import { PageHeader } from "@/components/site/page-header"
 import { ClosingCta } from "@/components/site/closing-cta"
-import { Reveal } from "@/components/site/reveal"
 import { BLOG_POSTS, formatPostDate } from "@/lib/blog-data"
 import { BLOG_IMAGES } from "@/lib/blog-images"
 import { BlogImage } from "@/components/site/blog-image"
@@ -94,9 +93,9 @@ export function BlogPostPage() {
       <section className="py-16 sm:py-20">
         <div className="mx-auto max-w-2xl px-5 sm:px-8">
           <BlogImage imageKey={`${meta.slug}/featured`} featured />
-          <Reveal className="prose-content text-[15px] leading-relaxed text-muted-foreground">
+          <div className="prose-content text-[15px] leading-relaxed text-muted-foreground">
             <Content />
-          </Reveal>
+          </div>
 
           {meta.faq && (
             <div className="mt-14 border-t border-border pt-10">

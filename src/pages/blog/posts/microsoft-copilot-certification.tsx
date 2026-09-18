@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { BlogImage } from "@/components/site/blog-image"
 
 export function MicrosoftCopilotCertificationPost() {
   return (
@@ -13,6 +14,7 @@ export function MicrosoftCopilotCertificationPost() {
       </p>
 
       <h2>What Microsoft actually offers</h2>
+      <BlogImage imageKey="microsoft-copilot-certification/01-open-credential-paths" />
       <p>
         Microsoft introduced a wave of new Copilot-related credentials in
         February 2026. The two most relevant are:
@@ -71,6 +73,7 @@ export function MicrosoftCopilotCertificationPost() {
       </p>
 
       <h2>Applied Skills tests generic scenarios, not your work</h2>
+      <BlogImage imageKey="microsoft-copilot-certification/02-company-workflows" />
       <p>
         The Applied Skills lab is a genuine practical assessment — a real
         lab environment, not a multiple-choice quiz, which is more than
@@ -104,6 +107,7 @@ export function MicrosoftCopilotCertificationPost() {
       </p>
 
       <h2>What to test for instead</h2>
+      <BlogImage imageKey="microsoft-copilot-certification/03-contextual-rubric" />
       <p>
         If what you need is proof that specific employees can use Copilot
         well in your business — not an admin credential, not a generic lab

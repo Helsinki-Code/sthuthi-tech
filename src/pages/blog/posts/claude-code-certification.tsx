@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { BlogImage } from "@/components/site/blog-image"
 
 export function ClaudeCodeCertificationPost() {
   return (
@@ -67,6 +68,7 @@ export function ClaudeCodeCertificationPost() {
       </p>
 
       <h2>The catch: it's gated to the Claude Partner Network</h2>
+      <BlogImage imageKey="claude-code-certification/02-partner-eligibility" />
       <p>
         Here's the part that changes whether this is actually useful to
         you. Registration for all four exams is restricted to organizations
@@ -118,6 +120,7 @@ export function ClaudeCodeCertificationPost() {
       </p>
 
       <h2>What the Developer exam tests, versus what most companies need</h2>
+      <BlogImage imageKey="claude-code-certification/01-ecosystem-and-repository" />
       <p>
         Even ignoring the partner-network gate, CCDV-F is scoped broadly on
         purpose — Anthropic built it to validate the whole Claude ecosystem
@@ -140,6 +143,7 @@ export function ClaudeCodeCertificationPost() {
       </p>
 
       <h2>What to test for instead</h2>
+      <BlogImage imageKey="claude-code-certification/03-task-contract" />
       <p>
         If what you actually need is proof that specific people on your
         team can use Claude Code well — not a partner-network credential
