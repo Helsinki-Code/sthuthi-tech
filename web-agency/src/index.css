@@ -1,0 +1,122 @@
+@import "tailwindcss";
+@import "@fontsource-variable/space-grotesk";
+@import "@fontsource-variable/source-serif-4";
+@import "@fontsource/space-mono/400.css";
+@import "@fontsource/space-mono/700.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Space Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Space Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Source Serif 4 Variable", ui-serif, Georgia, serif;
+  --font-mono: "Space Mono", ui-monospace, monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-orange-ink: var(--brand-orange-ink);
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-navy-foreground: var(--brand-navy-foreground);
+  --animate-rise: rise 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  /* Sthuthi Web — same brand palette as the parent site, required by brand: warm
+     paper + navy-ink + brand orange. Reused verbatim; every visual difference
+     from the parent site comes from type/layout, not color. */
+  --background: #f5f3ee;
+  --foreground: #14181c;
+  --card: #fffefb;
+  --card-foreground: #14181c;
+  --border: #ddd8cc;
+  --muted: #eae6dc;
+  --muted-foreground: #5b6570;
+  --accent: #fbe7dc;
+  --accent-foreground: #14181c;
+
+  --brand-orange: #e6501f;
+  --brand-orange-ink: #14181c;
+  --brand-navy: #121b23;
+  --brand-navy-foreground: #eceee9;
+}
+
+.dark {
+  /* dark designed separately, not an inverted light — same rule as the parent brand */
+  --background: #10151a;
+  --foreground: #ecede7;
+  --card: #161d24;
+  --card-foreground: #ecede7;
+  --border: #263039;
+  --muted: #1e262e;
+  --muted-foreground: #8a97a0;
+  --accent: #24201b;
+  --accent-foreground: #ecede7;
+
+  --brand-orange: #ff6b3d;
+  --brand-orange-ink: #10151a;
+  --brand-navy: #0d1318;
+  --brand-navy-foreground: #ecede7;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  ::selection {
+    background: var(--brand-orange);
+    color: var(--brand-orange-ink);
+  }
+}
+
+/* The Registry — ledger rule lines used throughout instead of card borders/shadows */
+.ledger-rule {
+  border-top: 1px solid var(--border);
+}
+
+.dossier p + p {
+  margin-top: 1.15em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
