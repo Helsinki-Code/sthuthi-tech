@@ -1,5 +1,5 @@
 import { Link, Navigate, useParams } from "react-router-dom"
-import { ArrowLeft, CheckCircle } from "@phosphor-icons/react"
+import { ArrowLeft, ArrowUpRight, CheckCircle } from "@phosphor-icons/react"
 import { Seo, SITE_URL } from "@/lib/seo"
 import { PageHeader } from "@/components/site/page-header"
 import { Reveal } from "@/components/site/reveal"
@@ -17,8 +17,8 @@ export function CertificationDetailPage() {
   return (
     <>
       <Seo
-        title={`${track.tool} Certification`}
-        description={`${track.tool} certification from Sthuthi Technologies: ${track.summary}`}
+        title={track.metaTitle}
+        description={track.metaDescription}
         path={`/certifications/${track.slug}`}
         structuredData={[
           {
@@ -40,6 +40,15 @@ export function CertificationDetailPage() {
               { "@type": "ListItem", position: 2, name: "Certification tracks", item: `${SITE_URL}/certifications` },
               { "@type": "ListItem", position: 3, name: track.tool, item: `${SITE_URL}/certifications/${track.slug}` },
             ],
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: track.faq.map((item) => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: { "@type": "Answer", text: item.answer },
+            })),
           },
         ]}
       />
@@ -122,6 +131,49 @@ export function CertificationDetailPage() {
                 </Reveal>
               ))}
             </ol>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-border py-16 sm:py-20">
+        <div className="mx-auto max-w-6xl px-5 sm:px-8">
+          <div className="grid gap-10 border border-dashed border-border p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-brand-orange">
+                Certification landscape
+              </p>
+              <h2 className="mt-3 font-heading text-xl font-bold tracking-tight sm:text-2xl">
+                {track.landscape.heading}
+              </h2>
+              <p className="mt-3 max-w-3xl text-[14px] leading-relaxed text-muted-foreground">
+                {track.landscape.body}
+              </p>
+            </div>
+            <Link
+              to={`/blog/${track.landscape.blogSlug}`}
+              className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap text-[13px] font-semibold text-brand-orange"
+            >
+              Read the full research
+              <ArrowUpRight weight="bold" className="size-3.5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-border py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-5 sm:px-8">
+          <h2 className="font-heading text-lg font-bold tracking-tight">
+            Frequently asked questions
+          </h2>
+          <div className="mt-6 flex flex-col gap-6">
+            {track.faq.map((item) => (
+              <div key={item.question}>
+                <h3 className="font-heading text-[15px] font-bold">{item.question}</h3>
+                <p className="mt-1.5 text-[14px] leading-relaxed text-muted-foreground">
+                  {item.answer}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
