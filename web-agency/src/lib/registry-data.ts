@@ -16,6 +16,8 @@ export interface RegistryEntry {
   stack?: string
   pricing?: string
   subProducts?: SubProduct[]
+  image: { src: string; alt: string }
+  capturedOn: string
 }
 
 export const REGISTRY: RegistryEntry[] = [
@@ -34,6 +36,8 @@ export const REGISTRY: RegistryEntry[] = [
       "52+ connected MCP server integrations spanning development, commerce, trading, and social tooling",
     ],
     stack: "React, TypeScript, OpenAI Realtime API, ElevenLabs, Stripe, 52+ MCP servers",
+    image: { src: "/registry/shelvey-ai.png", alt: "ShelVey AI's homepage showing its AI CEO dashboard and 5-phase business-creation process." },
+    capturedOn: "19 September 2026",
   },
   {
     number: "002",
@@ -50,6 +54,8 @@ export const REGISTRY: RegistryEntry[] = [
       "Built with policy-aware boundaries and human oversight by design",
     ],
     stack: "Agent orchestration layer (Sophi AgentOS), DMS/CRM integrations, voice + text channels",
+    image: { src: "/registry/kenect-ai.png", alt: "Kenect AI's homepage showing its Sophi AgentOS dealership operations dashboard." },
+    capturedOn: "19 September 2026",
   },
   {
     number: "003",
@@ -101,6 +107,8 @@ export const REGISTRY: RegistryEntry[] = [
         description: "The shared component system powering the other six products — 229 production-ready React components across six product-specific collections, distributed as the @amro-ui/react npm package with shadcn-registry installation, open-source on GitHub.",
       },
     ],
+    image: { src: "/registry/amro-agentic-ai.png", alt: "Amro Agentic AI's homepage showing its seven-product suite for UK small businesses." },
+    capturedOn: "19 September 2026",
   },
   {
     number: "004",
@@ -117,6 +125,8 @@ export const REGISTRY: RegistryEntry[] = [
       "Sends execute through the customer's own connected Resend and Twilio accounts, not shared sending infrastructure",
     ],
     stack: "Multi-agent pipeline, Resend, Twilio (customer's own accounts)",
+    image: { src: "/registry/vranceflex.png", alt: "VranceFlex's workspace loading screen for its agent-led B2B outreach platform." },
+    capturedOn: "19 September 2026",
   },
   {
     number: "005",
@@ -134,6 +144,8 @@ export const REGISTRY: RegistryEntry[] = [
     ],
     pricing: "From $149/mo, no free trial",
     stack: "GitHub/WordPress integration, Search Console, GA4, DataForSEO",
+    image: { src: "/registry/seoforge.png", alt: "SEOForge's homepage showing its dual-pipeline autonomous SEO operations platform." },
+    capturedOn: "19 September 2026",
   },
   {
     number: "006",
@@ -150,6 +162,8 @@ export const REGISTRY: RegistryEntry[] = [
       "Fully open-source — inspectable and ownable, not a black-box UI kit",
     ],
     stack: "React, shadcn registry, Model Context Protocol server",
+    image: { src: "/registry/anuime.png", alt: "AnUIme's homepage showing its three character-driven React component systems." },
+    capturedOn: "19 September 2026",
   },
   {
     number: "007",
@@ -167,6 +181,8 @@ export const REGISTRY: RegistryEntry[] = [
     ],
     pricing: "$49/mo (500 renders, 10 model profiles) to $199/mo (3,000 renders, unlimited profiles, API access)",
     stack: "Gemini 3 Pro Image",
+    image: { src: "/registry/mirrorfit-ai.png", alt: "MirrorFit AI's homepage showing its AI virtual try-on catalogue imagery generator." },
+    capturedOn: "19 September 2026",
   },
   {
     number: "008",
@@ -183,6 +199,8 @@ export const REGISTRY: RegistryEntry[] = [
       "An “art concierge” feature gives personalised recommendations from a described room, budget, or aesthetic",
     ],
     stack: "E-commerce cart/checkout, account system, worldwide shipping",
+    image: { src: "/registry/sthuthi-art.png", alt: "Sthuthi Art's homepage showing original paintings by Shalini Tomar and Leela Rani." },
+    capturedOn: "19 September 2026",
   },
 ]
 

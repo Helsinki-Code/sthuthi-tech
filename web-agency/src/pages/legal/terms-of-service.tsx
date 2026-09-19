@@ -64,8 +64,8 @@ export function TermsOfServicePage() {
             body: (
               <p>
                 Questions about these terms:{" "}
-                <a href="mailto:web@sthuthi-tech.com" className="text-brand-orange underline underline-offset-4">
-                  web@sthuthi-tech.com
+                <a href="mailto:admin@sthuthi-tech.com" className="text-brand-orange underline underline-offset-4">
+                  admin@sthuthi-tech.com
                 </a>
                 .
               </p>

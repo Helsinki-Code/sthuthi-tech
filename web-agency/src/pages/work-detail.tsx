@@ -4,6 +4,7 @@ import { Seo, SITE_URL } from "@/lib/seo"
 import { Reveal } from "@/components/site/reveal"
 import { SpecBlock } from "@/components/site/spec-block"
 import { EntryNav } from "@/components/site/entry-nav"
+import { DeviceFrame } from "@/components/site/device-frame"
 import { Button } from "@/components/ui/button"
 import { getRegistryEntry, getAdjacentEntries } from "@/lib/registry-data"
 
@@ -36,6 +37,7 @@ export function WorkDetailPage() {
             name: entry.name,
             description: entry.summary,
             url: entry.url,
+            image: `${SITE_URL}${entry.image.src}`,
           },
           {
             "@context": "https://schema.org",
@@ -72,6 +74,15 @@ export function WorkDetailPage() {
             <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-muted-foreground">
               {entry.summary}
             </p>
+          </Reveal>
+          <Reveal delayMs={80}>
+            <DeviceFrame
+              src={entry.image.src}
+              alt={entry.image.alt}
+              domain={entry.url.replace("https://", "")}
+              capturedOn={entry.capturedOn}
+              className="mt-10"
+            />
           </Reveal>
         </div>
       </section>

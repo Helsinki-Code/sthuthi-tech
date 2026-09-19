@@ -4,7 +4,6 @@ import { Reveal } from "@/components/site/reveal"
 import { RegistryRow } from "@/components/site/registry-row"
 import { Button } from "@/components/ui/button"
 import { REGISTRY, SERVICES } from "@/lib/registry-data"
-import { ArrowUpRight } from "@phosphor-icons/react"
 
 const SECTIONS = [
   { n: "01", label: "The studio" },
@@ -24,15 +23,32 @@ export function HomePage() {
   return (
     <>
       <Seo
-        title="Sthuthi Web — Agentic AI Product Studio"
-        description="Sthuthi Web builds agentic AI products, integrations, and design systems — the engineering studio behind Sthuthi Technologies' own client work."
+        title="Sthuthi Web — Agentic AI Product Engineering Studio"
+        description="Sthuthi Web designs and ships agentic AI platforms, AI-tool integrations, and production design systems. Fourteen live products across eight real engagements — see the registry."
         path="/"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "Sthuthi Web",
+          legalName: "Sthuthi Technologies, LLC",
           url: SITE_URL,
-          parentOrganization: { "@type": "Organization", name: "Sthuthi Technologies", url: "https://sthuthi-tech.com" },
+          email: "admin@sthuthi-tech.com",
+          telephone: "+91 9950730218",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "2810 North Church Street",
+            addressLocality: "Wilmington",
+            addressRegion: "DE",
+            postalCode: "19802",
+            addressCountry: "US",
+          },
+          founder: {
+            "@type": "Person",
+            name: "Shalini Tomar",
+            url: "https://www.linkedin.com/in/shalini-tomar-10-sha/",
+            email: "shelly@sthuthi-tech.com",
+            image: `${SITE_URL}/ceo/shalini_tomar.png`,
+          },
         }}
       />
 
@@ -47,34 +63,54 @@ export function HomePage() {
                 </span>
               </div>
             ))}
-            <a
-              href="https://sthuthi-tech.com"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-6 inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.1em] text-muted-foreground hover:text-brand-orange"
-            >
-              Part of Sthuthi Technologies
-              <ArrowUpRight weight="bold" className="size-3" />
-            </a>
           </div>
           <Reveal>
             <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-brand-orange lg:hidden">
               The studio
             </p>
             <h1 className="mt-3 font-heading text-4xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:mt-0">
-              We build the AI products our own certification standard would pass.
+              Agentic AI products, engineered to actually ship.
             </h1>
             <p className="mt-6 max-w-xl text-[15px] leading-relaxed text-muted-foreground sm:text-base">
-              Sthuthi Web is the engineering arm of Sthuthi Technologies —
-              agentic platforms, AI integrations, and design systems, built
-              with the same reviewed, human-approved discipline our parent
-              company certifies teams on.
+              Sthuthi Web designs and builds agentic AI platforms, AI-tool
+              integrations, and production design systems — fourteen live
+              products across eight real engagements, each one dated and
+              linked in our registry so you can check it yourself.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button nativeButton={false} render={<Link to="/work">See the registry</Link>} />
               <Button variant="outline" nativeButton={false} render={<Link to="/services">What we build</Link>} />
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      <section className="border-b border-border py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl px-5 sm:px-8">
+          <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-brand-orange">
+            What we do
+          </p>
+          <div className="dossier mt-4 text-[15px] leading-relaxed text-muted-foreground">
+            <p>
+              Sthuthi Web is an agentic AI product engineering studio: we
+              design, build, and ship multi-agent platforms, AI integrations,
+              and the design systems that hold them together. Most "AI
+              product" work stalls at a demo — a slick prototype that never
+              reaches a real user because nobody solved the boring parts:
+              human-approval gates before an agent sends anything, fallback
+              handling when a model provider goes down, a component system
+              the rest of the team can actually build on. That's the work we
+              specialize in.
+            </p>
+            <p className="mt-5">
+              Every product in our registry is live and independently owned —
+              agentic sales and outreach platforms, AI customer-support
+              agents, SEO and content automation, a component design system
+              with its own MCP server, and an AI image-generation product,
+              among others. We don't publish case studies we can't back with
+              a real, dated link.
+            </p>
+          </div>
         </div>
       </section>
 

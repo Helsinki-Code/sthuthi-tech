@@ -21,9 +21,7 @@ export function PrivacyPolicyPage() {
                 This site collects only what you submit through the contact
                 form — name, email, company, project type, and your message —
                 plus standard analytics (page views and outbound clicks) once
-                a GA4 property is configured for this domain. We don't collect
-                anything related to certifications or assessments; that's the
-                parent site's domain, not this one.
+                a GA4 property is configured for this domain.
               </p>
             ),
           },
@@ -64,29 +62,19 @@ export function PrivacyPolicyPage() {
             body: (
               <p>
                 You can ask what we hold on you or request deletion. Write to{" "}
-                <a href="mailto:web@sthuthi-tech.com" className="text-brand-orange underline underline-offset-4">
-                  web@sthuthi-tech.com
+                <a href="mailto:admin@sthuthi-tech.com" className="text-brand-orange underline underline-offset-4">
+                  admin@sthuthi-tech.com
                 </a>{" "}
                 and we'll respond within 30 days.
               </p>
             ),
           },
           {
-            title: "The parent company",
+            title: "Who operates this site",
             body: (
               <p>
-                Sthuthi Web is operated by Sthuthi Technologies. If you're
-                looking for the certification-related privacy policy (cohort
-                data, assessment records, credential verification), see{" "}
-                <a
-                  href="https://sthuthi-tech.com/legal/privacy-policy"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-brand-orange underline underline-offset-4"
-                >
-                  sthuthi-tech.com's privacy policy
-                </a>{" "}
-                instead.
+                Sthuthi Web is operated by Sthuthi Technologies, LLC, 2810
+                North Church Street, Wilmington, DE 19802, US.
               </p>
             ),
           },

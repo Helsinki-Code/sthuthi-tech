@@ -30,7 +30,7 @@ export function WorkIndexPage() {
       <PageIntro
         eyebrow="Registry — Vol. 1"
         title="Everything we've shipped, numbered."
-        description="Eight entries, fourteen live products. Each one links to the real thing — not a screenshot."
+        description="Eight entries, fourteen live products. Each one shows a real, dated capture and links straight to the live thing itself."
       />
 
       <section className="py-12 sm:py-16">

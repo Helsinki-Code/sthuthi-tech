@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import { ArrowUpRight } from "@phosphor-icons/react"
 import { LogoMark } from "@/components/site/logo-mark"
 import { REGISTRY } from "@/lib/registry-data"
 
@@ -42,18 +41,9 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-[13px] leading-relaxed text-muted-foreground">
-              The engineering studio behind Sthuthi's own client work — agentic
-              products, integrations, and design systems.
+              An agentic AI product engineering studio — platforms,
+              integrations, and design systems, built to ship.
             </p>
-            <a
-              href="https://sthuthi-tech.com"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-4 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.12em] text-muted-foreground hover:text-brand-orange"
-            >
-              Part of Sthuthi Technologies
-              <ArrowUpRight weight="bold" className="size-3" />
-            </a>
           </div>
 
           {COLUMNS.map((col) => (
@@ -78,7 +68,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-2 border-t border-border pt-6 font-mono text-[11px] text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <span>© {new Date().getFullYear()} Sthuthi Web</span>
+          <span>© {new Date().getFullYear()} Sthuthi Technologies, LLC — Wilmington, DE</span>
           <span>Registry entries reflect live, independently owned products</span>
         </div>
       </div>

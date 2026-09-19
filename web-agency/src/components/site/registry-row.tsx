@@ -15,6 +15,15 @@ export function RegistryRow({ entry, className }: { entry: RegistryEntry; classN
       <span className="w-10 shrink-0 font-mono text-sm text-muted-foreground sm:w-12">
         {entry.number}
       </span>
+      <span className="hidden aspect-[4/2.5] w-24 shrink-0 overflow-hidden border border-border bg-muted sm:block">
+        <img
+          src={entry.image.src}
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          className="h-full w-full object-cover object-top grayscale transition-[filter] duration-300 group-hover:grayscale-0"
+        />
+      </span>
       <div className="min-w-0 flex-1">
         <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
           <h3 className="font-heading text-base font-bold tracking-tight sm:text-lg">

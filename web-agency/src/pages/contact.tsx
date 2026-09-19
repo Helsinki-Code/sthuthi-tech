@@ -137,9 +137,11 @@ export function ContactPage() {
           <div>
             <SpecBlock
               rows={[
-                { label: "Direct", value: "web@sthuthi-tech.com" },
+                { label: "Email", value: "admin@sthuthi-tech.com" },
+                { label: "Phone", value: "+91 99507 30218" },
+                { label: "Address", value: "Sthuthi Technologies, LLC — 2810 North Church Street, Wilmington, DE 19802, US" },
                 { label: "Response", value: "Within 2 working days" },
-                { label: "Studio", value: "Part of Sthuthi Technologies" },
+                { label: "CEO", value: "Shalini Tomar" },
               ]}
             />
           </div>
