@@ -2,6 +2,8 @@ export interface SubProduct {
   name: string
   url: string
   description: string
+  image: { src: string; alt: string }
+  capturedOn: string
 }
 
 export interface RegistryEntry {
@@ -75,36 +77,50 @@ export const REGISTRY: RegistryEntry[] = [
         name: "AmroGen",
         url: "https://amrogen.com",
         description: "AI B2B outreach and prospecting — research, personalised sequences, and follow-up, with every send held for human approval before it goes out. Tiered credit pricing from £599 to £4,999/mo.",
+        image: { src: "/registry/amro/amrogen.png", alt: "AmroGen's homepage showing its AI B2B outreach and prospecting workflow." },
+        capturedOn: "19 September 2026",
       },
       {
         name: "AmroAgents",
         url: "https://amroagents.com",
         description: "Knowledge-grounded customer chatbots that answer from a company's own docs, handle support queries, and escalate to live chat, a ticket, or an AmroMeet booking when a person is needed. Integrates with Microsoft 365, Google Workspace, Salesforce, HubSpot, and Slack.",
+        image: { src: "/registry/amro/amroagents.png", alt: "AmroAgents' homepage showing its knowledge-grounded customer chatbot product." },
+        capturedOn: "19 September 2026",
       },
       {
         name: "AmroPilot",
         url: "https://amropilot.com",
         description: "SEO content generation across a four-stage workflow — keyword/SERP research, drafting, AI image generation with quality checks, export to Word/PDF/HTML or a CMS webhook. Credit-based from £500, no subscription required.",
+        image: { src: "/registry/amro/amropilot.png", alt: "AmroPilot's homepage showing its four-stage SEO content generation workflow." },
+        capturedOn: "19 September 2026",
       },
       {
         name: "AmroMeet",
         url: "https://amromeet.com",
         description: "Instant Google Meet scheduling with no guest account or login required — a “talk now” instant link or a hosted booking page synced to the host's calendar. Embeddable on third-party sites.",
+        image: { src: "/registry/amro/amromeet.png", alt: "AmroMeet's homepage showing its no-login-required Google Meet scheduling product." },
+        capturedOn: "19 September 2026",
       },
       {
         name: "AmroAcademy",
         url: "https://amroacademy.com",
         description: "Corporate AI training delivered as voice-first, conversational lessons — “a tutor that talks back,” not a video library — with a unified L&D dashboard tracking participation, knowledge checks, and progress.",
+        image: { src: "/registry/amro/amroacademy.png", alt: "AmroAcademy's homepage showing its voice-first corporate AI training product." },
+        capturedOn: "19 September 2026",
       },
       {
         name: "AmroVisionAI",
         url: "https://amrovisionai.com",
         description: "Marketing-image generation integrating DALL·E, Gemini, and FLUX with automatic provider fallback. Pay-as-you-go credits that never expire; images persist on Google Cloud Storage for long-term reuse.",
+        image: { src: "/registry/amro/amrovisionai.png", alt: "AmroVisionAI's homepage showing its multi-provider marketing-image generation product." },
+        capturedOn: "19 September 2026",
       },
       {
         name: "AmroUI",
         url: "https://amro-ui.vercel.app",
         description: "The shared component system powering the other six products — 229 production-ready React components across six product-specific collections, distributed as the @amro-ui/react npm package with shadcn-registry installation, open-source on GitHub.",
+        image: { src: "/registry/amro/amro-ui.png", alt: "AmroUI's homepage showing its 229-component React design system." },
+        capturedOn: "19 September 2026",
       },
     ],
     image: { src: "/registry/amro-agentic-ai.png", alt: "Amro Agentic AI's homepage showing its seven-product suite for UK small businesses." },

@@ -100,53 +100,55 @@ export function WorkDetailPage() {
             <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
               Dossier
             </p>
-            {entry.subProducts ? (
-              <div className="mt-4 flex flex-col gap-8 border-t border-border pt-6">
-                {entry.facts.length > 0 && (
-                  <ul className="dossier font-serif text-[16px] leading-relaxed text-foreground/90">
-                    {entry.facts.map((fact) => (
-                      <li key={fact} className="mb-3 list-disc pl-1 marker:text-brand-orange">
-                        {fact}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-                <div className="flex flex-col divide-y divide-border border-t border-border">
-                  {entry.subProducts.map((sub, i) => (
-                    <Reveal key={sub.name} delayMs={i * 40} className="py-5">
-                      <div className="flex flex-wrap items-baseline justify-between gap-2">
-                        <h3 className="font-heading text-base font-bold tracking-tight">
-                          {sub.name}
-                        </h3>
-                        <a
-                          href={sub.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-[0.1em] text-muted-foreground hover:text-brand-orange"
-                        >
-                          {sub.url.replace("https://", "")}
-                          <ArrowUpRight weight="bold" className="size-3" />
-                        </a>
-                      </div>
-                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                        {sub.description}
-                      </p>
-                    </Reveal>
-                  ))}
-                </div>
-              </div>
-            ) : (
-              <ul className="dossier mt-4 border-t border-border pt-6 font-serif text-[16px] leading-relaxed text-foreground/90">
-                {entry.facts.map((fact) => (
-                  <li key={fact} className="mb-4 list-disc pl-1 marker:text-brand-orange">
-                    {fact}
-                  </li>
-                ))}
-              </ul>
-            )}
+            <ul className="dossier mt-4 border-t border-border pt-6 font-serif text-[16px] leading-relaxed text-foreground/90">
+              {entry.facts.map((fact) => (
+                <li key={fact} className="mb-4 list-disc pl-1 marker:text-brand-orange">
+                  {fact}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
+
+      {entry.subProducts && (
+        <section className="border-b border-border py-16 sm:py-20">
+          <div className="mx-auto max-w-6xl px-5 sm:px-8">
+            <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">
+              The suite — {entry.subProducts.length} products
+            </p>
+            <div className="mt-6 grid gap-x-8 gap-y-12 sm:grid-cols-2">
+              {entry.subProducts.map((sub, i) => (
+                <Reveal key={sub.name} delayMs={i * 40}>
+                  <DeviceFrame
+                    src={sub.image.src}
+                    alt={sub.image.alt}
+                    domain={sub.url.replace("https://", "")}
+                    capturedOn={sub.capturedOn}
+                  />
+                  <div className="mt-4 flex flex-wrap items-baseline justify-between gap-2">
+                    <h3 className="font-heading text-base font-bold tracking-tight">
+                      {sub.name}
+                    </h3>
+                    <a
+                      href={sub.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1 font-mono text-[10px] uppercase tracking-[0.1em] text-muted-foreground hover:text-brand-orange"
+                    >
+                      Visit
+                      <ArrowUpRight weight="bold" className="size-3" />
+                    </a>
+                  </div>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {sub.description}
+                  </p>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="border-b border-border">
         <div className="mx-auto max-w-6xl px-5 sm:px-8">
