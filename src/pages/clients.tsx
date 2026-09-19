@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { ArrowUpRight } from "@phosphor-icons/react"
 import { Seo } from "@/lib/seo"
 import { PageHeader } from "@/components/site/page-header"
@@ -25,10 +26,8 @@ export function ClientsPage() {
           <div className="grid gap-6 sm:grid-cols-2">
             {CLIENTS.map((client, i) => (
               <Reveal key={client.name} delayMs={i * 60}>
-                <a
-                  href={client.url}
-                  target="_blank"
-                  rel="noreferrer"
+                <Link
+                  to={`/clients/${client.slug}`}
                   className="group flex h-full flex-col gap-5 border border-border bg-card p-6 transition-colors hover:border-brand-orange"
                 >
                   <div className="flex items-start justify-between gap-4">
@@ -55,10 +54,10 @@ export function ClientsPage() {
                   </div>
 
                   <div className="flex items-center justify-between border-t border-border pt-4 font-mono text-[10px] uppercase tracking-[0.12em] text-muted-foreground">
-                    <span className="text-brand-orange">Cohort on record</span>
+                    <span className="text-brand-orange">View profile & certificate</span>
                     <span>{new URL(client.url).hostname.replace("www.", "")}</span>
                   </div>
-                </a>
+                </Link>
               </Reveal>
             ))}
           </div>

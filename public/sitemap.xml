@@ -51,6 +51,26 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://sthuthi-tech.com/clients/shelvey-ai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sthuthi-tech.com/clients/amro-agentic-ai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sthuthi-tech.com/clients/kenect-ai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://sthuthi-tech.com/clients/the-payzon</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://sthuthi-tech.com/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>

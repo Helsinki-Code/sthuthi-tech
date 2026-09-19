@@ -8,6 +8,7 @@ import { CertificationDetailPage } from "@/pages/certification-detail"
 import { CustomCertificationPage } from "@/pages/custom-certification"
 import { AboutPage } from "@/pages/about"
 import { ClientsPage } from "@/pages/clients"
+import { ClientDetailPage } from "@/pages/client-detail"
 import { ContactPage } from "@/pages/contact"
 import { BlogIndexPage } from "@/pages/blog"
 import { BlogPostPage } from "@/pages/blog/post"
@@ -29,6 +30,7 @@ function App() {
           <Route path="/custom-certification" element={<CustomCertificationPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/clients" element={<ClientsPage />} />
+          <Route path="/clients/:slug" element={<ClientDetailPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/blog" element={<BlogIndexPage />} />
           <Route path="/blog/:slug" element={<BlogPostPage />} />
